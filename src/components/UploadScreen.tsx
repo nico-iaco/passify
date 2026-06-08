@@ -4,24 +4,20 @@ import { parseExamFromFile, parseExamFromUrl } from '../lib/parseExam'
 import type { NormalizedExam, QuizSession } from '../types'
 import styles from './UploadScreen.module.css'
 
+const BASE = import.meta.env.BASE_URL
+
 const SAMPLES = [
   {
-    file: '/samples/google-cloudDeveloper.json',
+    file: `${BASE}samples/google-cloudDeveloper.json`,
     label: 'Professional Cloud Developer',
     count: 288,
     icon: '☁️',
   },
   {
-    file: '/samples/google-devops.json',
+    file: `${BASE}samples/google-devops.json`,
     label: 'Professional Cloud DevOps Engineer',
     count: 203,
     icon: '⚙️',
-  },
-  {
-    file: '/samples/google-generativeAiLeader.json',
-    label: 'Generative AI Leader',
-    count: 71,
-    icon: '✨',
   },
 ]
 
