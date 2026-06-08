@@ -1,0 +1,277 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 80px;
+  min-height: 100vh;
+}
+
+/* ─── Exam header ─────────────────────────────────────────────────────────── */
+
+.examHeader {
+  margin-bottom: 28px;
+}
+
+.backBtn {
+  margin-bottom: 16px;
+}
+
+.examMeta {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.examName {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.examTotal {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* ─── Setup card ──────────────────────────────────────────────────────────── */
+
+.setupCard {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.setupTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: -8px;
+}
+
+/* ─── Section ─────────────────────────────────────────────────────────────── */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+/* ─── Mode cards ──────────────────────────────────────────────────────────── */
+
+.modeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.modeCard {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  background: var(--bg-subtle);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease);
+}
+
+.modeCard:hover {
+  border-color: var(--brand-300);
+  background: var(--bg-hover);
+}
+
+.modeCardActive {
+  border-color: var(--brand-500) !important;
+  background: var(--option-selected-bg) !important;
+}
+
+.modeIcon {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.modeCardActive .modeIcon { color: var(--brand-500); }
+
+.modeName {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.modeDesc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.modeCheck {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: var(--brand-500);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Topic grid ──────────────────────────────────────────────────────────── */
+
+.topicGrid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.topicBtn {
+  padding: 7px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease);
+}
+
+.topicBtn:hover { border-color: var(--brand-400); color: var(--brand-500); }
+
+.topicBtnActive {
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+  color: #fff;
+}
+
+/* ─── Slider ──────────────────────────────────────────────────────────────── */
+
+.sliderHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sliderValue {
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--brand-500);
+}
+
+.sliderMax {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-faint);
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-full);
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--brand-500);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(99,102,241,.4);
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.slider::-webkit-slider-thumb:hover { transform: scale(1.2); }
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: var(--brand-500);
+  cursor: pointer;
+}
+
+.sliderTicks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  margin-top: -4px;
+}
+
+/* ─── Toggle ──────────────────────────────────────────────────────────────── */
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  flex-shrink: 0;
+}
+
+.toggleOn {
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+}
+
+.toggleThumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--text-faint);
+  border-radius: 50%;
+  transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.toggleOn .toggleThumb {
+  transform: translateX(20px);
+  background: #fff;
+}

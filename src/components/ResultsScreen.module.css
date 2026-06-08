@@ -1,0 +1,296 @@
+.root {
+  padding: 48px 0 80px;
+  min-height: 100vh;
+}
+
+/* ─── Score card ──────────────────────────────────────────────────────────── */
+
+.scoreCard {
+  padding: 40px 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.scoreCircleWrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.scoreCircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid;
+  gap: 4px;
+}
+
+.scorePassed {
+  border-color: var(--correct-border);
+  background: var(--correct-bg);
+}
+
+.scoreFailed {
+  border-color: var(--wrong-border);
+  background: var(--wrong-bg);
+}
+
+.scorePct {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+
+.scorePassed .scorePct { color: var(--correct-text); }
+.scoreFailed .scorePct { color: var(--wrong-text); }
+
+.scoreLabel {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.scorePassed .scoreLabel { color: var(--correct-text); }
+.scoreFailed .scoreLabel { color: var(--wrong-text); }
+
+.examResultName {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  max-width: 480px;
+}
+
+/* ─── Stats ───────────────────────────────────────────────────────────────── */
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 18px 32px;
+}
+
+.statDivider {
+  width: 1px;
+  height: 48px;
+  background: var(--border);
+}
+
+.statNum {
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  line-height: 1;
+  color: var(--text);
+}
+
+.statCorrect { color: var(--correct-text); }
+.statWrong   { color: var(--wrong-text);   }
+
+.statLabel {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* ─── Score bar ───────────────────────────────────────────────────────────── */
+
+.scoreBar {
+  width: 100%;
+  max-width: 400px;
+  height: 8px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.scoreBarFill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 800ms var(--ease);
+}
+
+.scoreBarPassed { background: linear-gradient(90deg, #22c55e, #16a34a); }
+.scoreBarFailed { background: linear-gradient(90deg, #f87171, #dc2626); }
+
+/* ─── Actions ─────────────────────────────────────────────────────────────── */
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ─── Review section ──────────────────────────────────────────────────────── */
+
+.reviewSection {
+  margin-top: 0;
+}
+
+.reviewTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.noErrors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.noErrorsIcon { font-size: 2.5rem; }
+
+/* ─── Error list ──────────────────────────────────────────────────────────── */
+
+.errorList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.errorItem {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.errorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.errorNum {
+  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+  color: var(--text-faint);
+}
+
+.errorQuestion {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.errorImages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.errorImage {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+/* ─── Answer comparison ───────────────────────────────────────────────────── */
+
+.answerComparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 540px) {
+  .answerComparison { grid-template-columns: 1fr; }
+}
+
+.answerBox {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.answerWrong {
+  background: var(--wrong-bg);
+  border-color: var(--wrong-border);
+}
+
+.answerCorrect {
+  background: var(--correct-bg);
+  border-color: var(--correct-border);
+}
+
+.answerBoxLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.answerWrong .answerBoxLabel   { color: var(--wrong-text);   }
+.answerCorrect .answerBoxLabel { color: var(--correct-text); }
+
+.answerOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.answerChip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.answerKey {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  margin-top: 1px;
+}
+
+.noAnswer {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.discussionLink {
+  align-self: flex-start;
+  color: var(--text-muted) !important;
+}

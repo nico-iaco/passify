@@ -1,0 +1,260 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 64px 0 80px;
+  min-height: 100vh;
+}
+
+/* ─── Hero ────────────────────────────────────────────────────────────────── */
+
+.hero {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.logo {
+  display: inline-flex;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 4px 12px rgba(99,102,241,.35));
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--brand-600), var(--brand-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+/* ─── Resume banner ───────────────────────────────────────────────────────── */
+
+.resumeBanner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  border-color: var(--brand-300);
+  background: var(--brand-50);
+  flex-wrap: wrap;
+}
+
+[data-theme="dark"] .resumeBanner {
+  background: #1e1b4b;
+  border-color: var(--brand-700);
+}
+
+.resumeIcon {
+  color: var(--brand-500);
+  flex-shrink: 0;
+}
+
+.resumeInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.resumeTitle {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--brand-700);
+}
+
+[data-theme="dark"] .resumeTitle { color: var(--brand-300); }
+
+.resumeMeta {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.resumeActions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ─── Drop zone ───────────────────────────────────────────────────────────── */
+
+.dropZone {
+  padding: 48px 32px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
+  background: var(--bg-card);
+  box-shadow: none;
+  margin-bottom: 12px;
+}
+
+.dropZone:hover {
+  border-color: var(--brand-400);
+  background: var(--brand-50);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .dropZone:hover {
+  background: #1e1b4b;
+}
+
+.dragging {
+  border-color: var(--brand-500);
+  background: var(--brand-50);
+  transform: scale(1.01);
+  box-shadow: 0 0 0 4px rgba(99,102,241,.15);
+}
+
+[data-theme="dark"] .dragging {
+  background: #1e1b4b;
+}
+
+.hasError {
+  border-color: var(--wrong-border);
+}
+
+.dropContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.dropIcon {
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+
+.dragging .dropIcon,
+.dropZone:hover .dropIcon {
+  color: var(--brand-500);
+}
+
+.dropLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.dropOr {
+  font-size: 0.875rem;
+  color: var(--text-faint);
+}
+
+.dropContent .btn {
+  pointer-events: auto;
+}
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+/* ─── Error box ───────────────────────────────────────────────────────────── */
+
+.errorBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--wrong-bg);
+  border: 1px solid var(--wrong-border);
+  border-radius: var(--radius-md);
+  color: var(--wrong-text);
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+}
+
+.errorBox svg { flex-shrink: 0; margin-top: 1px; }
+
+/* ─── Samples ─────────────────────────────────────────────────────────────── */
+
+.samples {
+  margin-top: 32px;
+}
+
+.samplesTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.sampleGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 480px) {
+  .sampleGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.sampleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 18px 16px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
+  box-shadow: none;
+}
+
+.sampleCard:hover:not(:disabled) {
+  border-color: var(--brand-400);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.sampleCard:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.sampleIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.sampleLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.sampleCount {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-faint);
+}

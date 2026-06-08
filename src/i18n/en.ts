@@ -1,0 +1,71 @@
+import type { Strings } from './it'
+
+export const en: Strings = {
+  // Upload screen
+  upload_title: 'Passify',
+  upload_subtitle: 'Load your JSON file with exam questions and start studying.',
+  upload_drag: 'Drop your JSON file here',
+  upload_or: 'or',
+  upload_browse: 'Browse file',
+  upload_samples_title: 'Or try with a sample exam',
+  upload_resume_title: 'You have a session in progress',
+  upload_resume_exam: 'Exam:',
+  upload_resume_progress: 'Progress:',
+  upload_resume_btn: 'Resume',
+  upload_resume_discard: 'Discard',
+  upload_error: 'File error',
+  upload_loading: 'Loading…',
+
+  // Setup screen
+  setup_title: 'Configure your quiz',
+  setup_mode_label: 'Mode',
+  setup_mode_practice: 'Practice',
+  setup_mode_practice_desc: 'Instant feedback after each answer',
+  setup_mode_exam: 'Exam',
+  setup_mode_exam_desc: 'No feedback, final score at the end',
+  setup_questions_label: 'Number of questions',
+  setup_topics_label: 'Filter by topic',
+  setup_topics_all: 'All topics',
+  setup_topic_n: 'Topic',
+  setup_shuffle_label: 'Shuffle questions and options',
+  setup_start: 'Start',
+  setup_back: 'Back',
+  setup_available: 'available',
+
+  // Quiz screen
+  quiz_question: 'Question',
+  quiz_of: 'of',
+  quiz_select_multi: 'Select',
+  quiz_select_multi_answers: 'answers',
+  quiz_confirm: 'Confirm',
+  quiz_next: 'Next',
+  quiz_finish: 'Finish',
+  quiz_prev: 'Previous',
+  quiz_explanation: 'View discussion',
+  quiz_correct_answer: 'Correct answer:',
+  quiz_your_answer: 'Your answer:',
+  quiz_correct_label: 'Correct!',
+  quiz_wrong_label: 'Incorrect',
+  quiz_exit: 'Exit',
+  quiz_exit_confirm: 'Are you sure you want to exit? Progress will be saved.',
+
+  // Results screen
+  results_title: 'Results',
+  results_score: 'Score',
+  results_correct: 'Correct',
+  results_wrong: 'Wrong',
+  results_total: 'Total',
+  results_passed: 'Passed!',
+  results_failed: 'Not passed',
+  results_review_title: 'Error review',
+  results_no_errors: 'Perfect! No mistakes.',
+  results_your_answer: 'Your answer:',
+  results_correct_answer: 'Correct answer:',
+  results_explanation: 'Discussion',
+  results_retry: 'Retry',
+  results_new_exam: 'New exam',
+
+  // Misc
+  theme_toggle: 'Toggle theme',
+  lang_toggle: 'IT',
+}

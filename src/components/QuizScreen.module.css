@@ -1,0 +1,161 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ─── Header ──────────────────────────────────────────────────────────────── */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.headerInner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.examInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.examName {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+@media (min-width: 640px) {
+  .examName { max-width: 300px; }
+}
+
+.modeBadge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--brand-500);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.exitBtn {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ─── Main ────────────────────────────────────────────────────────────────── */
+
+.main {
+  flex: 1;
+  padding: 32px 0 80px;
+}
+
+.questionMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.questionNumber {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.answeredCount {
+  font-size: 0.8125rem;
+  font-family: var(--font-mono);
+  color: var(--text-faint);
+}
+
+/* ─── Navigation ──────────────────────────────────────────────────────────── */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.navDots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.dotCurrent {
+  background: var(--brand-500);
+  transform: scale(1.4);
+}
+
+.dotAnswered {
+  background: var(--brand-300);
+}
+
+.dotCorrect {
+  background: var(--correct-border);
+}
+
+.dotWrong {
+  background: var(--wrong-border);
+}
+
+/* ─── Dialog ──────────────────────────────────────────────────────────────── */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 24px;
+}
+
+.dialog {
+  padding: 28px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.dialogText {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.dialogActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}

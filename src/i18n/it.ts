@@ -1,0 +1,71 @@
+export const it = {
+  // Upload screen
+  upload_title: 'Passify',
+  upload_subtitle: 'Carica il tuo file JSON con le domande d\'esame e inizia a studiare.',
+  upload_drag: 'Trascina il file JSON qui',
+  upload_or: 'oppure',
+  upload_browse: 'Sfoglia file',
+  upload_samples_title: 'Oppure prova con un esame di esempio',
+  upload_resume_title: 'Hai una sessione in corso',
+  upload_resume_exam: 'Esame:',
+  upload_resume_progress: 'Progresso:',
+  upload_resume_btn: 'Riprendi',
+  upload_resume_discard: 'Scarta',
+  upload_error: 'Errore nel file',
+  upload_loading: 'Caricamento in corso…',
+
+  // Setup screen
+  setup_title: 'Configura il quiz',
+  setup_mode_label: 'Modalità',
+  setup_mode_practice: 'Pratica',
+  setup_mode_practice_desc: 'Feedback immediato dopo ogni risposta',
+  setup_mode_exam: 'Esame',
+  setup_mode_exam_desc: 'Nessun feedback, punteggio finale',
+  setup_questions_label: 'Numero di domande',
+  setup_topics_label: 'Filtra per topic',
+  setup_topics_all: 'Tutti i topic',
+  setup_topic_n: 'Topic',
+  setup_shuffle_label: 'Mescola domande e opzioni',
+  setup_start: 'Inizia',
+  setup_back: 'Indietro',
+  setup_available: 'disponibili',
+
+  // Quiz screen
+  quiz_question: 'Domanda',
+  quiz_of: 'di',
+  quiz_select_multi: 'Seleziona',
+  quiz_select_multi_answers: 'risposte',
+  quiz_confirm: 'Conferma',
+  quiz_next: 'Avanti',
+  quiz_finish: 'Termina',
+  quiz_prev: 'Precedente',
+  quiz_explanation: 'Vedi discussione',
+  quiz_correct_answer: 'Risposta corretta:',
+  quiz_your_answer: 'La tua risposta:',
+  quiz_correct_label: 'Corretto!',
+  quiz_wrong_label: 'Sbagliato',
+  quiz_exit: 'Esci',
+  quiz_exit_confirm: 'Vuoi davvero uscire? I progressi saranno salvati.',
+
+  // Results screen
+  results_title: 'Risultati',
+  results_score: 'Punteggio',
+  results_correct: 'Corrette',
+  results_wrong: 'Sbagliate',
+  results_total: 'Totali',
+  results_passed: 'Superato!',
+  results_failed: 'Non superato',
+  results_review_title: 'Revisione errori',
+  results_no_errors: 'Perfetto! Nessun errore.',
+  results_your_answer: 'La tua risposta:',
+  results_correct_answer: 'Risposta corretta:',
+  results_explanation: 'Discussione',
+  results_retry: 'Rifai',
+  results_new_exam: 'Nuovo esame',
+
+  // Misc
+  theme_toggle: 'Cambia tema',
+  lang_toggle: 'EN',
+}
+
+export type Strings = typeof it

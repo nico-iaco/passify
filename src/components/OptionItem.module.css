@@ -1,0 +1,135 @@
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--option-bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition:
+    background var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
+  user-select: none;
+  position: relative;
+}
+
+.option:hover {
+  background: var(--option-hover);
+  border-color: var(--brand-300);
+  transform: translateX(2px);
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.indicator {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-subtle);
+  transition: all var(--dur-fast) var(--ease);
+  margin-top: 1px;
+}
+
+.keyLabel {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.text {
+  flex: 1;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* ─── Selected ────────────────────────────────────────────────────────────── */
+
+.stateSelected {
+  background: var(--option-selected-bg);
+  border-color: var(--option-selected-border);
+}
+
+.stateSelected .indicator {
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+  color: #fff;
+}
+
+.stateSelected .keyLabel {
+  color: #fff;
+}
+
+/* ─── Correct ─────────────────────────────────────────────────────────────── */
+
+.stateCorrect {
+  background: var(--correct-bg);
+  border-color: var(--correct-border);
+  cursor: default;
+}
+
+.stateCorrect:hover {
+  transform: none;
+  background: var(--correct-bg);
+  border-color: var(--correct-border);
+}
+
+.stateCorrect .indicator {
+  background: var(--correct-border);
+  border-color: var(--correct-border);
+  color: #fff;
+}
+
+.stateCorrect .text {
+  color: var(--correct-text);
+  font-weight: 500;
+}
+
+/* ─── Wrong ───────────────────────────────────────────────────────────────── */
+
+.stateWrong {
+  background: var(--wrong-bg);
+  border-color: var(--wrong-border);
+  cursor: default;
+}
+
+.stateWrong:hover {
+  transform: none;
+  background: var(--wrong-bg);
+  border-color: var(--wrong-border);
+}
+
+.stateWrong .indicator {
+  background: var(--wrong-border);
+  border-color: var(--wrong-border);
+  color: #fff;
+}
+
+.stateWrong .text {
+  color: var(--wrong-text);
+}
+
+/* disabled state for confirmed options */
+.option:has(.input:disabled) {
+  cursor: default;
+}
+
+.option:has(.input:disabled):hover {
+  transform: none;
+}
