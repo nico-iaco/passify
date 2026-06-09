@@ -243,6 +243,12 @@
   gap: 16px;
 }
 
+.toggleLabel {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
 .toggle {
   position: relative;
   width: 44px;

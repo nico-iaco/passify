@@ -18,10 +18,10 @@ function buildQuestions(exam: NormalizedExam, config: QuizConfig) {
   let qs = exam.questions.filter(
     q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
   )
-  if (config.shuffle) qs = shuffleFn(qs)
+  if (config.shuffleQuestions) qs = shuffleFn(qs)
   qs = qs.slice(0, config.totalQuestions)
 
-  if (config.shuffle) {
+  if (config.shuffleOptions) {
     qs = qs.map(q => {
       const keys = shuffleFn(q.optionKeys)
       const options: Record<string, string> = {}

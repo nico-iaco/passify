@@ -49,7 +49,8 @@ export interface QuizConfig {
   mode: QuizMode
   totalQuestions: number
   selectedTopics: number[]              // empty = all
-  shuffle: boolean
+  shuffleQuestions: boolean
+  shuffleOptions: boolean
 }
 
 export interface QuizSession {

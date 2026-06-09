@@ -15,7 +15,8 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
   const [mode, setMode] = useState<QuizMode>('practice')
   const [totalQuestions, setTotalQuestions] = useState(Math.min(20, exam.questions.length))
   const [selectedTopics, setSelectedTopics] = useState<number[]>([])
-  const [shuffle, setShuffle] = useState(true)
+  const [shuffleQuestions, setShuffleQuestions] = useState(true)
+  const [shuffleOptions, setShuffleOptions] = useState(true)
 
   const hasMultipleTopics = exam.topics.length > 1
 
@@ -36,7 +37,8 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
       mode,
       totalQuestions: Math.min(clampedTotal, filteredCount),
       selectedTopics,
-      shuffle,
+      shuffleQuestions,
+      shuffleOptions,
     })
   }
 
@@ -153,15 +155,27 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
             </div>
           </section>
 
-          {/* Shuffle toggle */}
+          {/* Shuffle toggles */}
           <section className={styles.section}>
+            <span className={styles.sectionLabel}>{t.setup_shuffle_section}</span>
             <label className={styles.toggleRow}>
-              <span className={styles.sectionLabel} style={{ margin: 0 }}>{t.setup_shuffle_label}</span>
+              <span className={styles.toggleLabel}>{t.setup_shuffle_questions}</span>
               <button
                 role="switch"
-                aria-checked={shuffle}
-                className={`${styles.toggle} ${shuffle ? styles.toggleOn : ''}`}
-                onClick={() => setShuffle(!shuffle)}
+                aria-checked={shuffleQuestions}
+                className={`${styles.toggle} ${shuffleQuestions ? styles.toggleOn : ''}`}
+                onClick={() => setShuffleQuestions(!shuffleQuestions)}
+              >
+                <span className={styles.toggleThumb} />
+              </button>
+            </label>
+            <label className={styles.toggleRow}>
+              <span className={styles.toggleLabel}>{t.setup_shuffle_options}</span>
+              <button
+                role="switch"
+                aria-checked={shuffleOptions}
+                className={`${styles.toggle} ${shuffleOptions ? styles.toggleOn : ''}`}
+                onClick={() => setShuffleOptions(!shuffleOptions)}
               >
                 <span className={styles.toggleThumb} />
               </button>
