@@ -65,6 +65,29 @@ export const it = {
   results_retry: 'Rifai',
   results_new_exam: 'Nuovo esame',
 
+  // AI explanation
+  ai_explain_btn: 'Spiega con AI',
+  ai_explaining: 'Generazione spiegazione…',
+  ai_error_auth: 'Chiave API non valida. Controlla le Impostazioni.',
+  ai_error_model: 'Modello non disponibile. Cambia il modello nelle Impostazioni.',
+  ai_error_rate: 'Quota API esaurita. Riprova tra qualche minuto.',
+  ai_error_network: 'Errore di rete. Controlla la connessione.',
+  ai_error_generic: 'Errore nella generazione della spiegazione.',
+  ai_no_key: 'Imposta la tua chiave API nelle Impostazioni (⚙).',
+
+  // Settings modal
+  settings_btn: 'Impostazioni AI',
+  settings_title: 'Impostazioni AI',
+  settings_api_key_label: 'Chiave API Google AI Studio',
+  settings_api_key_placeholder: 'Incolla qui la tua chiave API…',
+  settings_get_key: 'Ottieni una chiave su Google AI Studio',
+  settings_model_label: 'Modello',
+  settings_model_placeholder: 'es. gemini-2.5-flash',
+  settings_save: 'Salva',
+  settings_clear: 'Cancella chiave',
+  settings_close: 'Chiudi',
+  settings_saved: 'Chiave salvata',
+
   // Misc
   theme_toggle: 'Cambia tema',
   lang_toggle: 'EN',

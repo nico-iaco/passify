@@ -1,5 +1,6 @@
 import { useI18n } from '../i18n'
 import type { NormalizedQuestion } from '../types'
+import { AiExplanation } from './AiExplanation'
 import { OptionItem } from './OptionItem'
 import styles from './QuestionCard.module.css'
 
@@ -116,6 +117,7 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
                 </svg>
                 {t.quiz_explanation}
               </a>
+              <AiExplanation question={question} />
             </div>
           )}
         </div>

@@ -67,6 +67,29 @@ export const en: Strings = {
   results_retry: 'Retry',
   results_new_exam: 'New exam',
 
+  // AI explanation
+  ai_explain_btn: 'Explain with AI',
+  ai_explaining: 'Generating explanation…',
+  ai_error_auth: 'Invalid API key. Check your Settings.',
+  ai_error_model: 'Model unavailable. Change the model in Settings.',
+  ai_error_rate: 'API quota exceeded. Try again in a few minutes.',
+  ai_error_network: 'Network error. Check your connection.',
+  ai_error_generic: 'Error generating explanation.',
+  ai_no_key: 'Set your API key in Settings (⚙).',
+
+  // Settings modal
+  settings_btn: 'AI Settings',
+  settings_title: 'AI Settings',
+  settings_api_key_label: 'Google AI Studio API Key',
+  settings_api_key_placeholder: 'Paste your API key here…',
+  settings_get_key: 'Get a key at Google AI Studio',
+  settings_model_label: 'Model',
+  settings_model_placeholder: 'e.g. gemini-2.5-flash',
+  settings_save: 'Save',
+  settings_clear: 'Clear key',
+  settings_close: 'Close',
+  settings_saved: 'Key saved',
+
   // Misc
   theme_toggle: 'Toggle theme',
   lang_toggle: 'IT',

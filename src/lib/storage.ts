@@ -1,9 +1,12 @@
 import type { QuizSession } from '../types'
+import { DEFAULT_MODEL } from './gemini'
 
 const KEYS = {
   SESSION: 'qf_session',
   LANG: 'qf_lang',
   THEME: 'qf_theme',
+  API_KEY: 'qf_api_key',
+  AI_MODEL: 'qf_ai_model',
 } as const
 
 // ─── Session ─────────────────────────────────────────────────────────────────
@@ -56,4 +59,32 @@ export function loadTheme(): Theme {
   const saved = localStorage.getItem(KEYS.THEME)
   if (saved === 'light' || saved === 'dark') return saved
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+// ─── AI API key ───────────────────────────────────────────────────────────────
+
+export function saveApiKey(key: string): void {
+  localStorage.setItem(KEYS.API_KEY, key)
+}
+
+export function loadApiKey(): string {
+  return localStorage.getItem(KEYS.API_KEY) ?? ''
+}
+
+export function clearApiKey(): void {
+  localStorage.removeItem(KEYS.API_KEY)
+}
+
+// ─── AI model ─────────────────────────────────────────────────────────────────
+
+export function saveAiModel(model: string): void {
+  localStorage.setItem(KEYS.AI_MODEL, model)
+}
+
+export function loadAiModel(): string {
+  return localStorage.getItem(KEYS.AI_MODEL) ?? DEFAULT_MODEL
+}
+
+export function clearAiModel(): void {
+  localStorage.removeItem(KEYS.AI_MODEL)
 }

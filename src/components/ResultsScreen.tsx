@@ -1,6 +1,7 @@
 import { useI18n } from '../i18n'
 import { isCorrect } from '../lib/grade'
 import type { QuizSession } from '../types'
+import { AiExplanation } from './AiExplanation'
 import styles from './ResultsScreen.module.css'
 
 interface Props {
@@ -161,6 +162,7 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
                         {t.results_explanation}
                       </a>
                     )}
+                    <AiExplanation question={q} />
                   </div>
                 )
               })}
