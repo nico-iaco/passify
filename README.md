@@ -12,16 +12,33 @@ Un'app web per studiare e simulare esami a partire da file JSON di domande. Cari
 - **Domande multi-risposta** — quando la risposta corretta ha più opzioni vengono mostrate come checkbox con hint sul numero da selezionare
 - **Configurazione flessibile** — scegli quante domande fare, filtra per topic e attiva il rimescolamento casuale di domande e opzioni
 - **Revisione errori** — schermata finale con tutte le domande sbagliate, la tua risposta, la risposta corretta e il link alla discussione
+- **Spiegazioni AI** — bottone "Spiega con AI" disponibile dopo ogni risposta (modalità Pratica) e nella revisione errori; utilizza la tua chiave API personale di Google AI Studio, salvata solo in localStorage
 - **Salvataggio sessione** — il progresso viene salvato in localStorage; se esci e riapri l'app puoi riprendere da dove eri rimasto
 - **Tema chiaro / scuro** — rilevato automaticamente dalle preferenze di sistema, modificabile con il toggle in alto a destra
 - **Interfaccia IT / EN** — switcher di lingua nella topbar; la scelta viene ricordata
 
 ---
 
+## Spiegazioni AI
+
+Passify può generare spiegazioni contestuali per ogni domanda tramite le API di Google AI Studio (Gemini).
+
+**Come configurarlo:**
+
+1. Ottieni una chiave API gratuita su [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+2. Clicca sull'icona ⚙ in alto a destra nell'app
+3. Incolla la chiave nel campo apposito e clicca **Salva**
+
+La chiave viene salvata esclusivamente nel `localStorage` del browser — non viene mai trasmessa a server diversi da `generativelanguage.googleapis.com`.
+
+**Modello di default:** `gemma-4-31b-it` (modificabile dalla modale Impostazioni). Alternative comuni: `gemini-2.5-flash`, `gemma-3-27b-it`.
+
+---
+
 ## Esami inclusi
 
 | Esame | Domande |
-|---|---|
+| --- | --- |
 | Professional Cloud Developer | 288 |
 | Professional Cloud DevOps Engineer | 203 |
 
@@ -54,7 +71,7 @@ L'app accetta qualsiasi file JSON che rispetti questa struttura:
 ```
 
 | Campo | Tipo | Note |
-|---|---|---|
+| --- | --- | --- |
 | `exam` | `string` | Nome visualizzato nell'app |
 | `questions` | `array` | Array non vuoto di domande |
 | `id` | `number` | Identificativo univoco |
@@ -73,9 +90,11 @@ L'app accetta qualsiasi file JSON che rispetti questa struttura:
 - **React 19** + **TypeScript**
 - **Vite** come bundler e dev server
 - **CSS Modules** con custom properties — nessuna libreria UI esterna
+- **marked** per il rendering delle spiegazioni AI in Markdown
 - Stato gestito con `useReducer` locale — nessun Redux o Zustand
 - i18n implementato con dizionari statici e un Context — nessuna dipendenza esterna
 - Persistenza tramite `localStorage` — nessun backend
+- Chiamate AI dirette all'endpoint REST di Google (`generativelanguage.googleapis.com`) — nessun proxy
 
 ---
 
