@@ -65,6 +65,33 @@
   padding: 32px 0 80px;
 }
 
+/* ─── Timer layout ────────────────────────────────────────────────────────── */
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  align-items: start;
+  gap: 24px;
+}
+
+.content {
+  min-width: 0;
+}
+
+.sidebar {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: -1;
+  }
+}
+
 .questionMeta {
   display: flex;
   align-items: center;

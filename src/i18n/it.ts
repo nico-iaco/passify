@@ -28,6 +28,8 @@ export const it = {
   setup_shuffle_section: 'Rimescolamento',
   setup_shuffle_questions: 'Mescola le domande',
   setup_shuffle_options: 'Mescola le opzioni di risposta',
+  setup_timer_label: 'Timer esame',
+  setup_timer_minutes_label: 'Durata (minuti)',
   setup_start: 'Inizia',
   setup_back: 'Indietro',
   setup_available: 'disponibili',
@@ -48,6 +50,7 @@ export const it = {
   quiz_wrong_label: 'Sbagliato',
   quiz_exit: 'Esci',
   quiz_exit_confirm: 'Vuoi davvero uscire? I progressi saranno salvati.',
+  quiz_timer_label: 'Tempo rimasto',
 
   // Results screen
   results_title: 'Risultati',

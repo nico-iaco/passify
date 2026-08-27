@@ -48,10 +48,16 @@ export function parseExam(raw: unknown): NormalizedExam {
 
   const topics = Array.from(new Set(questions.map(q => q.topic))).sort((a, b) => a - b)
 
+  const examDuration =
+    typeof obj.examDuration === 'number' && Number.isFinite(obj.examDuration) && obj.examDuration > 0
+      ? obj.examDuration
+      : null
+
   return {
     name: obj.exam.trim(),
     questions,
     topics,
+    examDuration,
   }
 }
 

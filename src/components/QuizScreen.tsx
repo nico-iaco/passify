@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useI18n } from '../i18n'
 import { isCorrect } from '../lib/grade'
 import type { QuizSession } from '../types'
+import { ExamTimer } from './ExamTimer'
 import { ProgressBar } from './ProgressBar'
 import { QuestionCard } from './QuestionCard'
 import styles from './QuizScreen.module.css'
@@ -72,86 +73,96 @@ export function QuizScreen({
 
       {/* Question */}
       <main className={styles.main}>
-        <div className="container">
-          <div className={styles.questionMeta}>
-            <span className={styles.questionNumber}>
-              {t.quiz_question} {currentIndex + 1} {t.quiz_of} {questions.length}
-            </span>
-            {!isPractice && (
-              <span className={styles.answeredCount}>
-                {answeredCount}/{questions.length}
-              </span>
-            )}
-          </div>
+        <div className={`container ${session.expiresAt ? 'container--wide' : ''}`}>
+          <div className={session.expiresAt ? styles.layout : undefined}>
+            <div className={styles.content}>
+              <div className={styles.questionMeta}>
+                <span className={styles.questionNumber}>
+                  {t.quiz_question} {currentIndex + 1} {t.quiz_of} {questions.length}
+                </span>
+                {!isPractice && (
+                  <span className={styles.answeredCount}>
+                    {answeredCount}/{questions.length}
+                  </span>
+                )}
+              </div>
 
-          <QuestionCard
-            key={question.id}
-            question={question}
-            selected={selected}
-            confirmed={isConfirmed}
-            isPractice={isPractice}
-            onSelect={(key) => onSelectAnswer(question.id, key, question.isMulti)}
-            onConfirm={() => onConfirmAnswer(question.id)}
-          />
+              <QuestionCard
+                key={question.id}
+                question={question}
+                selected={selected}
+                confirmed={isConfirmed}
+                isPractice={isPractice}
+                onSelect={(key) => onSelectAnswer(question.id, key, question.isMulti)}
+                onConfirm={() => onConfirmAnswer(question.id)}
+              />
 
-          {/* Navigation */}
-          <div className={styles.nav}>
-            <button
-              className="btn btn--ghost"
-              onClick={() => onNavigate(-1)}
-              disabled={currentIndex === 0}
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="15 18 9 12 15 6"/>
-              </svg>
-              {t.quiz_prev}
-            </button>
+              {/* Navigation */}
+              <div className={styles.nav}>
+                <button
+                  className="btn btn--ghost"
+                  onClick={() => onNavigate(-1)}
+                  disabled={currentIndex === 0}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 18 9 12 15 6"/>
+                  </svg>
+                  {t.quiz_prev}
+                </button>
 
-            <div className={styles.navDots}>
-              {questions.slice(Math.max(0, currentIndex - 2), Math.min(questions.length, currentIndex + 3)).map((q, i) => {
-                const realIdx = Math.max(0, currentIndex - 2) + i
-                const isCurrent = realIdx === currentIndex
-                const hasAnswer = !!answers[q.id]
-                const wasCorrect = isPractice && confirmed[q.id] && isCorrect(q, answers[q.id] ?? [])
-                const wasWrong = isPractice && confirmed[q.id] && !isCorrect(q, answers[q.id] ?? [])
-                return (
-                  <span
-                    key={q.id}
-                    className={`${styles.dot}
-                      ${isCurrent ? styles.dotCurrent : ''}
-                      ${!isCurrent && hasAnswer && !confirmed[q.id] ? styles.dotAnswered : ''}
-                      ${wasCorrect ? styles.dotCorrect : ''}
-                      ${wasWrong ? styles.dotWrong : ''}
-                    `}
-                  />
-                )
-              })}
+                <div className={styles.navDots}>
+                  {questions.slice(Math.max(0, currentIndex - 2), Math.min(questions.length, currentIndex + 3)).map((q, i) => {
+                    const realIdx = Math.max(0, currentIndex - 2) + i
+                    const isCurrent = realIdx === currentIndex
+                    const hasAnswer = !!answers[q.id]
+                    const wasCorrect = isPractice && confirmed[q.id] && isCorrect(q, answers[q.id] ?? [])
+                    const wasWrong = isPractice && confirmed[q.id] && !isCorrect(q, answers[q.id] ?? [])
+                    return (
+                      <span
+                        key={q.id}
+                        className={`${styles.dot}
+                          ${isCurrent ? styles.dotCurrent : ''}
+                          ${!isCurrent && hasAnswer && !confirmed[q.id] ? styles.dotAnswered : ''}
+                          ${wasCorrect ? styles.dotCorrect : ''}
+                          ${wasWrong ? styles.dotWrong : ''}
+                        `}
+                      />
+                    )
+                  })}
+                </div>
+
+                {canFinish ? (
+                  <button className="btn btn--primary" onClick={onFinish}>
+                    {t.quiz_finish}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                  </button>
+                ) : (
+                  <button
+                    className="btn btn--primary"
+                    onClick={() => {
+                      if (isPractice && isLast && isConfirmed) {
+                        onFinish()
+                      } else {
+                        onNavigate(1)
+                      }
+                    }}
+                    disabled={isPractice ? !canPracticeNext : isLast}
+                  >
+                    {isPractice && isLast && isConfirmed ? t.quiz_finish : t.quiz_next}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                  </button>
+                )}
+              </div>
             </div>
 
-            {canFinish ? (
-              <button className="btn btn--primary" onClick={onFinish}>
-                {t.quiz_finish}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="9 18 15 12 9 6"/>
-                </svg>
-              </button>
-            ) : (
-              <button
-                className="btn btn--primary"
-                onClick={() => {
-                  if (isPractice && isLast && isConfirmed) {
-                    onFinish()
-                  } else {
-                    onNavigate(1)
-                  }
-                }}
-                disabled={isPractice ? !canPracticeNext : isLast}
-              >
-                {isPractice && isLast && isConfirmed ? t.quiz_finish : t.quiz_next}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="9 18 15 12 9 6"/>
-                </svg>
-              </button>
+            {session.expiresAt && (
+              <aside className={styles.sidebar}>
+                <ExamTimer expiresAt={session.expiresAt} onExpire={onFinish} />
+              </aside>
             )}
           </div>
         </div>

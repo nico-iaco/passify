@@ -71,6 +71,7 @@ function reducer(state: AppState, action: Action): AppState {
     case 'START_QUIZ': {
       if (!state.loadedExam) return state
       const questions = buildQuestions(state.loadedExam, action.config)
+      const startedAt = Date.now()
       const session: QuizSession = {
         exam: state.loadedExam,
         config: action.config,
@@ -78,7 +79,8 @@ function reducer(state: AppState, action: Action): AppState {
         currentIndex: 0,
         answers: {},
         confirmed: {},
-        startedAt: Date.now(),
+        startedAt,
+        expiresAt: action.config.timerMinutes ? startedAt + action.config.timerMinutes * 60_000 : null,
       }
       saveSession(session)
       return { ...state, session, screen: 'quiz' }
