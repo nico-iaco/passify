@@ -14,6 +14,7 @@ export interface RawQuestion {
 export interface RawExam {
   exam: string
   questions: RawQuestion[]
+  examDuration?: number                 // suggested exam-mode timer, in minutes
 }
 
 // ─── Normalized types (used throughout the app) ─────────────────────────────
@@ -35,6 +36,7 @@ export interface NormalizedExam {
   name: string
   questions: NormalizedQuestion[]
   topics: number[]                      // sorted unique topic numbers
+  examDuration: number | null           // suggested exam-mode timer, in minutes
 }
 
 // ─── App screens state machine ───────────────────────────────────────────────
@@ -51,6 +53,7 @@ export interface QuizConfig {
   selectedTopics: number[]              // empty = all
   shuffleQuestions: boolean
   shuffleOptions: boolean
+  timerMinutes: number | null           // exam mode only; null = no timer
 }
 
 export interface QuizSession {
@@ -61,6 +64,7 @@ export interface QuizSession {
   answers: Record<number, string[]>     // questionId → selected options
   confirmed: Record<number, boolean>    // practice mode: has been confirmed
   startedAt: number                     // epoch ms
+  expiresAt: number | null              // epoch ms when the exam timer runs out; null = no timer
 }
 
 export interface QuizResults {

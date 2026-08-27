@@ -281,3 +281,24 @@
   transform: translateX(20px);
   background: #fff;
 }
+
+/* ─── Timer input ─────────────────────────────────────────────────────────── */
+
+.timerInput {
+  width: 88px;
+  padding: 8px 12px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-align: center;
+  color: var(--text);
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.timerInput:focus {
+  border-color: var(--border-focus);
+}

@@ -17,6 +17,8 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
   const [selectedTopics, setSelectedTopics] = useState<number[]>([])
   const [shuffleQuestions, setShuffleQuestions] = useState(true)
   const [shuffleOptions, setShuffleOptions] = useState(true)
+  const [timerEnabled, setTimerEnabled] = useState(exam.examDuration !== null)
+  const [timerMinutes, setTimerMinutes] = useState(exam.examDuration ?? 30)
 
   const hasMultipleTopics = exam.topics.length > 1
 
@@ -39,6 +41,7 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
       selectedTopics,
       shuffleQuestions,
       shuffleOptions,
+      timerMinutes: mode === 'exam' && timerEnabled ? timerMinutes : null,
     })
   }
 
@@ -181,6 +184,39 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
               </button>
             </label>
           </section>
+
+          {/* Timer (exam mode only) */}
+          {mode === 'exam' && (
+            <section className={styles.section}>
+              <label className={styles.toggleRow}>
+                <span className={styles.toggleLabel}>{t.setup_timer_label}</span>
+                <button
+                  role="switch"
+                  aria-checked={timerEnabled}
+                  className={`${styles.toggle} ${timerEnabled ? styles.toggleOn : ''}`}
+                  onClick={() => setTimerEnabled(!timerEnabled)}
+                >
+                  <span className={styles.toggleThumb} />
+                </button>
+              </label>
+              {timerEnabled && (
+                <div className={styles.sliderHeader}>
+                  <label className={styles.toggleLabel} htmlFor="timer-minutes">
+                    {t.setup_timer_minutes_label}
+                  </label>
+                  <input
+                    id="timer-minutes"
+                    type="number"
+                    min={1}
+                    max={600}
+                    value={timerMinutes}
+                    onChange={e => setTimerMinutes(Math.max(1, Number(e.target.value) || 1))}
+                    className={styles.timerInput}
+                  />
+                </div>
+              )}
+            </section>
+          )}
 
           {/* Start button */}
           <button

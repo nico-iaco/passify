@@ -30,6 +30,8 @@ export const en: Strings = {
   setup_shuffle_section: 'Shuffle',
   setup_shuffle_questions: 'Shuffle questions',
   setup_shuffle_options: 'Shuffle answer options',
+  setup_timer_label: 'Exam timer',
+  setup_timer_minutes_label: 'Duration (minutes)',
   setup_start: 'Start',
   setup_back: 'Back',
   setup_available: 'available',
@@ -50,6 +52,7 @@ export const en: Strings = {
   quiz_wrong_label: 'Incorrect',
   quiz_exit: 'Exit',
   quiz_exit_confirm: 'Are you sure you want to exit? Progress will be saved.',
+  quiz_timer_label: 'Time left',
 
   // Results screen
   results_title: 'Results',
