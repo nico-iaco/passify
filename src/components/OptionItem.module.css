@@ -6,6 +6,7 @@
   background: var(--option-bg);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-md);
+  white-space: pre-wrap;
   cursor: pointer;
   transition:
     background var(--dur-fast) var(--ease),
