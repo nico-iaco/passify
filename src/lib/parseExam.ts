@@ -1,5 +1,12 @@
 import type { NormalizedExam, NormalizedQuestion, RawQuestion } from '../types'
 
+// ExamTopics now 404s on discussion URLs without the "-discussion" suffix (older exports lack it).
+export function normalizeDiscussionUrl(url: string): string {
+  if (typeof url !== 'string' || !/^https?:\/\/(www\.)?examtopics\.com\/discussions\/.+\/view\//.test(url)) return url
+  const base = url.replace(/\/+$/, '')
+  return base.endsWith('-discussion') ? `${base}/` : `${base}-discussion/`
+}
+
 function normalizeQuestion(q: RawQuestion): NormalizedQuestion {
   const answers = q.answer.split('').filter(c => /[A-E]/.test(c))
   return {
@@ -11,7 +18,7 @@ function normalizeQuestion(q: RawQuestion): NormalizedQuestion {
     answers,
     isMulti: answers.length > 1,
     timestamp: q.timestamp,
-    url: q.url,
+    url: normalizeDiscussionUrl(q.url),
     imageUrls: Array.isArray(q.image_urls) ? q.image_urls : [],
   }
 }
