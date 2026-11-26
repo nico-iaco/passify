@@ -7,6 +7,7 @@ const KEYS = {
   THEME: 'qf_theme',
   API_KEY: 'qf_api_key',
   AI_MODEL: 'qf_ai_model',
+  LAST_WRONG: 'qf_last_wrong',
 } as const
 
 // ─── Session ─────────────────────────────────────────────────────────────────
@@ -23,9 +24,40 @@ export function loadSession(): QuizSession | null {
   try {
     const raw = localStorage.getItem(KEYS.SESSION)
     if (!raw) return null
-    return JSON.parse(raw) as QuizSession
+    const parsed = JSON.parse(raw) as QuizSession
+    if (!parsed || !parsed.config) return null
+    return {
+      ...parsed,
+      config: {
+        ...parsed.config,
+        source: parsed.config.source ?? 'all',
+      },
+    }
   } catch {
     return null
+  }
+}
+
+export function saveLastWrongIds(examName: string, ids: number[]): void {
+  try {
+    const raw = localStorage.getItem(KEYS.LAST_WRONG)
+    const map: Record<string, number[]> = raw ? JSON.parse(raw) : {}
+    map[examName.trim().toLowerCase()] = ids
+    localStorage.setItem(KEYS.LAST_WRONG, JSON.stringify(map))
+  } catch {
+    // ignore storage errors
+  }
+}
+
+export function loadLastWrongIds(examName: string): number[] {
+  try {
+    const raw = localStorage.getItem(KEYS.LAST_WRONG)
+    if (!raw) return []
+    const map = JSON.parse(raw) as Record<string, number[]>
+    const ids = map[examName.trim().toLowerCase()]
+    return Array.isArray(ids) ? ids : []
+  } catch {
+    return []
   }
 }
 

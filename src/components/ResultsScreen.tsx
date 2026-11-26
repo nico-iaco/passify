@@ -1,16 +1,17 @@
 import { useI18n } from '../i18n'
 import { isCorrect } from '../lib/grade'
-import type { QuizSession } from '../types'
+import type { NormalizedQuestion, QuizSession } from '../types'
 import { AiExplanation } from './AiExplanation'
 import styles from './ResultsScreen.module.css'
 
 interface Props {
   session: QuizSession
   onRetry: () => void
+  onRetryWrong: (wrongQuestions: NormalizedQuestion[]) => void
   onNewExam: () => void
 }
 
-export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
+export function ResultsScreen({ session, onRetry, onRetryWrong, onNewExam }: Props) {
   const { t } = useI18n()
   const { questions, answers, config } = session
   const isPractice = config.mode === 'practice'
@@ -65,6 +66,15 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
           </div>
 
           <div className={styles.actions}>
+            {wrongQuestions.length > 0 && (
+              <button className="btn btn--primary" onClick={() => onRetryWrong(wrongQuestions)}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                </svg>
+                {t.results_retry_wrong} ({wrongQuestions.length})
+              </button>
+            )}
             <button className="btn btn--outline" onClick={onRetry}>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="1 4 1 10 7 10"/>
@@ -72,7 +82,7 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
               </svg>
               {t.results_retry}
             </button>
-            <button className="btn btn--primary" onClick={onNewExam}>
+            <button className={wrongQuestions.length > 0 ? 'btn btn--ghost' : 'btn btn--primary'} onClick={onNewExam}>
               {t.results_new_exam}
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="9 18 15 12 9 6"/>

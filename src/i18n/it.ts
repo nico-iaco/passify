@@ -21,6 +21,9 @@ export const it = {
   setup_mode_practice_desc: 'Feedback immediato dopo ogni risposta',
   setup_mode_exam: 'Esame',
   setup_mode_exam_desc: 'Nessun feedback, punteggio finale',
+  setup_source_label: 'Set di domande',
+  setup_source_all: 'Tutte le domande',
+  setup_source_last_wrong: 'Sbagliate ultima sessione',
   setup_questions_label: 'Numero di domande',
   setup_topics_label: 'Filtra per topic',
   setup_topics_all: 'Tutti i topic',
@@ -66,6 +69,7 @@ export const it = {
   results_correct_answer: 'Risposta corretta:',
   results_explanation: 'Discussione',
   results_retry: 'Rifai',
+  results_retry_wrong: 'Rifai sbagliate',
   results_new_exam: 'Nuovo esame',
 
   // AI explanation

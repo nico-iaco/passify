@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useReducer, useState } from 'react'
 import { I18nProvider } from './i18n'
-import { clearSession, loadSession, loadTheme, saveSession, saveTheme } from './lib/storage'
+import { clearSession, loadLastWrongIds, loadSession, loadTheme, saveLastWrongIds, saveSession, saveTheme } from './lib/storage'
 import type { Theme } from './lib/storage'
-import type { NormalizedExam, QuizConfig, QuizSession, Screen } from './types'
+import type { NormalizedExam, NormalizedQuestion, QuizConfig, QuizSession, Screen } from './types'
+import { isCorrect } from './lib/grade'
 import { LanguageSwitcher } from './components/LanguageSwitcher'
 import { ThemeToggle } from './components/ThemeToggle'
 import { SettingsModal } from './components/SettingsModal'
@@ -15,13 +16,30 @@ import appStyles from './App.module.css'
 
 // ─── Helpers (same logic as quizStore but kept local to simplify wiring) ────
 
-function buildQuestions(exam: NormalizedExam, config: QuizConfig) {
-  let qs = exam.questions.filter(
-    q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
-  )
+function buildQuestions(exam: NormalizedExam, config: QuizConfig, targetIds?: number[]) {
+  let qs = config.source === 'last_wrong' && targetIds && targetIds.length > 0
+    ? exam.questions.filter(q => targetIds.includes(q.id))
+    : exam.questions.filter(
+        q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
+      )
   if (config.shuffleQuestions) qs = shuffleFn(qs)
   qs = qs.slice(0, config.totalQuestions)
 
+  if (config.shuffleOptions) {
+    qs = qs.map(q => {
+      const keys = shuffleFn(q.optionKeys)
+      const options: Record<string, string> = {}
+      keys.forEach(k => { options[k] = q.options[k] })
+      return { ...q, options, optionKeys: keys }
+    })
+  }
+  return qs
+}
+
+function buildQuestionsFromSubset(exam: NormalizedExam, config: QuizConfig, subset: NormalizedQuestion[]) {
+  const byId = new Map(exam.questions.map(q => [q.id, q]))
+  let qs = subset.map(q => byId.get(q.id) ?? q)
+  if (config.shuffleQuestions) qs = shuffleFn(qs)
   if (config.shuffleOptions) {
     qs = qs.map(q => {
       const keys = shuffleFn(q.optionKeys)
@@ -44,7 +62,7 @@ interface AppState {
 
 type Action =
   | { type: 'EXAM_LOADED'; exam: NormalizedExam }
-  | { type: 'START_QUIZ'; config: QuizConfig }
+  | { type: 'START_QUIZ'; config: QuizConfig; targetIds?: number[] }
   | { type: 'RESUME_SESSION'; session: QuizSession }
   | { type: 'DISCARD_SESSION' }
   | { type: 'SELECT_ANSWER'; questionId: number; option: string; isMulti: boolean }
@@ -52,6 +70,7 @@ type Action =
   | { type: 'NAVIGATE'; delta: 1 | -1 }
   | { type: 'GO_TO_RESULTS' }
   | { type: 'RETRY' }
+  | { type: 'RETRY_WRONG'; wrongQuestions: NormalizedQuestion[] }
   | { type: 'NEW_EXAM' }
   | { type: 'BACK_TO_UPLOAD' }
 
@@ -70,7 +89,7 @@ function reducer(state: AppState, action: Action): AppState {
 
     case 'START_QUIZ': {
       if (!state.loadedExam) return state
-      const questions = buildQuestions(state.loadedExam, action.config)
+      const questions = buildQuestions(state.loadedExam, action.config, action.targetIds)
       const startedAt = Date.now()
       const session: QuizSession = {
         exam: state.loadedExam,
@@ -142,8 +161,10 @@ function reducer(state: AppState, action: Action): AppState {
 
     case 'RETRY': {
       if (!state.session) return state
-      const { exam, config } = state.session
-      const questions = buildQuestions(exam, config)
+      const { exam, config, questions: prevQuestions } = state.session
+      const questions = config.source === 'last_wrong'
+        ? buildQuestionsFromSubset(exam, config, prevQuestions)
+        : buildQuestions(exam, config)
       const startedAt = Date.now()
       const session: QuizSession = {
         exam,
@@ -154,6 +175,30 @@ function reducer(state: AppState, action: Action): AppState {
         confirmed: {},
         startedAt,
         expiresAt: config.timerMinutes ? startedAt + config.timerMinutes * 60_000 : null,
+      }
+      return { ...state, session, screen: 'quiz' }
+    }
+
+    case 'RETRY_WRONG': {
+      if (!state.session || action.wrongQuestions.length === 0) return state
+      const { exam, config } = state.session
+      const nextConfig: QuizConfig = {
+        ...config,
+        source: 'last_wrong',
+        totalQuestions: action.wrongQuestions.length,
+        timerMinutes: null,
+      }
+      const questions = buildQuestionsFromSubset(exam, nextConfig, action.wrongQuestions)
+      const startedAt = Date.now()
+      const session: QuizSession = {
+        exam,
+        config: nextConfig,
+        questions,
+        currentIndex: 0,
+        answers: {},
+        confirmed: {},
+        startedAt,
+        expiresAt: null,
       }
       return { ...state, session, screen: 'quiz' }
     }
@@ -194,6 +239,16 @@ export default function App() {
       return next
     })
   }, [])
+
+  const handleFinishQuiz = useCallback(() => {
+    if (state.session) {
+      const wrongIds = state.session.questions
+        .filter(q => !isCorrect(q, state.session!.answers[q.id] ?? []))
+        .map(q => q.id)
+      saveLastWrongIds(state.session.exam.name, wrongIds)
+    }
+    dispatch({ type: 'GO_TO_RESULTS' })
+  }, [state.session])
 
   return (
     <I18nProvider>
@@ -243,7 +298,8 @@ export default function App() {
         {state.screen === 'setup' && state.loadedExam && (
           <SetupScreen
             exam={state.loadedExam}
-            onStart={config => dispatch({ type: 'START_QUIZ', config })}
+            lastWrongIds={loadLastWrongIds(state.loadedExam.name)}
+            onStart={(config, targetIds) => dispatch({ type: 'START_QUIZ', config, targetIds })}
             onBack={() => dispatch({ type: 'BACK_TO_UPLOAD' })}
           />
         )}
@@ -256,7 +312,7 @@ export default function App() {
             }
             onConfirmAnswer={qId => dispatch({ type: 'CONFIRM_ANSWER', questionId: qId })}
             onNavigate={delta => dispatch({ type: 'NAVIGATE', delta })}
-            onFinish={() => dispatch({ type: 'GO_TO_RESULTS' })}
+            onFinish={handleFinishQuiz}
             onExit={() => dispatch({ type: 'BACK_TO_UPLOAD' })}
           />
         )}
@@ -265,6 +321,7 @@ export default function App() {
           <ResultsScreen
             session={state.session}
             onRetry={() => dispatch({ type: 'RETRY' })}
+            onRetryWrong={wrongQuestions => dispatch({ type: 'RETRY_WRONG', wrongQuestions })}
             onNewExam={() => dispatch({ type: 'NEW_EXAM' })}
           />
         )}

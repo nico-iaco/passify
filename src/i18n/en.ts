@@ -23,6 +23,9 @@ export const en: Strings = {
   setup_mode_practice_desc: 'Instant feedback after each answer',
   setup_mode_exam: 'Exam',
   setup_mode_exam_desc: 'No feedback, final score at the end',
+  setup_source_label: 'Question set',
+  setup_source_all: 'All questions',
+  setup_source_last_wrong: 'Last session mistakes',
   setup_questions_label: 'Number of questions',
   setup_topics_label: 'Filter by topic',
   setup_topics_all: 'All topics',
@@ -68,6 +71,7 @@ export const en: Strings = {
   results_correct_answer: 'Correct answer:',
   results_explanation: 'Discussion',
   results_retry: 'Retry',
+  results_retry_wrong: 'Retry mistakes',
   results_new_exam: 'New exam',
 
   // AI explanation
