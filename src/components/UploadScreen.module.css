@@ -258,3 +258,17 @@
   font-family: var(--font-mono);
   color: var(--text-faint);
 }
+
+/* ─── History shortcut ────────────────────────────────────────────────────── */
+
+.historyBanner {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.historyBtn {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+}

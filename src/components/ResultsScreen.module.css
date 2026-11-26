@@ -143,6 +143,10 @@
 
 /* ─── Review section ──────────────────────────────────────────────────────── */
 
+.compareWrap {
+  margin-bottom: 32px;
+}
+
 .reviewSection {
   margin-top: 0;
 }
@@ -187,6 +191,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.errorHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .errorNum {

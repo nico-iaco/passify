@@ -1,0 +1,176 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 18px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.scoreTransition {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.deltaBadge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.deltaPositive {
+  background: var(--correct-bg);
+  color: var(--correct-text);
+}
+
+.deltaNegative {
+  background: var(--wrong-bg);
+  color: var(--wrong-text);
+}
+
+.deltaNeutral {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.noOverlap {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summaryLine {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.summaryLine strong {
+  font-family: var(--font-mono);
+}
+
+.wrongNum {
+  color: var(--wrong-text);
+}
+
+.okNum {
+  color: var(--correct-text);
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badgeWarn {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+[data-theme="dark"] .badgeWarn {
+  background: #451a03;
+  color: #fbbf24;
+}
+
+.refList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.refItem {
+  padding: 12px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.refHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.refMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.refId {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.refQuestion {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.refFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.refAnswers strong {
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+
+.correctKey {
+  color: var(--correct-text) !important;
+}
+
+.refLink {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}

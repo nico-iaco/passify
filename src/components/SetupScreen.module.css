@@ -34,6 +34,36 @@
   font-family: var(--font-mono);
 }
 
+.historyStrip {
+  margin-top: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--bg-subtle);
+  box-shadow: none;
+}
+
+.historyStats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.historyStats strong {
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+.historyDot {
+  color: var(--text-faint);
+}
+
 /* ─── Setup card ──────────────────────────────────────────────────────────── */
 
 .setupCard {

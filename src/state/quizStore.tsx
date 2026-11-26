@@ -6,18 +6,14 @@ import type {
   QuizSession,
   Screen,
 } from '../types'
-import { shuffle as shuffleFn } from '../lib/shuffle'
+import { createSession } from '../lib/quiz'
 import { saveSession, clearSession } from '../lib/storage'
-
-// ─── State ───────────────────────────────────────────────────────────────────
 
 interface AppState {
   screen: Screen
   loadedExam: NormalizedExam | null
   session: QuizSession | null
 }
-
-// ─── Actions ─────────────────────────────────────────────────────────────────
 
 type Action =
   | { type: 'EXAM_LOADED'; exam: NormalizedExam }
@@ -30,30 +26,10 @@ type Action =
   | { type: 'BACK_TO_UPLOAD' }
   | { type: 'BACK_TO_SETUP' }
 
-// ─── Reducer ─────────────────────────────────────────────────────────────────
-
 const initialState: AppState = {
   screen: 'upload',
   loadedExam: null,
   session: null,
-}
-
-function buildQuestions(exam: NormalizedExam, config: QuizConfig) {
-  let qs = exam.questions.filter(
-    q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
-  )
-  if (config.shuffleQuestions) qs = shuffleFn(qs)
-  qs = qs.slice(0, config.totalQuestions)
-
-  if (config.shuffleOptions) {
-    qs = qs.map(q => {
-      const keys = shuffleFn(q.optionKeys)
-      const options: Record<string, string> = {}
-      keys.forEach(k => { options[k] = q.options[k] })
-      return { ...q, options, optionKeys: keys }
-    })
-  }
-  return qs
 }
 
 function reducer(state: AppState, action: Action): AppState {
@@ -70,18 +46,7 @@ function reducer(state: AppState, action: Action): AppState {
 
     case 'START_QUIZ': {
       if (!state.loadedExam) return state
-      const questions = buildQuestions(state.loadedExam, action.config)
-      const startedAt = Date.now()
-      const session: QuizSession = {
-        exam: state.loadedExam,
-        config: action.config,
-        questions,
-        currentIndex: 0,
-        answers: {},
-        confirmed: {},
-        startedAt,
-        expiresAt: action.config.timerMinutes ? startedAt + action.config.timerMinutes * 60_000 : null,
-      }
+      const session = createSession(state.loadedExam, action.config)
       saveSession(session)
       return { ...state, session, screen: 'quiz' }
     }
@@ -144,8 +109,6 @@ function reducer(state: AppState, action: Action): AppState {
   }
 }
 
-// ─── Context ─────────────────────────────────────────────────────────────────
-
 interface StoreContextValue {
   state: AppState
   dispatch: React.Dispatch<Action>
@@ -153,13 +116,8 @@ interface StoreContextValue {
 
 const StoreContext = createContext<StoreContextValue | null>(null)
 
-export function StoreProvider({ children, initialSession }: { children: ReactNode; initialSession?: QuizSession }) {
+export function StoreProvider({ children }: { children: ReactNode; initialSession?: QuizSession }) {
   const [state, dispatch] = useReducer(reducer, initialState)
-
-  // Resume session on mount if passed from parent
-  if (initialSession && state.session === null && state.screen === 'upload') {
-    // We'll handle this via useEffect in parent — this is just placeholder
-  }
 
   return (
     <StoreContext.Provider value={{ state, dispatch }}>

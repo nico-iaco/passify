@@ -47,3 +47,31 @@
   align-items: center;
   gap: 8px;
 }
+
+.historyNavBtn {
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+}
+
+.historyNavBtnActive {
+  background: var(--option-selected-bg) !important;
+  color: var(--brand-500) !important;
+  border-color: var(--brand-400);
+}
+
+.historyCount {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+  background: var(--badge-topic-bg);
+  color: var(--badge-topic-text);
+}
+
+@media (max-width: 480px) {
+  .historyNavLabel {
+    display: none;
+  }
+}

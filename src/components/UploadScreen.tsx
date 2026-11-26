@@ -23,12 +23,21 @@ const SAMPLES = [
 
 interface Props {
   savedSession: QuizSession | null
+  historySessionCount: number
   onExamLoaded: (exam: NormalizedExam) => void
   onResumeSession: (session: QuizSession) => void
   onDiscardSession: () => void
+  onOpenHistory: () => void
 }
 
-export function UploadScreen({ savedSession, onExamLoaded, onResumeSession, onDiscardSession }: Props) {
+export function UploadScreen({
+  savedSession,
+  historySessionCount,
+  onExamLoaded,
+  onResumeSession,
+  onDiscardSession,
+  onOpenHistory,
+}: Props) {
   const { t } = useI18n()
   const [dragging, setDragging] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -194,6 +203,20 @@ export function UploadScreen({ savedSession, onExamLoaded, onResumeSession, onDi
             ))}
           </div>
         </div>
+        {/* History shortcut */}
+        {historySessionCount > 0 && (
+          <div className={`${styles.historyBanner} animate-fade-up`} style={{ animationDelay: '160ms' }}>
+            <button className={`btn btn--ghost btn--sm ${styles.historyBtn}`} onClick={onOpenHistory}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              {t.upload_history_btn}
+              <span className="badge badge--topic">{historySessionCount} {t.upload_history_sessions}</span>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   )

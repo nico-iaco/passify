@@ -21,6 +21,7 @@ export interface RawExam {
 
 export interface NormalizedQuestion {
   id: number
+  position: number                      // 1-based index in the source JSON
   topic: number
   question: string
   options: Record<string, string>       // e.g. { A: "...", B: "...", C: "..." }
@@ -41,14 +42,17 @@ export interface NormalizedExam {
 
 // ─── App screens state machine ───────────────────────────────────────────────
 
-export type Screen = 'upload' | 'setup' | 'quiz' | 'results'
+export type Screen = 'upload' | 'setup' | 'quiz' | 'results' | 'history'
 
 export type QuizMode = 'practice' | 'exam'
+
+export type QuestionSource = 'all' | 'most_wrong'
 
 // ─── Quiz session ────────────────────────────────────────────────────────────
 
 export interface QuizConfig {
   mode: QuizMode
+  source: QuestionSource
   totalQuestions: number
   selectedTopics: number[]              // empty = all
   shuffleQuestions: boolean
@@ -57,6 +61,7 @@ export interface QuizConfig {
 }
 
 export interface QuizSession {
+  id: string
   exam: NormalizedExam
   config: QuizConfig
   questions: NormalizedQuestion[]       // the active question list (subset + shuffled)
@@ -73,4 +78,89 @@ export interface QuizResults {
   correct: number
   wrong: number
   total: number
+}
+
+// ─── Session History & Analytics ─────────────────────────────────────────────
+
+export interface QuestionResultRecord {
+  questionId: number
+  position: number
+  topic: number
+  correct: boolean
+  selected: string[]
+}
+
+export interface QuestionSnapshot {
+  id: number
+  position: number
+  topic: number
+  question: string
+  options: Record<string, string>
+  optionKeys: string[]
+  answers: string[]
+  isMulti: boolean
+  url: string
+  imageUrls: string[]
+}
+
+export interface SessionRecord {
+  id: string
+  examKey: string
+  examName: string
+  mode: QuizMode
+  source: QuestionSource
+  startedAt: number
+  finishedAt: number
+  total: number
+  correct: number
+  wrong: number
+  scorePct: number
+  durationMs: number
+  results: QuestionResultRecord[]
+}
+
+export interface ExamHistoryData {
+  examKey: string
+  examName: string
+  sessions: SessionRecord[]                   // chronological (oldest → newest)
+  snapshots: Record<number, QuestionSnapshot> // keyed by questionId
+  updatedAt: number
+}
+
+export type AnalyticsStore = Record<string, ExamHistoryData>
+
+export interface CommonQuestionComparison {
+  questionId: number
+  position: number
+  topic: number
+  currentResult: QuestionResultRecord
+  previousResult: QuestionResultRecord
+  status: 'improved' | 'repeated_error' | 'regressed' | 'maintained'
+  snapshot?: QuestionSnapshot
+}
+
+export interface SessionComparison {
+  previousSession: SessionRecord
+  scoreDelta: number
+  commonCount: number
+  commonWrongCount: number
+  commonWrongPct: number
+  improvedCount: number
+  repeatedErrorCount: number
+  regressedCount: number
+  items: CommonQuestionComparison[]
+}
+
+export interface QuestionAggregateStat {
+  questionId: number
+  position: number
+  topic: number
+  attempts: number
+  wrongCount: number
+  correctCount: number
+  errorRate: number                     // 0–1
+  consecutiveWrong: number
+  lastWrong: boolean
+  lastAttemptAt: number
+  snapshot?: QuestionSnapshot
 }
