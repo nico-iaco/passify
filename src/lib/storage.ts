@@ -1,4 +1,4 @@
-import type { QuizSession } from '../types'
+import type { AnalyticsStore, QuizSession } from '../types'
 import { DEFAULT_MODEL } from './gemini'
 
 const KEYS = {
@@ -7,6 +7,7 @@ const KEYS = {
   THEME: 'qf_theme',
   API_KEY: 'qf_api_key',
   AI_MODEL: 'qf_ai_model',
+  ANALYTICS: 'qf_analytics',
 } as const
 
 // ─── Session ─────────────────────────────────────────────────────────────────
@@ -23,7 +24,16 @@ export function loadSession(): QuizSession | null {
   try {
     const raw = localStorage.getItem(KEYS.SESSION)
     if (!raw) return null
-    return JSON.parse(raw) as QuizSession
+    const parsed = JSON.parse(raw) as Partial<QuizSession>
+    if (!parsed || !parsed.exam || !Array.isArray(parsed.questions)) return null
+    return {
+      ...parsed,
+      id: parsed.id ?? `${parsed.startedAt ?? Date.now()}`,
+      config: {
+        ...parsed.config!,
+        source: parsed.config?.source ?? 'all',
+      },
+    } as QuizSession
   } catch {
     return null
   }
@@ -31,6 +41,43 @@ export function loadSession(): QuizSession | null {
 
 export function clearSession(): void {
   localStorage.removeItem(KEYS.SESSION)
+}
+
+// ─── Analytics / History ─────────────────────────────────────────────────────
+
+export function loadAnalytics(): AnalyticsStore {
+  try {
+    const raw = localStorage.getItem(KEYS.ANALYTICS)
+    if (!raw) return {}
+    const parsed = JSON.parse(raw)
+    if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) return {}
+    return parsed as AnalyticsStore
+  } catch {
+    return {}
+  }
+}
+
+export function saveAnalytics(store: AnalyticsStore): void {
+  try {
+    localStorage.setItem(KEYS.ANALYTICS, JSON.stringify(store))
+  } catch {
+    try {
+      const pruned: AnalyticsStore = {}
+      for (const [key, data] of Object.entries(store)) {
+        pruned[key] = {
+          ...data,
+          sessions: data.sessions.slice(-25),
+        }
+      }
+      localStorage.setItem(KEYS.ANALYTICS, JSON.stringify(pruned))
+    } catch {
+      // ignore if still unavailable
+    }
+  }
+}
+
+export function clearAnalytics(): void {
+  localStorage.removeItem(KEYS.ANALYTICS)
 }
 
 // ─── Language ─────────────────────────────────────────────────────────────────

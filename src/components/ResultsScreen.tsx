@@ -1,16 +1,35 @@
+import { useMemo } from 'react'
 import { useI18n } from '../i18n'
+import { compareWithPrevious } from '../lib/analytics'
 import { isCorrect } from '../lib/grade'
-import type { QuizSession } from '../types'
+import type {
+  QuestionSnapshot,
+  QuizSession,
+  SessionRecord,
+} from '../types'
 import { AiExplanation } from './AiExplanation'
+import { ComparisonPanel } from './ComparisonPanel'
 import styles from './ResultsScreen.module.css'
 
 interface Props {
   session: QuizSession
+  completedRecord: SessionRecord | null
+  previousSession: SessionRecord | null
+  snapshots: Record<number, QuestionSnapshot>
   onRetry: () => void
+  onOpenHistory: () => void
   onNewExam: () => void
 }
 
-export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
+export function ResultsScreen({
+  session,
+  completedRecord,
+  previousSession,
+  snapshots,
+  onRetry,
+  onOpenHistory,
+  onNewExam,
+}: Props) {
   const { t } = useI18n()
   const { questions, answers, config } = session
   const isPractice = config.mode === 'practice'
@@ -23,6 +42,11 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
   const passed = pct >= 70
 
   const wrongQuestions = questions.filter(q => !isCorrect(q, answers[q.id] ?? []))
+
+  const comparison = useMemo(() => {
+    if (!completedRecord || !previousSession) return null
+    return compareWithPrevious(completedRecord, previousSession, snapshots)
+  }, [completedRecord, previousSession, snapshots])
 
   return (
     <div className={styles.root}>
@@ -72,6 +96,14 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
               </svg>
               {t.results_retry}
             </button>
+            <button className="btn btn--ghost" onClick={onOpenHistory}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              {t.results_view_history}
+            </button>
             <button className="btn btn--primary" onClick={onNewExam}>
               {t.results_new_exam}
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -80,6 +112,13 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
             </button>
           </div>
         </div>
+
+        {/* Comparison vs previous session */}
+        {comparison && (
+          <div className={`${styles.compareWrap} animate-fade-up`} style={{ animationDelay: '70ms' }}>
+            <ComparisonPanel comparison={comparison} currentScorePct={pct} />
+          </div>
+        )}
 
         {/* Error review */}
         <div className={`${styles.reviewSection} animate-fade-up`} style={{ animationDelay: '100ms' }}>
@@ -101,15 +140,20 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
             <div className={styles.errorList}>
               {wrongQuestions.map((q, idx) => {
                 const userAnswer = answers[q.id] ?? []
+                const refLabel = q.position && q.position !== q.id
+                  ? `#${q.position} · ID ${q.id}`
+                  : `ID #${q.id}`
                 return (
                   <div key={q.id} className={`${styles.errorItem} card animate-fade-up`} style={{ animationDelay: `${120 + idx * 30}ms` }}>
                     <div className={styles.errorHeader}>
-                      <span className="badge badge--topic">Topic {q.topic}</span>
+                      <div className={styles.errorHeaderLeft}>
+                        <span className="badge badge--topic">Topic {q.topic}</span>
+                        <span className={styles.errorNum}>{refLabel}</span>
+                      </div>
                       <span className={styles.errorNum}>#{idx + 1}</span>
                     </div>
                     <p className={styles.errorQuestion}>{q.question}</p>
 
-                    {/* Images */}
                     {q.imageUrls.length > 0 && (
                       <div className={styles.errorImages}>
                         {q.imageUrls.map((url, i) => (
@@ -147,7 +191,7 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
                       </div>
                     </div>
 
-                    {isPractice === false && (
+                    {isPractice === false && q.url && (
                       <a
                         href={q.url}
                         target="_blank"

@@ -1,18 +1,38 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useI18n } from '../i18n'
-import type { NormalizedExam, QuizConfig, QuizMode } from '../types'
+import { computeQuestionStats } from '../lib/analytics'
+import type { ExamHistoryData, NormalizedExam, QuestionSource, QuizConfig, QuizMode } from '../types'
 import styles from './SetupScreen.module.css'
 
 interface Props {
   exam: NormalizedExam
-  onStart: (config: QuizConfig) => void
+  examHistory: ExamHistoryData | null
+  onStart: (config: QuizConfig, targetIds?: number[]) => void
   onBack: () => void
+  onOpenHistory: () => void
 }
 
-export function SetupScreen({ exam, onStart, onBack }: Props) {
+export function SetupScreen({ exam, examHistory, onStart, onBack, onOpenHistory }: Props) {
   const { t } = useI18n()
 
+  const mostWrongIds = useMemo(() => {
+    if (!examHistory) return []
+    const idSet = new Set(exam.questions.map(q => q.id))
+    return computeQuestionStats(examHistory.sessions, examHistory.snapshots)
+      .filter(s => idSet.has(s.questionId))
+      .map(s => s.questionId)
+  }, [examHistory, exam.questions])
+
+  const historySummary = useMemo(() => {
+    if (!examHistory || examHistory.sessions.length === 0) return null
+    const sessions = examHistory.sessions
+    const avg = Math.round(sessions.reduce((acc, s) => acc + s.scorePct, 0) / sessions.length)
+    const last = sessions[sessions.length - 1].scorePct
+    return { count: sessions.length, avg, last }
+  }, [examHistory])
+
   const [mode, setMode] = useState<QuizMode>('practice')
+  const [source, setSource] = useState<QuestionSource>('all')
   const [totalQuestions, setTotalQuestions] = useState(Math.min(20, exam.questions.length))
   const [selectedTopics, setSelectedTopics] = useState<number[]>([])
   const [shuffleQuestions, setShuffleQuestions] = useState(true)
@@ -22,11 +42,20 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
 
   const hasMultipleTopics = exam.topics.length > 1
 
-  const filteredCount = selectedTopics.length === 0
-    ? exam.questions.length
-    : exam.questions.filter(q => selectedTopics.includes(q.topic)).length
+  const filteredCount = source === 'most_wrong'
+    ? mostWrongIds.length
+    : selectedTopics.length === 0
+      ? exam.questions.length
+      : exam.questions.filter(q => selectedTopics.includes(q.topic)).length
 
   const clampedTotal = Math.min(totalQuestions, filteredCount)
+
+  function handleSelectSource(next: QuestionSource) {
+    setSource(next)
+    setTotalQuestions(
+      next === 'most_wrong' ? mostWrongIds.length : Math.min(20, exam.questions.length)
+    )
+  }
 
   function toggleTopic(topic: number) {
     setSelectedTopics(prev =>
@@ -35,14 +64,18 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
   }
 
   function handleStart() {
-    onStart({
-      mode,
-      totalQuestions: Math.min(clampedTotal, filteredCount),
-      selectedTopics,
-      shuffleQuestions,
-      shuffleOptions,
-      timerMinutes: mode === 'exam' && timerEnabled ? timerMinutes : null,
-    })
+    onStart(
+      {
+        mode,
+        source,
+        totalQuestions: Math.min(clampedTotal, filteredCount),
+        selectedTopics: source === 'all' ? selectedTopics : [],
+        shuffleQuestions,
+        shuffleOptions,
+        timerMinutes: mode === 'exam' && timerEnabled ? timerMinutes : null,
+      },
+      source === 'most_wrong' ? mostWrongIds : undefined,
+    )
   }
 
   return (
@@ -60,6 +93,24 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
             <h1 className={styles.examName}>{exam.name}</h1>
             <span className={styles.examTotal}>{exam.questions.length} {t.setup_available}</span>
           </div>
+
+          {historySummary && (
+            <div className={`${styles.historyStrip} card`}>
+              <div className={styles.historyStats}>
+                <span><strong>{historySummary.count}</strong> {t.setup_history_sessions}</span>
+                <span className={styles.historyDot}>·</span>
+                <span>{t.setup_history_avg}: <strong>{historySummary.avg}%</strong></span>
+                <span className={styles.historyDot}>·</span>
+                <span>{t.setup_history_last}: <strong>{historySummary.last}%</strong></span>
+              </div>
+              <button className="btn btn--ghost btn--sm" onClick={onOpenHistory}>
+                {t.setup_history_open}
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"/>
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Setup card */}
@@ -109,8 +160,29 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
             </div>
           </section>
 
-          {/* Topic filter (only if multiple topics) */}
-          {hasMultipleTopics && (
+          {/* Question source selector when historical missed questions exist */}
+          {mostWrongIds.length > 0 && (
+            <section className={styles.section}>
+              <label className={styles.sectionLabel}>{t.setup_source_label}</label>
+              <div className={styles.topicGrid}>
+                <button
+                  className={`${styles.topicBtn} ${source === 'all' ? styles.topicBtnActive : ''}`}
+                  onClick={() => handleSelectSource('all')}
+                >
+                  {t.setup_source_all} ({exam.questions.length})
+                </button>
+                <button
+                  className={`${styles.topicBtn} ${source === 'most_wrong' ? styles.topicBtnActive : ''}`}
+                  onClick={() => handleSelectSource('most_wrong')}
+                >
+                  {t.setup_source_most_wrong} ({mostWrongIds.length})
+                </button>
+              </div>
+            </section>
+          )}
+
+          {/* Topic filter (only if multiple topics and source is 'all') */}
+          {source === 'all' && hasMultipleTopics && (
             <section className={styles.section}>
               <label className={styles.sectionLabel}>{t.setup_topics_label}</label>
               <div className={styles.topicGrid}>

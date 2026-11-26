@@ -1,0 +1,595 @@
+.root {
+  padding: 40px 0 80px;
+  min-height: 100vh;
+}
+
+.topHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.pageSubtitle {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ─── Empty state ─────────────────────────────────────────────────────────── */
+
+.emptyCard {
+  padding: 56px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.emptyIcon {
+  font-size: 2.5rem;
+}
+
+.emptyTitle {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+.emptyDesc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  max-width: 420px;
+}
+
+/* ─── Exam switcher ───────────────────────────────────────────────────────── */
+
+.examTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.examTab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.examTab:hover {
+  border-color: var(--brand-400);
+  color: var(--text);
+}
+
+.examTabActive {
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+  color: #fff;
+}
+
+.examTabCount {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 1px 7px;
+  border-radius: var(--radius-full);
+  background: rgba(128, 128, 128, 0.18);
+}
+
+/* ─── KPI Grid ────────────────────────────────────────────────────────────── */
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 680px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.kpiCard {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kpiLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.kpiRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.kpiValue {
+  font-size: 1.625rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.kpiPass { color: var(--correct-text); }
+.kpiFail { color: var(--wrong-text); }
+
+.kpiDelta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.deltaUp { background: var(--correct-bg); color: var(--correct-text); }
+.deltaDown { background: var(--wrong-bg); color: var(--wrong-text); }
+.deltaFlat { background: var(--bg-subtle); color: var(--text-muted); }
+
+/* ─── Chart ───────────────────────────────────────────────────────────────── */
+
+.chartCard {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.passLegend {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--correct-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.passLegend::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  border-top: 2px dashed var(--correct-border);
+}
+
+.chartWrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chartSvg {
+  width: 100%;
+  min-width: 360px;
+  height: auto;
+  display: block;
+}
+
+.chartGridLine {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.chartPassLine {
+  stroke: var(--correct-border);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+  opacity: 0.7;
+}
+
+.chartArea {
+  fill: var(--brand-500);
+  opacity: 0.1;
+}
+
+.chartLine {
+  stroke: var(--brand-500);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chartDotPass {
+  fill: var(--correct-border);
+  stroke: var(--bg-card);
+  stroke-width: 2;
+}
+
+.chartDotFail {
+  fill: var(--wrong-border);
+  stroke: var(--bg-card);
+  stroke-width: 2;
+}
+
+.chartAxisLabel {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  fill: var(--text-faint);
+}
+
+.chartValLabel {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  fill: var(--text);
+}
+
+.chartDateLabel {
+  font-size: 10px;
+  font-family: var(--font-sans);
+  fill: var(--text-muted);
+}
+
+/* ─── Sections ────────────────────────────────────────────────────────────── */
+
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+}
+
+.sectionSub {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.emptyInline {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.recurringActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ─── Recurring mistakes ──────────────────────────────────────────────────── */
+
+.recurringList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recurringCard {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recurringHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.recurringBadges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.monoRef {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.badgeAlways {
+  background: var(--wrong-bg);
+  color: var(--wrong-text);
+  border: 1px solid var(--wrong-border);
+}
+
+.badgeRecurring {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+[data-theme="dark"] .badgeRecurring {
+  background: #451a03;
+  color: #fbbf24;
+}
+
+.timePill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.questionText {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.correctAnswersRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  background: var(--correct-bg);
+  border: 1px solid var(--correct-border);
+  border-radius: var(--radius-md);
+}
+
+.correctAnswersLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--correct-text);
+}
+
+.correctChips {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.correctChip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.keyChip {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  margin-top: 2px;
+}
+
+.itemFooter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ─── Past sessions ───────────────────────────────────────────────────────── */
+
+.confirmClearRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.confirmClearText {
+  font-size: 0.8125rem;
+  color: var(--wrong-text);
+  font-weight: 600;
+}
+
+.sessionList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sessionCard {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sessionTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sessionPrimary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sessionScore {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 6px 12px;
+}
+
+.sessionMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sessionTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sessionFraction {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.sourceTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.sessionDate {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.sessionActions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ─── Expanded session details ────────────────────────────────────────────── */
+
+.expandedArea {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.expandTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.expandTab {
+  padding: 5px 12px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.expandTabActive {
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+  color: #fff;
+}
+
+.noErrorsText {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.detailList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailItem {
+  padding: 12px 14px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detailQuestion {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.detailFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.detailFooter strong {
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+
+.correctKey {
+  color: var(--correct-text) !important;
+}
