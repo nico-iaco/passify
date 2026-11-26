@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import styles from './OptionItem.module.css'
 
 interface Props {
@@ -11,6 +12,8 @@ interface Props {
 }
 
 export function OptionItem({ optKey, text, isSelected, isMulti, isConfirmed, isCorrect, onSelect }: Props) {
+  const labelRef = useRef<HTMLLabelElement>(null)
+
   let stateClass = ''
   if (isConfirmed) {
     if (isCorrect) stateClass = styles.stateCorrect
@@ -19,8 +22,20 @@ export function OptionItem({ optKey, text, isSelected, isMulti, isConfirmed, isC
     stateClass = styles.stateSelected
   }
 
+  function handleLabelClick(e: React.MouseEvent<HTMLLabelElement>) {
+    // Allow users to drag-select option text for copying without accidentally toggling the answer
+    const sel = window.getSelection()
+    if (sel && sel.toString().length > 0 && labelRef.current && sel.containsNode(labelRef.current, true)) {
+      e.preventDefault()
+    }
+  }
+
   return (
-    <label className={`${styles.option} ${stateClass}`}>
+    <label
+      ref={labelRef}
+      className={`${styles.option} ${stateClass}`}
+      onClick={handleLabelClick}
+    >
       <input
         type={isMulti ? 'checkbox' : 'radio'}
         checked={isSelected}
