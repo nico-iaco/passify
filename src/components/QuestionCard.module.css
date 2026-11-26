@@ -12,6 +12,13 @@
   flex-wrap: wrap;
 }
 
+.headerActions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .multiHint {
   display: inline-flex;
   align-items: center;

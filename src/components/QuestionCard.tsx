@@ -1,6 +1,7 @@
 import { useI18n } from '../i18n'
 import type { NormalizedQuestion } from '../types'
 import { AiExplanation } from './AiExplanation'
+import { CopyButton } from './CopyButton'
 import { OptionItem } from './OptionItem'
 import styles from './QuestionCard.module.css'
 
@@ -37,6 +38,9 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
             {t.quiz_select_multi} {question.answers.length} {t.quiz_select_multi_answers}
           </span>
         )}
+        <div className={styles.headerActions}>
+          <CopyButton question={question} />
+        </div>
       </div>
 
       {/* Question text */}

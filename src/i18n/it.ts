@@ -51,6 +51,8 @@ export const it = {
   quiz_exit: 'Esci',
   quiz_exit_confirm: 'Vuoi davvero uscire? I progressi saranno salvati.',
   quiz_timer_label: 'Tempo rimasto',
+  quiz_copy_btn: 'Copia',
+  quiz_copied: 'Copiato!',
 
   // Results screen
   results_title: 'Risultati',

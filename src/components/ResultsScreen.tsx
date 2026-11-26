@@ -2,6 +2,7 @@ import { useI18n } from '../i18n'
 import { isCorrect } from '../lib/grade'
 import type { QuizSession } from '../types'
 import { AiExplanation } from './AiExplanation'
+import { CopyButton } from './CopyButton'
 import styles from './ResultsScreen.module.css'
 
 interface Props {
@@ -105,7 +106,10 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
                   <div key={q.id} className={`${styles.errorItem} card animate-fade-up`} style={{ animationDelay: `${120 + idx * 30}ms` }}>
                     <div className={styles.errorHeader}>
                       <span className="badge badge--topic">Topic {q.topic}</span>
-                      <span className={styles.errorNum}>#{idx + 1}</span>
+                      <div className={styles.errorHeaderRight}>
+                        <CopyButton question={q} />
+                        <span className={styles.errorNum}>#{idx + 1}</span>
+                      </div>
                     </div>
                     <p className={styles.errorQuestion}>{q.question}</p>
 

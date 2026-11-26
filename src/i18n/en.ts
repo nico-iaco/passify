@@ -53,6 +53,8 @@ export const en: Strings = {
   quiz_exit: 'Exit',
   quiz_exit_confirm: 'Are you sure you want to exit? Progress will be saved.',
   quiz_timer_label: 'Time left',
+  quiz_copy_btn: 'Copy',
+  quiz_copied: 'Copied!',
 
   // Results screen
   results_title: 'Results',

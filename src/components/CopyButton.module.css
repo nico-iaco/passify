@@ -1,0 +1,13 @@
+.copyBtn {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.copied {
+  color: var(--correct-text) !important;
+  border-color: var(--correct-border);
+  background: var(--correct-bg) !important;
+}

@@ -13,7 +13,7 @@
     border-color var(--dur-fast) var(--ease),
     transform var(--dur-fast) var(--ease),
     box-shadow var(--dur-fast) var(--ease);
-  user-select: none;
+  user-select: text;
   position: relative;
 }
 
@@ -43,6 +43,7 @@
   background: var(--bg-subtle);
   transition: all var(--dur-fast) var(--ease);
   margin-top: 1px;
+  user-select: none;
 }
 
 .keyLabel {
