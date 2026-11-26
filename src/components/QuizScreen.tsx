@@ -54,6 +54,7 @@ export function QuizScreen({
               <span className={styles.examName}>{session.exam.name}</span>
               <span className={styles.modeBadge}>
                 {isPractice ? t.setup_mode_practice : t.setup_mode_exam}
+                {config.questionRange && ` · ${config.questionRange.from}–${config.questionRange.to}`}
               </span>
             </div>
             <ProgressBar current={currentIndex + 1} total={questions.length} />

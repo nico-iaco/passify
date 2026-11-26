@@ -21,6 +21,10 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
     selected.length === question.answers.length &&
     question.answers.every(a => selected.includes(a))
 
+  const questionRefLabel = question.position && question.position !== question.id
+    ? `#${question.position} · ID ${question.id}`
+    : `#${question.id}`
+
   return (
     <div className={`${styles.card} card animate-fade-up`}>
       {/* Header row */}
@@ -28,6 +32,7 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
         <span className="badge badge--topic">
           Topic {question.topic}
         </span>
+        <span className={styles.questionRef}>{questionRefLabel}</span>
         {question.isMulti && (
           <span className={styles.multiHint}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

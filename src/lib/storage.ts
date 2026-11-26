@@ -1,4 +1,4 @@
-import type { QuizSession } from '../types'
+import type { QuestionRange, QuizSession } from '../types'
 import { DEFAULT_MODEL } from './gemini'
 
 const KEYS = {
@@ -7,6 +7,7 @@ const KEYS = {
   THEME: 'qf_theme',
   API_KEY: 'qf_api_key',
   AI_MODEL: 'qf_ai_model',
+  LAST_RANGE: 'qf_last_range',
 } as const
 
 // ─── Session ─────────────────────────────────────────────────────────────────
@@ -23,7 +24,37 @@ export function loadSession(): QuizSession | null {
   try {
     const raw = localStorage.getItem(KEYS.SESSION)
     if (!raw) return null
-    return JSON.parse(raw) as QuizSession
+    const parsed = JSON.parse(raw) as QuizSession
+    if (!parsed || !parsed.config) return null
+    return {
+      ...parsed,
+      config: {
+        ...parsed.config,
+        questionRange: parsed.config.questionRange ?? null,
+      },
+    }
+  } catch {
+    return null
+  }
+}
+
+export function saveLastRange(examName: string, range: QuestionRange): void {
+  try {
+    const raw = localStorage.getItem(KEYS.LAST_RANGE)
+    const map: Record<string, QuestionRange> = raw ? JSON.parse(raw) : {}
+    map[examName.trim().toLowerCase()] = range
+    localStorage.setItem(KEYS.LAST_RANGE, JSON.stringify(map))
+  } catch {
+    // ignore storage errors
+  }
+}
+
+export function loadLastRange(examName: string): QuestionRange | null {
+  try {
+    const raw = localStorage.getItem(KEYS.LAST_RANGE)
+    if (!raw) return null
+    const map = JSON.parse(raw) as Record<string, QuestionRange>
+    return map[examName.trim().toLowerCase()] ?? null
   } catch {
     return null
   }

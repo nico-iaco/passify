@@ -170,12 +170,160 @@
   color: #fff;
 }
 
+/* ─── Segmented control & Range box ───────────────────────────────────────── */
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  gap: 2px;
+}
+
+.segmentedBtn {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+
+.segmentedBtnActive {
+  background: var(--bg-card);
+  color: var(--brand-500);
+  box-shadow: var(--shadow-xs);
+}
+
+.rangeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.rangeInputs {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rangeField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rangeLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rangeInput {
+  width: 88px;
+  padding: 8px 10px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-align: center;
+  color: var(--text);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.rangeInput:focus {
+  border-color: var(--border-focus);
+}
+
+.rangeSep {
+  padding-bottom: 10px;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.rangeCountPill {
+  margin-left: auto;
+  padding: 6px 12px;
+  font-size: 0.8125rem;
+  color: var(--brand-600);
+  background: var(--brand-50);
+  border: 1px solid var(--brand-200);
+  border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] .rangeCountPill {
+  background: #1e1b4b;
+  border-color: #3730a3;
+  color: var(--brand-300);
+}
+
+.rangeCountPill strong {
+  font-family: var(--font-mono);
+}
+
+.nextBlockBtn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--brand-600);
+  background: var(--bg-card);
+  border: 1px dashed var(--brand-400);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+
+.nextBlockBtn:hover {
+  background: var(--brand-50);
+  border-style: solid;
+}
+
+[data-theme="dark"] .nextBlockBtn {
+  color: var(--brand-300);
+}
+
+[data-theme="dark"] .nextBlockBtn:hover {
+  background: #1e1b4b;
+}
+
+.rangeHint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 /* ─── Slider ──────────────────────────────────────────────────────────────── */
 
 .sliderHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sliderValueRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4px;
 }
 
 .sliderValue {

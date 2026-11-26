@@ -1,9 +1,10 @@
 import type { NormalizedExam, NormalizedQuestion, RawQuestion } from '../types'
 
-function normalizeQuestion(q: RawQuestion): NormalizedQuestion {
+function normalizeQuestion(q: RawQuestion, position: number): NormalizedQuestion {
   const answers = q.answer.split('').filter(c => /[A-E]/.test(c))
   return {
     id: q.id,
+    position,
     topic: q.topic,
     question: q.question,
     options: q.options,
@@ -43,7 +44,7 @@ export function parseExam(raw: unknown): NormalizedExam {
     ) {
       throw new Error(`Question at index ${i} is malformed (missing question/options/answer).`)
     }
-    questions.push(normalizeQuestion(q as unknown as RawQuestion))
+    questions.push(normalizeQuestion(q as unknown as RawQuestion, i + 1))
   }
 
   const topics = Array.from(new Set(questions.map(q => q.topic))).sort((a, b) => a - b)

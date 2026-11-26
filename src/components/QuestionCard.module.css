@@ -12,6 +12,13 @@
   flex-wrap: wrap;
 }
 
+.questionRef {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-faint);
+}
+
 .multiHint {
   display: inline-flex;
   align-items: center;

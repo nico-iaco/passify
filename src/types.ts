@@ -21,6 +21,7 @@ export interface RawExam {
 
 export interface NormalizedQuestion {
   id: number
+  position: number                      // 1-based index in the source JSON
   topic: number
   question: string
   options: Record<string, string>       // e.g. { A: "...", B: "...", C: "..." }
@@ -45,10 +46,16 @@ export type Screen = 'upload' | 'setup' | 'quiz' | 'results'
 
 export type QuizMode = 'practice' | 'exam'
 
+export interface QuestionRange {
+  from: number                          // 1-based inclusive
+  to: number                            // 1-based inclusive
+}
+
 // ─── Quiz session ────────────────────────────────────────────────────────────
 
 export interface QuizConfig {
   mode: QuizMode
+  questionRange: QuestionRange | null
   totalQuestions: number
   selectedTopics: number[]              // empty = all
   shuffleQuestions: boolean

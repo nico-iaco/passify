@@ -1,20 +1,24 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useI18n } from '../i18n'
-import type { NormalizedExam, QuizConfig, QuizMode } from '../types'
+import type { NormalizedExam, QuestionRange, QuizConfig, QuizMode } from '../types'
 import styles from './SetupScreen.module.css'
 
 interface Props {
   exam: NormalizedExam
+  lastRange: QuestionRange | null
   onStart: (config: QuizConfig) => void
   onBack: () => void
 }
 
-export function SetupScreen({ exam, onStart, onBack }: Props) {
+export function SetupScreen({ exam, lastRange, onStart, onBack }: Props) {
   const { t } = useI18n()
 
   const [mode, setMode] = useState<QuizMode>('practice')
   const [totalQuestions, setTotalQuestions] = useState(Math.min(20, exam.questions.length))
   const [selectedTopics, setSelectedTopics] = useState<number[]>([])
+  const [useRange, setUseRange] = useState(false)
+  const [fromInput, setFromInput] = useState('1')
+  const [toInput, setToInput] = useState(String(Math.min(50, exam.questions.length)))
   const [shuffleQuestions, setShuffleQuestions] = useState(true)
   const [shuffleOptions, setShuffleOptions] = useState(true)
   const [timerEnabled, setTimerEnabled] = useState(exam.examDuration !== null)
@@ -28,16 +32,61 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
 
   const clampedTotal = Math.min(totalQuestions, filteredCount)
 
+  const parsedFrom = Number.parseInt(fromInput, 10)
+  const effectiveFrom = Number.isFinite(parsedFrom)
+    ? Math.max(1, Math.min(parsedFrom, filteredCount))
+    : 1
+  const parsedTo = Number.parseInt(toInput, 10)
+  const effectiveTo = Number.isFinite(parsedTo)
+    ? Math.max(effectiveFrom, Math.min(parsedTo, filteredCount))
+    : Math.max(effectiveFrom, Math.min(50, filteredCount))
+  const rangeCount = effectiveTo - effectiveFrom + 1
+
+  const nextRangeSuggestion = useMemo(() => {
+    if (!lastRange) return null
+    const nextFrom = lastRange.to + 1
+    if (nextFrom > filteredCount) return null
+    const blockSize = Math.max(1, lastRange.to - lastRange.from + 1)
+    const nextTo = Math.min(filteredCount, nextFrom + blockSize - 1)
+    return { from: nextFrom, to: nextTo }
+  }, [lastRange, filteredCount])
+
   function toggleTopic(topic: number) {
-    setSelectedTopics(prev =>
-      prev.includes(topic) ? prev.filter(t => t !== topic) : [...prev, topic]
-    )
+    setSelectedTopics(prev => {
+      const next = prev.includes(topic) ? prev.filter(item => item !== topic) : [...prev, topic]
+      const nextCount = next.length === 0
+        ? exam.questions.length
+        : exam.questions.filter(q => next.includes(q.topic)).length
+      if (Number.parseInt(fromInput, 10) > nextCount) setFromInput(String(Math.max(1, nextCount)))
+      if (Number.parseInt(toInput, 10) > nextCount) setToInput(String(Math.max(1, nextCount)))
+      return next
+    })
+  }
+
+  function commitFromBlur() {
+    setFromInput(String(effectiveFrom))
+    if (!Number.isFinite(parsedTo) || parsedTo < effectiveFrom) {
+      setToInput(String(effectiveFrom))
+    }
+  }
+
+  function commitToBlur() {
+    setToInput(String(effectiveTo))
+  }
+
+  function applyNextSuggestion() {
+    if (!nextRangeSuggestion) return
+    setUseRange(true)
+    setFromInput(String(nextRangeSuggestion.from))
+    setToInput(String(nextRangeSuggestion.to))
   }
 
   function handleStart() {
+    const activeRange = useRange ? { from: effectiveFrom, to: effectiveTo } : null
     onStart({
       mode,
-      totalQuestions: Math.min(clampedTotal, filteredCount),
+      questionRange: activeRange,
+      totalQuestions: activeRange ? rangeCount : Math.min(clampedTotal, filteredCount),
       selectedTopics,
       shuffleQuestions,
       shuffleOptions,
@@ -133,29 +182,111 @@ export function SetupScreen({ exam, onStart, onBack }: Props) {
             </section>
           )}
 
-          {/* Questions count */}
+          {/* Questions count or range */}
           <section className={styles.section}>
             <div className={styles.sliderHeader}>
-              <label className={styles.sectionLabel} htmlFor="q-count">{t.setup_questions_label}</label>
-              <span className={styles.sliderValue}>
-                {Math.min(totalQuestions, filteredCount)}
-                <span className={styles.sliderMax}> / {filteredCount}</span>
-              </span>
+              <label className={styles.sectionLabel} htmlFor={useRange ? 'range-from' : 'q-count'}>
+                {t.setup_questions_label}
+              </label>
+              <div className={styles.segmented} role="tablist" aria-label={t.setup_questions_label}>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected={!useRange}
+                  className={`${styles.segmentedBtn} ${!useRange ? styles.segmentedBtnActive : ''}`}
+                  onClick={() => setUseRange(false)}
+                >
+                  {t.setup_questions_mode_count}
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected={useRange}
+                  className={`${styles.segmentedBtn} ${useRange ? styles.segmentedBtnActive : ''}`}
+                  onClick={() => setUseRange(true)}
+                >
+                  {t.setup_questions_mode_range}
+                </button>
+              </div>
             </div>
-            <input
-              id="q-count"
-              type="range"
-              min={1}
-              max={filteredCount}
-              value={Math.min(totalQuestions, filteredCount)}
-              onChange={e => setTotalQuestions(Number(e.target.value))}
-              className={styles.slider}
-            />
-            <div className={styles.sliderTicks}>
-              <span>1</span>
-              <span>{Math.floor(filteredCount / 2)}</span>
-              <span>{filteredCount}</span>
-            </div>
+
+            {useRange ? (
+              <div className={styles.rangeBox}>
+                <div className={styles.rangeInputs}>
+                  <label className={styles.rangeField}>
+                    <span className={styles.rangeLabel}>{t.setup_range_from}</span>
+                    <input
+                      id="range-from"
+                      type="number"
+                      min={1}
+                      max={filteredCount}
+                      value={fromInput}
+                      onChange={e => setFromInput(e.target.value)}
+                      onBlur={commitFromBlur}
+                      className={styles.rangeInput}
+                    />
+                  </label>
+                  <span className={styles.rangeSep}>–</span>
+                  <label className={styles.rangeField}>
+                    <span className={styles.rangeLabel}>{t.setup_range_to}</span>
+                    <input
+                      id="range-to"
+                      type="number"
+                      min={effectiveFrom}
+                      max={filteredCount}
+                      value={toInput}
+                      onChange={e => setToInput(e.target.value)}
+                      onBlur={commitToBlur}
+                      className={styles.rangeInput}
+                    />
+                  </label>
+                  <div className={styles.rangeCountPill}>
+                    <strong>{rangeCount}</strong> {t.setup_range_summary}
+                  </div>
+                </div>
+                <p className={styles.rangeHint}>
+                  {shuffleQuestions ? t.setup_range_shuffle_hint : t.setup_range_order_hint}
+                  {' '}({effectiveFrom}–{effectiveTo} / {filteredCount})
+                </p>
+              </div>
+            ) : (
+              <>
+                <div className={styles.sliderValueRow}>
+                  <span className={styles.sliderValue}>
+                    {clampedTotal}
+                    <span className={styles.sliderMax}> / {filteredCount}</span>
+                  </span>
+                </div>
+                <input
+                  id="q-count"
+                  type="range"
+                  min={1}
+                  max={filteredCount}
+                  value={clampedTotal}
+                  onChange={e => setTotalQuestions(Number(e.target.value))}
+                  className={styles.slider}
+                />
+                <div className={styles.sliderTicks}>
+                  <span>1</span>
+                  <span>{Math.floor(filteredCount / 2)}</span>
+                  <span>{filteredCount}</span>
+                </div>
+              </>
+            )}
+
+            {nextRangeSuggestion && (
+              <button
+                type="button"
+                className={styles.nextBlockBtn}
+                onClick={applyNextSuggestion}
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="13 17 18 12 13 7"/>
+                  <polyline points="6 17 11 12 6 7"/>
+                </svg>
+                {t.setup_range_next_block} {nextRangeSuggestion.from}–{nextRangeSuggestion.to}
+              </button>
+            )}
           </section>
 
           {/* Shuffle toggles */}
