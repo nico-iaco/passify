@@ -1,4 +1,5 @@
 import { useI18n } from '../i18n'
+import { formatDuration } from '../lib/format'
 import type { NormalizedQuestion } from '../types'
 import { AiExplanation } from './AiExplanation'
 import { OptionItem } from './OptionItem'
@@ -9,11 +10,12 @@ interface Props {
   selected: string[]
   confirmed: boolean
   isPractice: boolean
+  timeMs?: number
   onSelect: (key: string) => void
   onConfirm: () => void
 }
 
-export function QuestionCard({ question, selected, confirmed, isPractice, onSelect, onConfirm }: Props) {
+export function QuestionCard({ question, selected, confirmed, isPractice, timeMs, onSelect, onConfirm }: Props) {
   const { t } = useI18n()
 
   const canConfirm = selected.length > 0
@@ -99,6 +101,15 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
                   </>
                 )}
               </span>
+              {timeMs !== undefined && (
+                <span className={styles.timeBadge} title={`${t.quiz_time_spent} ${formatDuration(timeMs)}`}>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  {formatDuration(timeMs)}
+                </span>
+              )}
               {!isCorrectAnswer && (
                 <span className={styles.correctAnswerHint}>
                   {t.quiz_correct_answer} <strong>{question.answers.join(', ')}</strong>

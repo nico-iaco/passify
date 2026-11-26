@@ -74,6 +74,8 @@
 .stats {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0;
   background: var(--bg-subtle);
   border-radius: var(--radius-lg);
@@ -86,7 +88,16 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  padding: 18px 32px;
+  padding: 14px 22px;
+}
+
+@media (max-width: 540px) {
+  .stat {
+    padding: 12px 14px;
+  }
+  .statDivider {
+    display: none;
+  }
 }
 
 .statDivider {
@@ -187,6 +198,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.errorHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
 }
 
 .errorNum {

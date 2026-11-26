@@ -24,8 +24,8 @@ type Action =
   | { type: 'START_QUIZ'; config: QuizConfig }
   | { type: 'RESUME_SESSION'; session: QuizSession }
   | { type: 'SELECT_ANSWER'; questionId: number; option: string; isMulti: boolean }
-  | { type: 'CONFIRM_ANSWER'; questionId: number }
-  | { type: 'NAVIGATE'; delta: 1 | -1 }
+  | { type: 'CONFIRM_ANSWER'; questionId: number; elapsedMs?: number }
+  | { type: 'NAVIGATE'; delta: 1 | -1; questionId?: number; elapsedMs?: number }
   | { type: 'GO_TO_RESULTS' }
   | { type: 'BACK_TO_UPLOAD' }
   | { type: 'BACK_TO_SETUP' }
@@ -79,6 +79,7 @@ function reducer(state: AppState, action: Action): AppState {
         currentIndex: 0,
         answers: {},
         confirmed: {},
+        questionTimeMs: {},
         startedAt,
         expiresAt: action.config.timerMinutes ? startedAt + action.config.timerMinutes * 60_000 : null,
       }
@@ -118,9 +119,14 @@ function reducer(state: AppState, action: Action): AppState {
 
     case 'CONFIRM_ANSWER': {
       if (!state.session) return state
+      const prevTime = state.session.questionTimeMs[action.questionId] ?? 0
       const session: QuizSession = {
         ...state.session,
         confirmed: { ...state.session.confirmed, [action.questionId]: true },
+        questionTimeMs: {
+          ...state.session.questionTimeMs,
+          [action.questionId]: prevTime + (action.elapsedMs ?? 0),
+        },
       }
       saveSession(session)
       return { ...state, session }
@@ -130,7 +136,17 @@ function reducer(state: AppState, action: Action): AppState {
       if (!state.session) return state
       const next = state.session.currentIndex + action.delta
       if (next < 0 || next >= state.session.questions.length) return state
-      const session: QuizSession = { ...state.session, currentIndex: next }
+      const nextTimeMap = action.questionId !== undefined && action.elapsedMs
+        ? {
+            ...state.session.questionTimeMs,
+            [action.questionId]: (state.session.questionTimeMs[action.questionId] ?? 0) + action.elapsedMs,
+          }
+        : state.session.questionTimeMs
+      const session: QuizSession = {
+        ...state.session,
+        currentIndex: next,
+        questionTimeMs: nextTimeMap,
+      }
       saveSession(session)
       return { ...state, session }
     }

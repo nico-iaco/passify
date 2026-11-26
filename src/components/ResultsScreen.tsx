@@ -1,4 +1,5 @@
 import { useI18n } from '../i18n'
+import { formatDuration } from '../lib/format'
 import { isCorrect } from '../lib/grade'
 import type { QuizSession } from '../types'
 import { AiExplanation } from './AiExplanation'
@@ -12,7 +13,7 @@ interface Props {
 
 export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
   const { t } = useI18n()
-  const { questions, answers, config } = session
+  const { questions, answers, config, questionTimeMs } = session
   const isPractice = config.mode === 'practice'
 
   const correct = questions.filter(q => isCorrect(q, answers[q.id] ?? [])).length
@@ -21,6 +22,10 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
   const score = total > 0 ? correct / total : 0
   const pct = Math.round(score * 100)
   const passed = pct >= 70
+
+  const timeValues = Object.values(questionTimeMs ?? {}).filter(v => v > 0)
+  const durationMs = timeValues.reduce((a, b) => a + b, 0)
+  const avgTimeMs = timeValues.length > 0 ? Math.round(durationMs / timeValues.length) : 0
 
   const wrongQuestions = questions.filter(q => !isCorrect(q, answers[q.id] ?? []))
 
@@ -55,6 +60,20 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
               <span className={styles.statNum}>{total}</span>
               <span className={styles.statLabel}>{t.results_total}</span>
             </div>
+            {durationMs > 0 && (
+              <>
+                <div className={styles.statDivider} />
+                <div className={styles.stat}>
+                  <span className={styles.statNum}>{formatDuration(durationMs)}</span>
+                  <span className={styles.statLabel}>{t.results_duration}</span>
+                </div>
+                <div className={styles.statDivider} />
+                <div className={styles.stat}>
+                  <span className={styles.statNum}>{formatDuration(avgTimeMs)}</span>
+                  <span className={styles.statLabel}>{t.results_avg_time}</span>
+                </div>
+              </>
+            )}
           </div>
 
           <div className={styles.scoreBar}>
@@ -101,10 +120,16 @@ export function ResultsScreen({ session, onRetry, onNewExam }: Props) {
             <div className={styles.errorList}>
               {wrongQuestions.map((q, idx) => {
                 const userAnswer = answers[q.id] ?? []
+                const qTime = questionTimeMs?.[q.id] ?? 0
                 return (
                   <div key={q.id} className={`${styles.errorItem} card animate-fade-up`} style={{ animationDelay: `${120 + idx * 30}ms` }}>
                     <div className={styles.errorHeader}>
-                      <span className="badge badge--topic">Topic {q.topic}</span>
+                      <div className={styles.errorHeaderLeft}>
+                        <span className="badge badge--topic">Topic {q.topic}</span>
+                        {qTime > 0 && (
+                          <span className={styles.timeBadge}>{formatDuration(qTime)}</span>
+                        )}
+                      </div>
                       <span className={styles.errorNum}>#{idx + 1}</span>
                     </div>
                     <p className={styles.errorQuestion}>{q.question}</p>

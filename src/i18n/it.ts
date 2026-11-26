@@ -51,6 +51,7 @@ export const it = {
   quiz_exit: 'Esci',
   quiz_exit_confirm: 'Vuoi davvero uscire? I progressi saranno salvati.',
   quiz_timer_label: 'Tempo rimasto',
+  quiz_time_spent: 'Tempo:',
 
   // Results screen
   results_title: 'Risultati',
@@ -58,6 +59,8 @@ export const it = {
   results_correct: 'Corrette',
   results_wrong: 'Sbagliate',
   results_total: 'Totali',
+  results_duration: 'Durata',
+  results_avg_time: 'Media / dom',
   results_passed: 'Superato!',
   results_failed: 'Non superato',
   results_review_title: 'Revisione errori',
