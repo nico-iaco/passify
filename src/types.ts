@@ -45,10 +45,13 @@ export type Screen = 'upload' | 'setup' | 'quiz' | 'results'
 
 export type QuizMode = 'practice' | 'exam'
 
+export type QuestionSource = 'all' | 'last_wrong'
+
 // ─── Quiz session ────────────────────────────────────────────────────────────
 
 export interface QuizConfig {
   mode: QuizMode
+  source: QuestionSource
   totalQuestions: number
   selectedTopics: number[]              // empty = all
   shuffleQuestions: boolean

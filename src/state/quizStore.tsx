@@ -38,10 +38,12 @@ const initialState: AppState = {
   session: null,
 }
 
-function buildQuestions(exam: NormalizedExam, config: QuizConfig) {
-  let qs = exam.questions.filter(
-    q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
-  )
+function buildQuestions(exam: NormalizedExam, config: QuizConfig, targetIds?: number[]) {
+  let qs = config.source === 'last_wrong' && targetIds && targetIds.length > 0
+    ? exam.questions.filter(q => targetIds.includes(q.id))
+    : exam.questions.filter(
+        q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
+      )
   if (config.shuffleQuestions) qs = shuffleFn(qs)
   qs = qs.slice(0, config.totalQuestions)
 
