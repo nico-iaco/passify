@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useReducer, useState } from 'react'
 import { I18nProvider } from './i18n'
-import { clearSession, loadSession, loadTheme, saveSession, saveTheme } from './lib/storage'
+import { clearSession, loadLastRange, loadSession, loadTheme, saveLastRange, saveSession, saveTheme } from './lib/storage'
 import type { Theme } from './lib/storage'
 import type { NormalizedExam, QuizConfig, QuizSession, Screen } from './types'
 import { LanguageSwitcher } from './components/LanguageSwitcher'
@@ -19,6 +19,11 @@ function buildQuestions(exam: NormalizedExam, config: QuizConfig) {
   let qs = exam.questions.filter(
     q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
   )
+  if (config.questionRange) {
+    const start = Math.max(0, config.questionRange.from - 1)
+    const end = Math.min(qs.length, config.questionRange.to)
+    qs = qs.slice(start, end)
+  }
   if (config.shuffleQuestions) qs = shuffleFn(qs)
   qs = qs.slice(0, config.totalQuestions)
 
@@ -243,7 +248,13 @@ export default function App() {
         {state.screen === 'setup' && state.loadedExam && (
           <SetupScreen
             exam={state.loadedExam}
-            onStart={config => dispatch({ type: 'START_QUIZ', config })}
+            lastRange={loadLastRange(state.loadedExam.name)}
+            onStart={config => {
+              if (config.questionRange) {
+                saveLastRange(state.loadedExam!.name, config.questionRange)
+              }
+              dispatch({ type: 'START_QUIZ', config })
+            }}
             onBack={() => dispatch({ type: 'BACK_TO_UPLOAD' })}
           />
         )}

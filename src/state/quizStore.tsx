@@ -42,6 +42,11 @@ function buildQuestions(exam: NormalizedExam, config: QuizConfig) {
   let qs = exam.questions.filter(
     q => config.selectedTopics.length === 0 || config.selectedTopics.includes(q.topic)
   )
+  if (config.questionRange) {
+    const start = Math.max(0, config.questionRange.from - 1)
+    const end = Math.min(qs.length, config.questionRange.to)
+    qs = qs.slice(start, end)
+  }
   if (config.shuffleQuestions) qs = shuffleFn(qs)
   qs = qs.slice(0, config.totalQuestions)
 
