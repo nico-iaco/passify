@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { useI18n } from '../i18n'
 import type { NormalizedQuestion } from '../types'
 import { AiExplanation } from './AiExplanation'
@@ -11,15 +12,51 @@ interface Props {
   isPractice: boolean
   onSelect: (key: string) => void
   onConfirm: () => void
+  onSelectionComplete?: () => void
 }
 
-export function QuestionCard({ question, selected, confirmed, isPractice, onSelect, onConfirm }: Props) {
+export function QuestionCard({
+  question,
+  selected,
+  confirmed,
+  isPractice,
+  onSelect,
+  onConfirm,
+  onSelectionComplete,
+}: Props) {
   const { t } = useI18n()
+  const confirmBtnRef = useRef<HTMLButtonElement>(null)
 
   const canConfirm = selected.length > 0
   const isCorrectAnswer = isPractice && confirmed &&
     selected.length === question.answers.length &&
     question.answers.every(a => selected.includes(a))
+
+  function handleOptionSelect(key: string) {
+    onSelect(key)
+
+    const wasSelected = selected.includes(key)
+    const isComplete = question.isMulti
+      ? !wasSelected && selected.length + 1 >= question.answers.length
+      : true
+
+    if (!isComplete) return
+
+    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches) {
+      if (isPractice && !confirmed) {
+        window.requestAnimationFrame(() => {
+          const btn = confirmBtnRef.current
+          if (!btn) return
+          const rect = btn.getBoundingClientRect()
+          if (rect.bottom > window.innerHeight - 16 || rect.top < 0) {
+            btn.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }
+        })
+      } else if (!isPractice) {
+        onSelectionComplete?.()
+      }
+    }
+  }
 
   return (
     <div className={`${styles.card} card animate-fade-up`}>
@@ -68,7 +105,7 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
             isMulti={question.isMulti}
             isConfirmed={isPractice && confirmed}
             isCorrect={question.answers.includes(key)}
-            onSelect={onSelect}
+            onSelect={handleOptionSelect}
           />
         ))}
       </div>
@@ -78,7 +115,8 @@ export function QuestionCard({ question, selected, confirmed, isPractice, onSele
         <div className={styles.practiceFooter}>
           {!confirmed ? (
             <button
-              className="btn btn--primary"
+              ref={confirmBtnRef}
+              className={`btn btn--primary ${styles.confirmBtn}`}
               onClick={onConfirm}
               disabled={!canConfirm}
             >

@@ -122,6 +122,10 @@
   gap: 16px;
 }
 
+.nextBtn {
+  scroll-margin-bottom: 24px;
+}
+
 .navDots {
   display: flex;
   align-items: center;
