@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useI18n } from '../i18n'
 import { isCorrect } from '../lib/grade'
 import type { QuizSession } from '../types'
@@ -26,8 +26,31 @@ export function QuizScreen({
 }: Props) {
   const { t } = useI18n()
   const [showExitConfirm, setShowExitConfirm] = useState(false)
+  const nextBtnRef = useRef<HTMLButtonElement>(null)
+  const prevIndexRef = useRef(session.currentIndex)
 
   const { questions, currentIndex, answers, confirmed, config } = session
+
+  useEffect(() => {
+    if (prevIndexRef.current !== currentIndex) {
+      prevIndexRef.current = currentIndex
+      if (window.scrollY > 40) {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    }
+  }, [currentIndex])
+
+  const handleExamSelectionComplete = useCallback(() => {
+    if (typeof window === 'undefined' || !window.matchMedia('(max-width: 768px)').matches) return
+    window.requestAnimationFrame(() => {
+      const btn = nextBtnRef.current
+      if (!btn) return
+      const rect = btn.getBoundingClientRect()
+      if (rect.bottom > window.innerHeight - 16 || rect.top < 0) {
+        btn.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }
+    })
+  }, [])
   const question = questions[currentIndex]
   const selected = answers[question.id] ?? []
   const isConfirmed = !!confirmed[question.id]
@@ -95,6 +118,7 @@ export function QuizScreen({
                 isPractice={isPractice}
                 onSelect={(key) => onSelectAnswer(question.id, key, question.isMulti)}
                 onConfirm={() => onConfirmAnswer(question.id)}
+                onSelectionComplete={handleExamSelectionComplete}
               />
 
               {/* Navigation */}
@@ -132,7 +156,7 @@ export function QuizScreen({
                 </div>
 
                 {canFinish ? (
-                  <button className="btn btn--primary" onClick={onFinish}>
+                  <button ref={nextBtnRef} className={`btn btn--primary ${styles.nextBtn}`} onClick={onFinish}>
                     {t.quiz_finish}
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <polyline points="9 18 15 12 9 6"/>
@@ -140,7 +164,8 @@ export function QuizScreen({
                   </button>
                 ) : (
                   <button
-                    className="btn btn--primary"
+                    ref={nextBtnRef}
+                    className={`btn btn--primary ${styles.nextBtn}`}
                     onClick={() => {
                       if (isPractice && isLast && isConfirmed) {
                         onFinish()
