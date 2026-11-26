@@ -63,6 +63,7 @@ export interface QuizSession {
   currentIndex: number
   answers: Record<number, string[]>     // questionId → selected options
   confirmed: Record<number, boolean>    // practice mode: has been confirmed
+  questionTimeMs: Record<number, number>// accumulated active time per questionId (ms)
   startedAt: number                     // epoch ms
   expiresAt: number | null              // epoch ms when the exam timer runs out; null = no timer
 }

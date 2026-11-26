@@ -48,9 +48,9 @@ type Action =
   | { type: 'RESUME_SESSION'; session: QuizSession }
   | { type: 'DISCARD_SESSION' }
   | { type: 'SELECT_ANSWER'; questionId: number; option: string; isMulti: boolean }
-  | { type: 'CONFIRM_ANSWER'; questionId: number }
-  | { type: 'NAVIGATE'; delta: 1 | -1 }
-  | { type: 'GO_TO_RESULTS' }
+  | { type: 'CONFIRM_ANSWER'; questionId: number; elapsedMs: number }
+  | { type: 'NAVIGATE'; delta: 1 | -1; questionId: number; elapsedMs: number }
+  | { type: 'GO_TO_RESULTS'; questionId?: number; elapsedMs?: number }
   | { type: 'RETRY' }
   | { type: 'NEW_EXAM' }
   | { type: 'BACK_TO_UPLOAD' }
@@ -79,6 +79,7 @@ function reducer(state: AppState, action: Action): AppState {
         currentIndex: 0,
         answers: {},
         confirmed: {},
+        questionTimeMs: {},
         startedAt,
         expiresAt: action.config.timerMinutes ? startedAt + action.config.timerMinutes * 60_000 : null,
       }
@@ -117,11 +118,16 @@ function reducer(state: AppState, action: Action): AppState {
 
     case 'CONFIRM_ANSWER': {
       if (!state.session) return state
+      const prevTime = state.session.questionTimeMs[action.questionId] ?? 0
       return {
         ...state,
         session: {
           ...state.session,
           confirmed: { ...state.session.confirmed, [action.questionId]: true },
+          questionTimeMs: {
+            ...state.session.questionTimeMs,
+            [action.questionId]: prevTime + action.elapsedMs,
+          },
         },
       }
     }
@@ -130,15 +136,37 @@ function reducer(state: AppState, action: Action): AppState {
       if (!state.session) return state
       const next = state.session.currentIndex + action.delta
       if (next < 0 || next >= state.session.questions.length) return state
+      const prevTime = state.session.questionTimeMs[action.questionId] ?? 0
       return {
         ...state,
-        session: { ...state.session, currentIndex: next },
+        session: {
+          ...state.session,
+          currentIndex: next,
+          questionTimeMs: action.elapsedMs > 0
+            ? { ...state.session.questionTimeMs, [action.questionId]: prevTime + action.elapsedMs }
+            : state.session.questionTimeMs,
+        },
       }
     }
 
-    case 'GO_TO_RESULTS':
+    case 'GO_TO_RESULTS': {
       clearSession()
-      return { ...state, screen: 'results' }
+      if (!state.session || action.questionId === undefined || !action.elapsedMs) {
+        return { ...state, screen: 'results' }
+      }
+      const prevTime = state.session.questionTimeMs[action.questionId] ?? 0
+      return {
+        ...state,
+        screen: 'results',
+        session: {
+          ...state.session,
+          questionTimeMs: {
+            ...state.session.questionTimeMs,
+            [action.questionId]: prevTime + action.elapsedMs,
+          },
+        },
+      }
+    }
 
     case 'RETRY': {
       if (!state.session) return state
@@ -152,6 +180,7 @@ function reducer(state: AppState, action: Action): AppState {
         currentIndex: 0,
         answers: {},
         confirmed: {},
+        questionTimeMs: {},
         startedAt,
         expiresAt: config.timerMinutes ? startedAt + config.timerMinutes * 60_000 : null,
       }
@@ -254,9 +283,15 @@ export default function App() {
             onSelectAnswer={(qId, opt, isMulti) =>
               dispatch({ type: 'SELECT_ANSWER', questionId: qId, option: opt, isMulti })
             }
-            onConfirmAnswer={qId => dispatch({ type: 'CONFIRM_ANSWER', questionId: qId })}
-            onNavigate={delta => dispatch({ type: 'NAVIGATE', delta })}
-            onFinish={() => dispatch({ type: 'GO_TO_RESULTS' })}
+            onConfirmAnswer={(qId, elapsedMs) =>
+              dispatch({ type: 'CONFIRM_ANSWER', questionId: qId, elapsedMs })
+            }
+            onNavigate={(delta, qId, elapsedMs) =>
+              dispatch({ type: 'NAVIGATE', delta, questionId: qId, elapsedMs })
+            }
+            onFinish={(qId, elapsedMs) =>
+              dispatch({ type: 'GO_TO_RESULTS', questionId: qId, elapsedMs })
+            }
             onExit={() => dispatch({ type: 'BACK_TO_UPLOAD' })}
           />
         )}

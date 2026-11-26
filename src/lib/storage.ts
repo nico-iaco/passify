@@ -23,7 +23,12 @@ export function loadSession(): QuizSession | null {
   try {
     const raw = localStorage.getItem(KEYS.SESSION)
     if (!raw) return null
-    return JSON.parse(raw) as QuizSession
+    const parsed = JSON.parse(raw) as QuizSession
+    if (!parsed) return null
+    return {
+      ...parsed,
+      questionTimeMs: parsed.questionTimeMs ?? {},
+    }
   } catch {
     return null
   }

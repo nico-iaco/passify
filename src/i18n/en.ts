@@ -53,6 +53,7 @@ export const en: Strings = {
   quiz_exit: 'Exit',
   quiz_exit_confirm: 'Are you sure you want to exit? Progress will be saved.',
   quiz_timer_label: 'Time left',
+  quiz_time_spent: 'Time:',
 
   // Results screen
   results_title: 'Results',
@@ -60,6 +61,8 @@ export const en: Strings = {
   results_correct: 'Correct',
   results_wrong: 'Wrong',
   results_total: 'Total',
+  results_duration: 'Duration',
+  results_avg_time: 'Avg / q',
   results_passed: 'Passed!',
   results_failed: 'Not passed',
   results_review_title: 'Error review',

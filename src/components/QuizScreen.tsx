@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useI18n } from '../i18n'
 import { isCorrect } from '../lib/grade'
 import type { QuizSession } from '../types'
@@ -10,9 +10,9 @@ import styles from './QuizScreen.module.css'
 interface Props {
   session: QuizSession
   onSelectAnswer: (questionId: number, option: string, isMulti: boolean) => void
-  onConfirmAnswer: (questionId: number) => void
-  onNavigate: (delta: 1 | -1) => void
-  onFinish: () => void
+  onConfirmAnswer: (questionId: number, elapsedMs: number) => void
+  onNavigate: (delta: 1 | -1, questionId: number, elapsedMs: number) => void
+  onFinish: (questionId: number, elapsedMs: number) => void
   onExit: () => void
 }
 
@@ -27,22 +27,77 @@ export function QuizScreen({
   const { t } = useI18n()
   const [showExitConfirm, setShowExitConfirm] = useState(false)
 
-  const { questions, currentIndex, answers, confirmed, config } = session
+  const { questions, currentIndex, answers, confirmed, config, questionTimeMs } = session
   const question = questions[currentIndex]
   const selected = answers[question.id] ?? []
   const isConfirmed = !!confirmed[question.id]
   const isPractice = config.mode === 'practice'
   const isLast = currentIndex === questions.length - 1
 
-  // Can go next in practice: must have confirmed OR in exam mode must have answered
-  // In exam mode: can finish only when on last question
   const canFinish = isLast && !isPractice
-
-  // In practice mode: can navigate to next after confirming
   const canPracticeNext = isPractice && isConfirmed
-
-  // Answered count for exam mode progress dot summary
   const answeredCount = Object.keys(answers).length
+
+  // Silent per-question timer (pauses when tab is hidden; revealed only after Confirm)
+  const timingRef = useRef<{
+    questionId: number
+    startedAt: number | null
+    accumulatedMs: number
+  }>({ questionId: question.id, startedAt: null, accumulatedMs: 0 })
+
+  useEffect(() => {
+    if (isPractice && isConfirmed) {
+      timingRef.current = { questionId: question.id, startedAt: null, accumulatedMs: 0 }
+      return
+    }
+
+    timingRef.current = {
+      questionId: question.id,
+      startedAt: document.hidden ? null : Date.now(),
+      accumulatedMs: 0,
+    }
+
+    function handleVisibility() {
+      const cur = timingRef.current
+      if (cur.questionId !== question.id) return
+      if (document.hidden) {
+        if (cur.startedAt !== null) {
+          cur.accumulatedMs += Math.max(0, Date.now() - cur.startedAt)
+          cur.startedAt = null
+        }
+      } else if (cur.startedAt === null) {
+        cur.startedAt = Date.now()
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibility)
+    return () => document.removeEventListener('visibilitychange', handleVisibility)
+  }, [question.id, isConfirmed, isPractice])
+
+  const consumeElapsedMs = useCallback((): number => {
+    const cur = timingRef.current
+    if (cur.questionId !== question.id) return 0
+    const running = cur.startedAt !== null ? Math.max(0, Date.now() - cur.startedAt) : 0
+    const total = cur.accumulatedMs + running
+    cur.accumulatedMs = 0
+    cur.startedAt = null
+    return total
+  }, [question.id])
+
+  const handleConfirm = useCallback(() => {
+    const elapsed = consumeElapsedMs()
+    onConfirmAnswer(question.id, elapsed)
+  }, [consumeElapsedMs, onConfirmAnswer, question.id])
+
+  const handleNavigate = useCallback((delta: 1 | -1) => {
+    const elapsed = (isPractice && isConfirmed) ? 0 : consumeElapsedMs()
+    onNavigate(delta, question.id, elapsed)
+  }, [consumeElapsedMs, isConfirmed, isPractice, onNavigate, question.id])
+
+  const handleFinish = useCallback(() => {
+    const elapsed = (isPractice && isConfirmed) ? 0 : consumeElapsedMs()
+    onFinish(question.id, elapsed)
+  }, [consumeElapsedMs, isConfirmed, isPractice, onFinish, question.id])
 
   return (
     <div className={styles.root}>
@@ -93,15 +148,16 @@ export function QuizScreen({
                 selected={selected}
                 confirmed={isConfirmed}
                 isPractice={isPractice}
+                timeMs={questionTimeMs?.[question.id]}
                 onSelect={(key) => onSelectAnswer(question.id, key, question.isMulti)}
-                onConfirm={() => onConfirmAnswer(question.id)}
+                onConfirm={handleConfirm}
               />
 
               {/* Navigation */}
               <div className={styles.nav}>
                 <button
                   className="btn btn--ghost"
-                  onClick={() => onNavigate(-1)}
+                  onClick={() => handleNavigate(-1)}
                   disabled={currentIndex === 0}
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -132,7 +188,7 @@ export function QuizScreen({
                 </div>
 
                 {canFinish ? (
-                  <button className="btn btn--primary" onClick={onFinish}>
+                  <button className="btn btn--primary" onClick={handleFinish}>
                     {t.quiz_finish}
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <polyline points="9 18 15 12 9 6"/>
@@ -143,9 +199,9 @@ export function QuizScreen({
                     className="btn btn--primary"
                     onClick={() => {
                       if (isPractice && isLast && isConfirmed) {
-                        onFinish()
+                        handleFinish()
                       } else {
-                        onNavigate(1)
+                        handleNavigate(1)
                       }
                     }}
                     disabled={isPractice ? !canPracticeNext : isLast}
@@ -161,7 +217,7 @@ export function QuizScreen({
 
             {session.expiresAt && (
               <aside className={styles.sidebar}>
-                <ExamTimer expiresAt={session.expiresAt} onExpire={onFinish} />
+                <ExamTimer expiresAt={session.expiresAt} onExpire={handleFinish} />
               </aside>
             )}
           </div>
