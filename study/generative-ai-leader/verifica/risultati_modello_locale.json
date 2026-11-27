@@ -1,0 +1,902 @@
+{
+ "1": {
+  "id": 1,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "TPUs are specialized AI chips optimized for parallel processing in machine learning tasks."
+  }
+ },
+ "2": {
+  "id": 2,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Gemini is the versatile multimodal model designed for text and image generation tasks without deep AI expertise."
+  }
+ },
+ "3": {
+  "id": 3,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Explainable AI provides reasons for decisions, directly addressing customer complaints about opaque rejections."
+  }
+ },
+ "4": {
+  "id": 4,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Grounding ensures outputs are based on source articles, directly preventing hallucinations of non-existent details."
+  }
+ },
+ "5": {
+  "id": 5,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Managers should identify high-impact solutions to drive adoption and address specific workflow challenges."
+  }
+ },
+ "6": {
+  "id": 6,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "A customized learning agent integrates evaluation, recommendation, and exercise creation into a single interactive solution."
+  }
+ },
+ "7": {
+  "id": 7,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "An AI agent autonomously uses tools to achieve goals based on inputs."
+  }
+ },
+ "8": {
+  "id": 8,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Gemini supports large context windows suitable for long transcripts."
+  }
+ },
+ "9": {
+  "id": 9,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Google AI Studio is designed for rapid experimentation with Gemini models without complex setup."
+  }
+ },
+ "10": {
+  "id": 10,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Vertex AI is Google's unified platform for building, deploying, and managing generative AI solutions with pre-trained models and tools."
+  }
+ },
+ "11": {
+  "id": 11,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Security agents are designed for threat research, case summarization, and automated security actions like rule creation."
+  }
+ },
+ "12": {
+  "id": 12,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Role prompting defines the AI's persona and constraints, ensuring tone and policy adherence."
+  }
+ },
+ "13": {
+  "id": 13,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Google Cloud emphasizes an AI-first strategy with continuous updates and broad platform integration."
+  }
+ },
+ "14": {
+  "id": 14,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Gemma is Google's open-source, lightweight LLM family designed for local fine-tuning and prototyping."
+  }
+ },
+ "15": {
+  "id": 15,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Drafting emails and providing insights aids efficiency while preserving human judgment for relationship building."
+  }
+ },
+ "16": {
+  "id": 16,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Gemma excels at text generation, making it ideal for drafting communications and summaries efficiently."
+  }
+ },
+ "17": {
+  "id": 17,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "The model invents facts and presents fiction as truth, which defines hallucination."
+  }
+ },
+ "18": {
+  "id": 18,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Agent Assist provides real-time guidance and recommendations to live agents without full automation."
+  }
+ },
+ "19": {
+  "id": 19,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Document AI API is designed specifically for extracting structured data from unstructured documents like PDFs and scanned images."
+  }
+ },
+ "20": {
+  "id": 20,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Safety settings filter harmful or inappropriate content from outputs."
+  }
+ },
+ "21": {
+  "id": 21,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Adding specific details like audience, tone, and keywords directly addresses the lack of engagement and missing brand emphasis."
+  }
+ },
+ "22": {
+  "id": 22,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Multi-agent systems coordinate specialized AI functions to handle complex tasks."
+  }
+ },
+ "23": {
+  "id": 23,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Agentspace focuses on AI assistants for productivity and document analysis."
+  }
+ },
+ "24": {
+  "id": 24,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Suggesting code snippets directly accelerates the coding process and prototype launch."
+  }
+ },
+ "25": {
+  "id": 25,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Google recommends automating repetitive, rule-based tasks with GenAI for efficiency and consistency."
+  }
+ },
+ "26": {
+  "id": 26,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Vertex AI integrates directly with Google Cloud databases for live data access, ensuring cost-effectiveness and real-time updates."
+  }
+ },
+ "27": {
+  "id": 27,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "TPUs and GPUs are the core hardware components for AI infrastructure."
+  }
+ },
+ "28": {
+  "id": 28,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Few-shot prompting provides examples to improve understanding and response accuracy."
+  }
+ },
+ "29": {
+  "id": 29,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Agent Assist provides real-time AI suggestions to live agents during calls or chats."
+  }
+ },
+ "30": {
+  "id": 30,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Anonymization directly removes PII to mitigate privacy risks before model training."
+  }
+ },
+ "31": {
+  "id": 31,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Unsupervised learning finds patterns in unlabeled data, matching the scenario."
+  }
+ },
+ "32": {
+  "id": 32,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Conversational Insights analyzes chat logs to identify trends, issues, and sentiment for CX enhancement."
+  }
+ },
+ "33": {
+  "id": 33,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Diffusion models generate content by iteratively removing noise from random data."
+  }
+ },
+ "34": {
+  "id": 34,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Role prompting ensures the AI adopts the specific persona of the target audience for suitable text generation."
+  }
+ },
+ "35": {
+  "id": 35,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Prompt chaining manages conversation history by passing context between steps."
+  }
+ },
+ "36": {
+  "id": 36,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Protecting sensitive training data via access controls is the primary security step during data gathering."
+  }
+ },
+ "37": {
+  "id": 37,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "AI agents autonomously analyze situations, use tools, and make decisions without constant human input."
+  }
+ },
+ "38": {
+  "id": 38,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Transparency builds trust and ensures fairness in AI-driven hiring processes."
+  }
+ },
+ "39": {
+  "id": 39,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Pub/Sub handles streaming, Cloud Storage for files, and Cloud SQL for structured databases."
+  }
+ },
+ "40": {
+  "id": 40,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "RAG retrieves external, up-to-date knowledge to improve answer accuracy without retraining the model."
+  }
+ },
+ "41": {
+  "id": 41,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Output length directly controls summary conciseness."
+  }
+ },
+ "42": {
+  "id": 42,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Human-in-the-loop review ensures nuanced intent like sarcasm is correctly captured before publication."
+  }
+ },
+ "43": {
+  "id": 43,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Grounding ensures the model uses only provided official documentation."
+  }
+ },
+ "44": {
+  "id": 44,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Open-ended text responses are unstructured data."
+  }
+ },
+ "45": {
+  "id": 45,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "RAG retrieves real-time relevant data from documents, ensuring accurate, up-to-date answers without retraining models."
+  }
+ },
+ "46": {
+  "id": 46,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "RAG retrieves up-to-date external information to ground responses, mitigating knowledge cutoff issues."
+  }
+ },
+ "47": {
+  "id": 47,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Google recommends a top-down strategy for successful GenAI adoption, aligning with executive vision and organizational goals."
+  },
+  "p2": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Google recommends a top-down strategy to align AI initiatives with business goals, ensure governance, and secure necessary resources for success."
+  }
+ },
+ "48": {
+  "id": 48,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Google Cloud prioritizes identifying specific business problems and desired outcomes before selecting tools or models."
+  }
+ },
+ "49": {
+  "id": 49,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "IAM provides granular access control for models and resources."
+  }
+ },
+ "50": {
+  "id": 50,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Grounding with Google Search retrieves real-time data for accurate, up-to-date summaries of breaking news."
+  }
+ },
+ "51": {
+  "id": 51,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Generative AI creates new content like text, images, and code, unlike predictive or neural network definitions."
+  }
+ },
+ "52": {
+  "id": 52,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Vertex AI Search grounds LLMs using first-party, third-party, and Google Knowledge Graph data."
+  }
+ },
+ "53": {
+  "id": 53,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Model Garden provides access to pre-trained models for discovery, customization, and deployment."
+  }
+ },
+ "54": {
+  "id": 54,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Security Command Center provides centralized security health insights and threat detection for all GCP resources, including AI workloads."
+  }
+ },
+ "55": {
+  "id": 55,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Google Contact Center as a Service provides AI-powered, omnichannel support and agent empowerment."
+  }
+ },
+ "56": {
+  "id": 56,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Open approach supports customer choice, addressing lock-in concerns."
+  }
+ },
+ "57": {
+  "id": 57,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "The prompt explicitly guides the model through a step-by-step reasoning process before answering."
+  }
+ },
+ "58": {
+  "id": 58,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Reinforcement learning uses rewards and penalties to train agents via trial-and-error."
+  }
+ },
+ "59": {
+  "id": 59,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Pre-built RAG with Vertex AI Search optimizes product discovery and support efficiency using retrieval-augmented generation."
+  }
+ },
+ "60": {
+  "id": 60,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Vertex AI Agent Builder enables natural language querying and summarization of documents with minimal coding, fitting the requirement."
+  }
+ },
+ "61": {
+  "id": 61,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Identifying natural groupings without labels is unsupervised learning."
+  }
+ },
+ "62": {
+  "id": 62,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "It automates a multi-step business process (order to return), defining it as a workflow agent."
+  }
+ },
+ "63": {
+  "id": 63,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Google Agentspace automates research and data entry via unified enterprise search and CRM agents."
+  }
+ },
+ "64": {
+  "id": 64,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "The model's poor performance stems directly from biased and outdated training data, illustrating data dependency."
+  }
+ },
+ "65": {
+  "id": 65,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Model Registry stores, tracks, and deploys model versions with metadata."
+  }
+ },
+ "66": {
+  "id": 66,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "NotebookLM is the prebuilt tool designed for uploading documents to generate grounded, cited summaries and insights."
+  }
+ },
+ "67": {
+  "id": 67,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Gemini is designed for generative tasks, not deterministic rule-based decision-making."
+  }
+ },
+ "68": {
+  "id": 68,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Vertex AI is Google's unified platform for the entire ML lifecycle, including gen AI model management."
+  }
+ },
+ "69": {
+  "id": 69,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Pre-trained models and low-code tools enable rapid development for teams with limited experience."
+  }
+ },
+ "70": {
+  "id": 70,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Google Vids is the free, no-code tool for creating branded videos with avatars and voiceovers."
+  }
+ },
+ "71": {
+  "id": 71,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Agentspace connects internal systems to break down knowledge silos and enable seamless collaboration."
+  }
+ },
+ "72": {
+  "id": 72,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Explainability ensures accountability and helps identify bias in loan rejections, supporting fair lending practices."
+  }
+ },
+ "73": {
+  "id": 73,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Labeled data requires supervised learning to train a classification model."
+  }
+ },
+ "74": {
+  "id": 74,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Vertex AI Search enables custom search over internal data like catalogs and docs to improve UX and reduce costs."
+  }
+ },
+ "75": {
+  "id": 75,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Multimodal search directly enhances customer experience and product discovery, driving satisfaction and sales."
+  }
+ },
+ "76": {
+  "id": 76,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Generative AI automates test creation, significantly reducing the manual effort required for validation."
+  }
+ },
+ "77": {
+  "id": 77,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Custom Gems automate weekly reports by embedding industry context and formatting, avoiding manual re-specification."
+  }
+ },
+ "78": {
+  "id": 78,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Gemini's multimodal nature handles text, images, and code for diverse tasks like drafting, summarizing, and coding."
+  }
+ },
+ "79": {
+  "id": 79,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "NotebookLM is the prebuilt tool designed for uploading documents to extract and synthesize insights."
+  }
+ },
+ "80": {
+  "id": 80,
+  "key": "D",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Google AI Studio provides tools to build, train, and deploy custom image classification models using labeled data."
+  },
+  "p2": {
+   "answer": "?",
+   "raw": ""
+  }
+ },
+ "81": {
+  "id": 81,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Google Cloud's AI infrastructure uses custom TPUs and GPUs for enhanced performance and scalability."
+  }
+ },
+ "82": {
+  "id": 82,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Training on non-representative data causes demographic bias in model outcomes."
+  }
+ },
+ "83": {
+  "id": 83,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Extensions are the recommended Google Cloud method for agents to interact with external APIs."
+  }
+ },
+ "84": {
+  "id": 84,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "The platform layer provides tools for interaction, building, and deploying AI solutions."
+  }
+ },
+ "85": {
+  "id": 85,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Conversational Agents handles natural language queries and combines rule-based logic with generative AI for FAQs."
+  }
+ },
+ "86": {
+  "id": 86,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Prompt engineering involves crafting specific instructions to guide AI models toward desired outputs."
+  }
+ },
+ "87": {
+  "id": 87,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Generative AI excels at creativity and strategic tasks, not sensitive or highly precise rule-based work."
+  }
+ },
+ "88": {
+  "id": 88,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Secure-by-design infrastructure ensures strong security measures are built into the underlying infrastructure from the ground up."
+  }
+ },
+ "89": {
+  "id": 89,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Model Registry manages model versions, code, data, and parameters throughout the lifecycle."
+  }
+ },
+ "90": {
+  "id": 90,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Predicting resolution time with labeled past data is supervised learning."
+  }
+ },
+ "91": {
+  "id": 91,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "The reasoning loop is the cycle of observe, interpret, plan, and act in AI agents."
+  }
+ },
+ "92": {
+  "id": 92,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use Google Cloud databases and Gemini Enterprise Agent Platform for live data access."
+  }
+ },
+ "93": {
+  "id": 93,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "AI Commerce Search on Gemini Enterprise combines natural language search, recommendations, and improved discovery for retail."
+  }
+ },
+ "94": {
+  "id": 94,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Pre-trained and tunable models allow customization to handle complex queries without expensive infrastructure changes."
+  }
+ },
+ "95": {
+  "id": 95,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "RAG retrieves internal docs at runtime, avoiding costly fine-tuning for new information."
+  }
+ },
+ "96": {
+  "id": 96,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Grounding with first-party data ensures accurate access to private customer records like purchase history."
+  }
+ },
+ "97": {
+  "id": 97,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Infrastructure layer provides compute, storage, and networking for training and running models."
+  }
+ },
+ "98": {
+  "id": 98,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Veo generates video from text and images, ideal for creating animated storyboards from descriptions."
+  }
+ },
+ "99": {
+  "id": 99,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Secure-by-design infrastructure refers to intrinsic protective measures built into Google's global network and hardware."
+  }
+ }
+}

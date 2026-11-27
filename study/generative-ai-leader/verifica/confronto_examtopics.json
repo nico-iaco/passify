@@ -1,0 +1,1462 @@
+[
+ {
+  "id": 25,
+  "et": "T4Q5",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310185-exam-generative-ai-leader-topic-4-question-5-discussion/",
+  "ets": "According to Google-recommended practices, when should generative AI be used to automate t",
+  "os": "According to Google-recommended practices, when should generative AI be used to automate t"
+ },
+ {
+  "id": 33,
+  "et": "T1Q9",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379919-exam-generative-ai-leader-topic-1-question-9-discussion/",
+  "ets": "What does a diffusion model do?",
+  "os": "What does a diffusion model do?"
+ },
+ {
+  "id": 51,
+  "et": "T1Q1",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 30
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/307181-exam-generative-ai-leader-topic-1-question-1-discussion/",
+  "ets": "What is the definition of generative AI?",
+  "os": "What is the definition of generative AI?"
+ },
+ {
+  "id": 7,
+  "et": "T1Q3",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 17
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/307209-exam-generative-ai-leader-topic-1-question-3-discussion/",
+  "ets": "What is the definition of an AI agent?",
+  "os": "What is the definition of an AI agent?"
+ },
+ {
+  "id": 27,
+  "et": "T1Q16",
+  "sc": 0.94,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 6
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379901-exam-generative-ai-leader-topic-1-question-16-discussion/",
+  "ets": "What are core hardware components of the infrastructure layer in the generative AI landsca",
+  "os": "Which components are core hardware elements of the infrastructure layer in the generative "
+ },
+ {
+  "id": 62,
+  "et": "T1Q13",
+  "sc": 0.94,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 8
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379913-exam-generative-ai-leader-topic-1-question-13-discussion/",
+  "ets": "An order fulfillment team has an agent that automatically processes orders, updates invent",
+  "os": "An order-fulfillment team has an agent that automatically processes orders, updates invent"
+ },
+ {
+  "id": 13,
+  "et": "T2Q13",
+  "sc": 0.93,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 3
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310169-exam-generative-ai-leader-topic-2-question-13-discussion/",
+  "ets": "What is a characteristic of Google Cloud as a generative AI company?",
+  "os": "Which characteristic describes Google Cloud as a generative AI company?"
+ },
+ {
+  "id": 44,
+  "et": "T1Q15",
+  "sc": 0.92,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 5
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379916-exam-generative-ai-leader-topic-1-question-15-discussion/",
+  "ets": "A company collects customer feedback through open-ended survey questions where customers c",
+  "os": "A company gathers customer feedback through open-ended survey questions, in which customer"
+ },
+ {
+  "id": 26,
+  "et": "T2Q21",
+  "sc": 0.92,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 11
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310192-exam-generative-ai-leader-topic-2-question-21-discussion/",
+  "ets": "A logistics company wants to use a generative AI (gen AI) agent to automatically check rea",
+  "os": "A logistics company wants to use a generative AI (gen AI) agent to automatically check rea"
+ },
+ {
+  "id": 75,
+  "et": "T4Q2",
+  "sc": 0.92,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 5
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310196-exam-generative-ai-leader-topic-4-question-2-discussion/",
+  "ets": "A retail company with a large online catalog wants to improve customer experience and driv",
+  "os": "A retail company with a large online catalog wants to enhance customer experience and incr"
+ },
+ {
+  "id": 31,
+  "et": "T1Q5",
+  "sc": 0.91,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 19
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/308639-exam-generative-ai-leader-topic-1-question-5-discussion/",
+  "ets": "A research team has collected a large dataset of sensor readings from various industrial m",
+  "os": "A research team has gathered a large dataset of sensor readings from various industrial ma"
+ },
+ {
+  "id": 3,
+  "et": "T4Q3",
+  "sc": 0.91,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310197-exam-generative-ai-leader-topic-4-question-3-discussion/",
+  "ets": "A financial institution uses generative AI (gen AI) to approve and reject loan application",
+  "os": "A financial institution uses generative AI (gen AI) to approve or reject loan applications"
+ },
+ {
+  "id": 61,
+  "et": "T1Q7",
+  "sc": 0.9,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 21
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310182-exam-generative-ai-leader-topic-1-question-7-discussion/",
+  "ets": "What is an example of unsupervised machine learning?",
+  "os": "Which of the following is an example of unsupervised machine learning?"
+ },
+ {
+  "id": 90,
+  "et": "T1Q18",
+  "sc": 0.9,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 3
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/430432-exam-generative-ai-leader-topic-1-question-18-discussion/",
+  "ets": "What is an example of supervised machine learning?",
+  "os": "Which of the following is an example of supervised machine learning?"
+ },
+ {
+  "id": 69,
+  "et": "T2Q9",
+  "sc": 0.9,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 10
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310172-exam-generative-ai-leader-topic-2-question-9-discussion/",
+  "ets": "A company\u2019s development team is eager to start building generative AI solutions with Googl",
+  "os": "A company\u2019s development team is eager to begin building generative AI solutions with Googl"
+ },
+ {
+  "id": 11,
+  "et": "T2Q2",
+  "sc": 0.9,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 13
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310174-exam-generative-ai-leader-topic-2-question-2-discussion/",
+  "ets": "The office of the CISO wants to use generative AI (gen AI) to help automate tasks like sum",
+  "os": "The CISO's office wants to use generative AI (gen AI) to help automate tasks such as summa"
+ },
+ {
+  "id": 59,
+  "et": "T2Q23",
+  "sc": 0.89,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310187-exam-generative-ai-leader-topic-2-question-23-discussion/",
+  "ets": "A large e-commerce company with a vast and frequently updated product catalog finds that c",
+  "os": "A large e-commerce company with a vast, frequently updated product catalog finds that cust"
+ },
+ {
+  "id": 4,
+  "et": "T3Q18",
+  "sc": 0.88,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379892-exam-generative-ai-leader-topic-3-question-18-discussion/",
+  "ets": "A global news company is using a large language model to automatically generate summaries ",
+  "os": "A global news company uses a large language model to automatically create summaries of new"
+ },
+ {
+  "id": 20,
+  "et": "T3Q12",
+  "sc": 0.88,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 11
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310191-exam-generative-ai-leader-topic-3-question-12-discussion/",
+  "ets": "A development team is configuring a generative AI model for a customer-facing application ",
+  "os": "A development team is configuring a generative AI model for a customer-facing application "
+ },
+ {
+  "id": 43,
+  "et": "T3Q4",
+  "sc": 0.88,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310206-exam-generative-ai-leader-topic-3-question-4-discussion/",
+  "ets": "A company wants to use generative AI to create a chatbot that can answer customer question",
+  "os": "A company wants to use generative AI to build a chatbot that answers customer questions ab"
+ },
+ {
+  "id": 52,
+  "et": "T3Q11",
+  "sc": 0.88,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 16
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310194-exam-generative-ai-leader-topic-3-question-11-discussion/",
+  "ets": "What does Vertex AI Search enable companies to do?",
+  "os": "What does Vertex AI Search allow companies to do?"
+ },
+ {
+  "id": 32,
+  "et": "T2Q25",
+  "sc": 0.88,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379942-exam-generative-ai-leader-topic-2-question-25-discussion/",
+  "ets": "An organization wants to understand trends in customer interactions, identify common issue",
+  "os": "An organization wants to understand trends in customer interactions, identify recurring is"
+ },
+ {
+  "id": 2,
+  "et": "T2Q11",
+  "sc": 0.87,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 8
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310173-exam-generative-ai-leader-topic-2-question-11-discussion/",
+  "ets": "A marketing team wants to use a foundation model to create social media and advertising ca",
+  "os": "A marketing team wants to use a foundation model to develop social-media and advertising c"
+ },
+ {
+  "id": 8,
+  "et": "T2Q22",
+  "sc": 0.87,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 8
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310200-exam-generative-ai-leader-topic-2-question-22-discussion/",
+  "ets": "An organization needs an AI tool to analyze and summarize lengthy customer feedback text t",
+  "os": "An organization requires an AI tool to analyze and summarize long customer-feedback text t"
+ },
+ {
+  "id": 10,
+  "et": "T2Q15",
+  "sc": 0.86,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310179-exam-generative-ai-leader-topic-2-question-15-discussion/",
+  "ets": "A company wants a generative AI platform that provides the infrastructure, tools, and pre-",
+  "os": "A company needs a generative AI platform that supplies the infrastructure, tools, and pre-"
+ },
+ {
+  "id": 41,
+  "et": "T3Q15",
+  "sc": 0.86,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379899-exam-generative-ai-leader-topic-3-question-15-discussion/",
+  "ets": "A team is using a generative AI model to automatically generate short summaries of custome",
+  "os": "A team uses a generative AI model to automatically produce short summaries of customer fee"
+ },
+ {
+  "id": 6,
+  "et": "T2Q8",
+  "sc": 0.86,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "C": 2,
+   "B": 17
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310180-exam-generative-ai-leader-topic-2-question-8-discussion/",
+  "ets": "A company wants to create an AI-powered educational solution that provides personalized le",
+  "os": "A company wants to build an AI-powered educational solution that delivers personalized lea"
+ },
+ {
+  "id": 12,
+  "et": "T3Q13",
+  "sc": 0.86,
+  "key": "A",
+  "top": "B",
+  "votes": {
+   "B": 2,
+   "A": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379897-exam-generative-ai-leader-topic-3-question-13-discussion/",
+  "ets": "A customer service team wants to use generative AI to improve the quality and consistency ",
+  "os": "A customer service team wants to use generative AI to improve the quality and consistency "
+ },
+ {
+  "id": 46,
+  "et": "T3Q8",
+  "sc": 0.86,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 13
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310204-exam-generative-ai-leader-topic-3-question-8-discussion/",
+  "ets": "A company\u2019s large learning model (LLM) is producing hallucinations that are a result of th",
+  "os": "A company\u2019s large language model (LLM) is producing hallucinations due to its knowledge cu"
+ },
+ {
+  "id": 39,
+  "et": "T2Q1",
+  "sc": 0.86,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 7
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/308700-exam-generative-ai-leader-topic-2-question-1-discussion/",
+  "ets": "A company has a machine learning project that involves diverse data types like streaming d",
+  "os": "A company has a machine learning project involving diverse data types, such as streaming d"
+ },
+ {
+  "id": 73,
+  "et": "T1Q12",
+  "sc": 0.86,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379934-exam-generative-ai-leader-topic-1-question-12-discussion/",
+  "ets": "A company wants to build a model to classify customer reviews as positive, negative, or ne",
+  "os": "A company wants to build a model that classifies customer reviews as positive, negative, o"
+ },
+ {
+  "id": 53,
+  "et": "T2Q31",
+  "sc": 0.86,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379876-exam-generative-ai-leader-topic-2-question-31-discussion/",
+  "ets": "What does Model Garden enable a company to do?",
+  "os": "What does Model Garden allow a company to do?"
+ },
+ {
+  "id": 19,
+  "et": "T2Q3",
+  "sc": 0.85,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 13
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/308222-exam-generative-ai-leader-topic-2-question-3-discussion/",
+  "ets": "A financial services company receives a high volume of loan applications daily submitted a",
+  "os": "A financial services company receives a large volume of loan applications each day, submit"
+ },
+ {
+  "id": 24,
+  "et": "T3Q6",
+  "sc": 0.85,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 12
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310203-exam-generative-ai-leader-topic-3-question-6-discussion/",
+  "ets": "A software development team wants to use generative AI (gen AI) to code faster so they can",
+  "os": "A software development team wants to use generative AI (gen AI) to code more quickly so it"
+ },
+ {
+  "id": 68,
+  "et": "T2Q27",
+  "sc": 0.85,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379911-exam-generative-ai-leader-topic-2-question-27-discussion/",
+  "ets": "A company is trying to decide which platform to use to optimize its generative AI (gen AI)",
+  "os": "A company is deciding which platform to use to optimize its generative AI (gen AI) solutio"
+ },
+ {
+  "id": 30,
+  "et": "T1Q14",
+  "sc": 0.84,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 3
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379906-exam-generative-ai-leader-topic-1-question-14-discussion/",
+  "ets": "A company is developing a generative AI application to analyze customer feedback collected",
+  "os": "A company is building a generative AI application to analyze customer feedback gathered th"
+ },
+ {
+  "id": 9,
+  "et": "T2Q24",
+  "sc": 0.84,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 10,
+   "A": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379902-exam-generative-ai-leader-topic-2-question-24-discussion/",
+  "ets": "An organization wants to quickly experiment with different Gemini models and parameters fo",
+  "os": "An organization needs to rapidly experiment with various Gemini models and parameters for "
+ },
+ {
+  "id": 49,
+  "et": "T2Q17",
+  "sc": 0.84,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 10
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310178-exam-generative-ai-leader-topic-2-question-17-discussion/",
+  "ets": "An organization wants granular control over who can use and see their generative AI models",
+  "os": "An organization needs granular control over who can access and use its generative AI model"
+ },
+ {
+  "id": 65,
+  "et": "T2Q12",
+  "sc": 0.84,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 13
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310181-exam-generative-ai-leader-topic-2-question-12-discussion/",
+  "ets": "A data science team needs a centralized and organized location to store its various model ",
+  "os": "A data science team requires a centralized, organized place to store its different model v"
+ },
+ {
+  "id": 48,
+  "et": "T4Q6",
+  "sc": 0.84,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 7
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310202-exam-generative-ai-leader-topic-4-question-6-discussion/",
+  "ets": "A company wants to choose a generative AI (gen AI) use case that will be successful and ha",
+  "os": "A company wants to select a generative AI (gen AI) use case that will succeed and deliver "
+ },
+ {
+  "id": 14,
+  "et": "T2Q6",
+  "sc": 0.83,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310176-exam-generative-ai-leader-topic-2-question-6-discussion/",
+  "ets": "A software developer needs a highly efficient, open-source large language model that can b",
+  "os": "A software developer requires a highly efficient, open-source large language model that ca"
+ },
+ {
+  "id": 22,
+  "et": "T3Q1",
+  "sc": 0.83,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 7
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310201-exam-generative-ai-leader-topic-3-question-1-discussion/",
+  "ets": "What is a primary benefit of using a multi-agent system?",
+  "os": "What is a key benefit of using a multi-agent system?"
+ },
+ {
+  "id": 54,
+  "et": "T2Q4",
+  "sc": 0.83,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310167-exam-generative-ai-leader-topic-2-question-4-discussion/",
+  "ets": "A security team needs a centralized platform to gain a comprehensive overview of their org",
+  "os": "A security team requires a centralized platform to obtain a comprehensive view of its orga"
+ },
+ {
+  "id": 64,
+  "et": "T1Q11",
+  "sc": 0.83,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 7
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379917-exam-generative-ai-leader-topic-1-question-11-discussion/",
+  "ets": "A company trains a generative AI model designed to classify customer feedback as positive,",
+  "os": "A company trains a generative AI model to classify customer feedback as positive, negative"
+ },
+ {
+  "id": 60,
+  "et": "T2Q7",
+  "sc": 0.83,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 8
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310171-exam-generative-ai-leader-topic-2-question-7-discussion/",
+  "ets": "A pharmaceutical company\u2019s research and development department spends significant time man",
+  "os": "A pharmaceutical company\u2019s research and development department devotes substantial time to"
+ },
+ {
+  "id": 67,
+  "et": "T1Q6",
+  "sc": 0.83,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 20
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310170-exam-generative-ai-leader-topic-1-question-6-discussion/",
+  "ets": "A highly regulated financial institution wants to use Gemini as the core decision engine f",
+  "os": "A highly regulated financial institution plans to use Gemini as the central decision engin"
+ },
+ {
+  "id": 55,
+  "et": "T2Q32",
+  "sc": 0.83,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379900-exam-generative-ai-leader-topic-2-question-32-discussion/",
+  "ets": "A national bank is overwhelmed by customer inquiries across multiple channels and needs an",
+  "os": "A national bank is inundated with customer inquiries across multiple channels and requires"
+ },
+ {
+  "id": 23,
+  "et": "T2Q16",
+  "sc": 0.82,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 15
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310177-exam-generative-ai-leader-topic-2-question-16-discussion/",
+  "ets": "A company is exploring Google Agentspace to improve how its employees search for informati",
+  "os": "A company is considering Google Agentspace to enhance how employees search for information"
+ },
+ {
+  "id": 36,
+  "et": "T1Q10",
+  "sc": 0.82,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 5
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379926-exam-generative-ai-leader-topic-1-question-10-discussion/",
+  "ets": "An organization is collecting data to train a generative AI model for customer service. Th",
+  "os": "An organization is gathering data to train a generative AI model for customer service. It "
+ },
+ {
+  "id": 45,
+  "et": "T3Q7",
+  "sc": 0.82,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 16
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310207-exam-generative-ai-leader-topic-3-question-7-discussion/",
+  "ets": "A development team is building an internal knowledge base chatbot to answer employee quest",
+  "os": "A development team is creating an internal knowledge-base chatbot to answer employee quest"
+ },
+ {
+  "id": 37,
+  "et": "T1Q2",
+  "sc": 0.82,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/307208-exam-generative-ai-leader-topic-1-question-2-discussion/",
+  "ets": "A company wants to use an AI agent to automate some tasks. They want everyone to understan",
+  "os": "A company plans to use an AI agent to automate certain tasks. It wants everyone to underst"
+ },
+ {
+  "id": 16,
+  "et": "T2Q28",
+  "sc": 0.81,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 7,
+   "A": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379904-exam-generative-ai-leader-topic-2-question-28-discussion/",
+  "ets": "A finance team wants to use Gemma to help with daily tasks so that the financial analysts ",
+  "os": "A finance team wants to use Gemma to support daily tasks so financial analysts can concent"
+ },
+ {
+  "id": 71,
+  "et": "T2Q10",
+  "sc": 0.8,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310183-exam-generative-ai-leader-topic-2-question-10-discussion/",
+  "ets": "A large multinational corporation with geographically dispersed teams struggles with knowl",
+  "os": "A large multinational corporation with geographically distributed teams faces knowledge si"
+ },
+ {
+  "id": 34,
+  "et": "T3Q3",
+  "sc": 0.8,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 19,
+   "D": 2,
+   "A": 3
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310188-exam-generative-ai-leader-topic-3-question-3-discussion/",
+  "ets": "An organization wants to use generative AI to create a marketing campaign. They need to en",
+  "os": "An organization wants to use generative AI to develop a marketing campaign. It must ensure"
+ },
+ {
+  "id": 15,
+  "et": "T4Q7",
+  "sc": 0.8,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379898-exam-generative-ai-leader-topic-4-question-7-discussion/",
+  "ets": "A sales manager wants to responsibly use generative AI (gen AI) to increase efficiency wit",
+  "os": "A sales manager wants to use generative AI (gen AI) responsibly to make existing tasks mor"
+ },
+ {
+  "id": 84,
+  "et": "T1Q20",
+  "sc": 0.8,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/430449-exam-generative-ai-leader-topic-1-question-20-discussion/",
+  "ets": "What is the function of the platform layer in the generative AI (gen AI) landscape?",
+  "os": "What role does the platform layer serve in the generative AI (gen AI) landscape?"
+ },
+ {
+  "id": 18,
+  "et": "T2Q5",
+  "sc": 0.8,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 4
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310168-exam-generative-ai-leader-topic-2-question-5-discussion/",
+  "ets": "An organization with a team of live customer service agents wants to improve agent efficie",
+  "os": "An organization that employs live customer service agents wants to increase agent efficien"
+ },
+ {
+  "id": 28,
+  "et": "T3Q10",
+  "sc": 0.79,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 14
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310189-exam-generative-ai-leader-topic-3-question-10-discussion/",
+  "ets": "A company is developing a conversational AI chatbot. They need to ensure the chatbot can e",
+  "os": "A company is building a conversational AI chatbot. It must be able to hold human-like conv"
+ },
+ {
+  "id": 66,
+  "et": "T2Q29",
+  "sc": 0.79,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379662-exam-generative-ai-leader-topic-2-question-29-discussion/",
+  "ets": "A research company needs to analyze several lengthy PDF documents containing financial rep",
+  "os": "A research company needs to examine several long PDF financial reports to identify key per"
+ },
+ {
+  "id": 56,
+  "et": "T2Q19",
+  "sc": 0.79,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 13
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310190-exam-generative-ai-leader-topic-2-question-19-discussion/",
+  "ets": "A company wants to adopt generative AI and is concerned about vendor lock-in. They want to",
+  "os": "A company plans to adopt generative AI and is worried about vendor lock-in. It wants to re"
+ },
+ {
+  "id": 74,
+  "et": "T2Q18",
+  "sc": 0.78,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 16
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310186-exam-generative-ai-leader-topic-2-question-18-discussion/",
+  "ets": "A large ecommerce company with a substantial product catalog and many support documents ha",
+  "os": "A large ecommerce company has an extensive product catalog and numerous support documents,"
+ },
+ {
+  "id": 1,
+  "et": "T2Q26",
+  "sc": 0.78,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379929-exam-generative-ai-leader-topic-2-question-26-discussion/",
+  "ets": "What is a key advantage of using Google\u2019s custom-designed TPUs?",
+  "os": "What is a primary benefit of using Google\u2019s custom-designed TPUs?"
+ },
+ {
+  "id": 29,
+  "et": "T2Q14",
+  "sc": 0.77,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 10
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310175-exam-generative-ai-leader-topic-2-question-14-discussion/",
+  "ets": "What will Google Cloud\u2019s Agent Assist help a company achieve?",
+  "os": "What can Google Cloud\u2019s Agent Assist enable a company to accomplish?"
+ },
+ {
+  "id": 50,
+  "et": "T3Q9",
+  "sc": 0.77,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 10
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310193-exam-generative-ai-leader-topic-3-question-9-discussion/",
+  "ets": "A global news agency is developing a generative AI tool to quickly summarize breaking news",
+  "os": "A global news agency is creating a generative AI tool to rapidly summarize breaking-news a"
+ },
+ {
+  "id": 78,
+  "et": "T1Q17",
+  "sc": 0.77,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/430443-exam-generative-ai-leader-topic-1-question-17-discussion/",
+  "ets": "A company needs a versatile AI model for tasks like drafting emails, summarizing documents",
+  "os": "A company requires a versatile AI model for work such as drafting emails, summarizing docu"
+ },
+ {
+  "id": 47,
+  "et": "T4Q1",
+  "sc": 0.76,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 21,
+   "C": 16
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310195-exam-generative-ai-leader-topic-4-question-1-discussion/",
+  "ets": "A company is defining their generative AI strategy. They want to follow Google-recommended",
+  "os": "A company is developing its generative AI strategy. It wants to follow Google-recommended "
+ },
+ {
+  "id": 35,
+  "et": "T3Q2",
+  "sc": 0.76,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 15
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310198-exam-generative-ai-leader-topic-3-question-2-discussion/",
+  "ets": "An organization wants to use generative AI to create a chatbot that can answer customer qu",
+  "os": "An organization plans to use generative AI to build a chatbot that answers customer questi"
+ },
+ {
+  "id": 38,
+  "et": "T4Q4",
+  "sc": 0.76,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 5
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310205-exam-generative-ai-leader-topic-4-question-4-discussion/",
+  "ets": "A human resources team is implementing a new generative AI application to assist the depar",
+  "os": "A human resources team is rolling out a new generative AI application to help the departme"
+ },
+ {
+  "id": 63,
+  "et": "T2Q20",
+  "sc": 0.76,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 19
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310184-exam-generative-ai-leader-topic-2-question-20-discussion/",
+  "ets": "A company\u2019s sales team spends a significant amount of time researching potential leads and",
+  "os": "A company\u2019s sales team spends considerable time researching prospective leads and manually"
+ },
+ {
+  "id": 17,
+  "et": "T1Q8",
+  "sc": 0.75,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 18,
+   "D": 3
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/315528-exam-generative-ai-leader-topic-1-question-8-discussion/",
+  "ets": "A user asks a generative AI model about the scientific accuracy of a popular science ficti",
+  "os": "A user asks a generative AI model about the scientific accuracy of a well-known science-fi"
+ },
+ {
+  "id": 72,
+  "et": "T4Q8",
+  "sc": 0.75,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379880-exam-generative-ai-leader-topic-4-question-8-discussion/",
+  "ets": "A home loan company is deploying a generative AI system to automate initial loan applicati",
+  "os": "A home loan company is implementing a generative AI system to automate the initial review "
+ },
+ {
+  "id": 70,
+  "et": "T2Q30",
+  "sc": 0.73,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379914-exam-generative-ai-leader-topic-2-question-30-discussion/",
+  "ets": "A learning and development team wants to quickly create a new hire training video with a c",
+  "os": "A learning and development team needs to quickly produce a new-hire training video featuri"
+ },
+ {
+  "id": 58,
+  "et": "T1Q4",
+  "sc": 0.71,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 18
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "A"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/307210-exam-generative-ai-leader-topic-1-question-4-discussion/",
+  "ets": "A company is developing an AI character for a video game. The AI character needs to learn ",
+  "os": "A company is creating an AI character for a video game. The AI character must learn to nav"
+ },
+ {
+  "id": 40,
+  "et": "T3Q14",
+  "sc": 0.69,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 3
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379896-exam-generative-ai-leader-topic-3-question-14-discussion/",
+  "ets": "A company is developing a generative AI-powered customer support chatbot. They want to ens",
+  "os": "A company is building a generative AI-powered customer-support chatbot. It wants the chatb"
+ },
+ {
+  "id": 21,
+  "et": "T3Q17",
+  "sc": 0.6,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/379881-exam-generative-ai-leader-topic-3-question-17-discussion/",
+  "ets": "A marketing team wants to use a generative AI model to create product descriptions for the",
+  "os": "A marketing team wants to use a generative AI model to produce product descriptions for it"
+ },
+ {
+  "id": 42,
+  "et": "T3Q5",
+  "sc": 0.6,
+  "key": "C",
+  "top": "?",
+  "votes": {
+   "?": 7
+  },
+  "map": {
+   "A": "A",
+   "B": "B"
+  },
+  "url": "https://www.examtopics.com/discussions/google/view/310199-exam-generative-ai-leader-topic-3-question-5-discussion/",
+  "ets": "A social media platform uses a generative AI model to automatically generate summaries of ",
+  "os": "A social-media platform uses a generative AI model to automatically create summaries of us"
+ },
+ {
+  "id": 57,
+  "et": "T3Q16",
+  "sc": 0.38,
+  "key": "B",
+  "top": "?",
+  "votes": {
+   "?": 3
+  },
+  "map": {},
+  "url": "https://www.examtopics.com/discussions/google/view/379894-exam-generative-ai-leader-topic-3-question-16-discussion/",
+  "ets": "A company is using a language model to solve complex customer service inquiries. For a par",
+  "os": "A company uses a language model to address complex customer-service inquiries. For one iss"
+ }
+]
