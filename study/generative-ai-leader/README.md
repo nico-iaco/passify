@@ -6,6 +6,7 @@
 | [02-guida-temi.md](02-guida-temi.md) | Guida ai 4 topic dell'esame con le definizioni in italiano e in inglese |
 | [`public/samples/google-generativeAiLeader-examcademy.json`](../../public/samples/google-generativeAiLeader-examcademy.json) | Le 99 domande di examcademy, da caricare in Passify |
 | [verifica/](verifica/) | Script e risultati del controllo delle risposte |
+| [notebooklm/](notebooklm/) | Materiale generato con NotebookLM: infografica, slide PDF, flashcard, podcast audio (solo in locale) |
 
 > Nella repo c'era già `public/samples/google-generativeAiLeader.json`, con 71 domande di un'altra fonte:
 > non è stato toccato.

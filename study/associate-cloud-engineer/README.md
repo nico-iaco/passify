@@ -6,6 +6,7 @@
 | [02-guida-temi.md](02-guida-temi.md) | Guida ai 4 topic dell'esame con le definizioni in italiano e in inglese |
 | [`public/samples/google-associateCloudEngineer-examcademy.json`](../../public/samples/google-associateCloudEngineer-examcademy.json) | Le 354 domande di examcademy, da caricare in Passify |
 | [verifica/](verifica/) | Risultati del controllo delle risposte (`sospette.md` è l'elenco rivisto a mano) |
+| [notebooklm/](notebooklm/) | Materiale generato con NotebookLM: infografica, slide PDF, flashcard, podcast audio (solo in locale) |
 
 Verifica fatta con la skill [`verifica-esame`](../../.claude/skills/verifica-esame/SKILL.md).
 

@@ -1,6 +1,6 @@
 ---
 name: verifica-esame
-description: Verifica le risposte di un file di domande d'esame (JSON in formato Passify, es. esportato da examcademy) e prepara il materiale di studio. USARE quando l'utente allega o indica un JSON di domande di certificazione (Google Cloud, AWS, Azure…) e chiede di "controllare le risposte", "verificare l'esame", "trovare le risposte sbagliate", "preparare cheat sheet / guida di studio", o di "fare lo stesso lavoro" su un nuovo esame, o di aggiungerlo agli esami di Passify.
+description: Verifica le risposte di un file di domande d'esame (JSON in formato Passify, es. esportato da examcademy) e prepara il materiale di studio. Può anche generare infografiche, slide, flashcard e podcast con NotebookLM. USARE quando l'utente allega o indica un JSON di domande di certificazione (Google Cloud, AWS, Azure…) e chiede di "controllare le risposte", "verificare l'esame", "trovare le risposte sbagliate", "preparare cheat sheet / guida di studio", o di "fare lo stesso lavoro" su un nuovo esame, o di aggiungerlo agli esami di Passify.
 ---
 
 # Verifica di un esame e materiale di studio
@@ -135,7 +135,39 @@ volta e scrive in `study/<slug>/`:
   non presenti su ExamTopics, esito, comandi per rilanciare).
 Esempio di riferimento già fatto: `study/generative-ai-leader/`.
 
-### 7. Aggiungere l'esame a Passify
+### 7. Materiale visuale con NotebookLM (se l'utente lo chiede)
+NotebookLM ora si chiama **Gemini Notebook** (`notebook.google.com`). Si usa con Claude in Chrome, dove
+l'utente ha già fatto l'accesso. Gli snippet sono in `$S/notebooklm_helpers.js`. Esempio già fatto:
+`study/*/notebooklm/`.
+1. **Fonti**: copiare in una cartella dello scratchpad, con nomi chiari (`<SIGLA>-cheat-sheet.md`,
+   `<SIGLA>-guida-temi-IT-EN.md`, `<SIGLA>-<n>-domande-risposte-corrette.txt`), il cheat sheet, la guida e
+   l'estratto compatto (passo 6). L'estratto si può rigenerare con `5_estratto_studio.py`.
+2. **New notebook** → **Add sources** → eseguire lo snippet 1 → clic **vero** su "Upload files" → `find`
+   "hidden file input" → `file_upload` con i 3 percorsi. Non si possono usare `fetch` verso localhost
+   (bloccato dalla CSP) né eventi di drop finti.
+3. **Studio**: ogni voce apre "Customize". Impostare sempre la **lingua italiano** (menu a tendina, voce
+   `italiano`) e scrivere un prompt che chieda i nomi dei servizi in inglese e la struttura per temi d'esame:
+   - Infographic: Portrait, Detailed;
+   - Slide Deck: Detailed Deck;
+   - Flashcards: More;
+   - Mind Map;
+   - Audio Overview: Deep Dive.
+
+   Tre o quattro generazioni possono girare insieme. Ci vogliono pochi minuti, l'audio di più.
+4. **Download**: prima chiedere il permesso all'utente, con nomi e dimensioni dei file.
+   - Infografica e slide: ⋮ → Download (PNG; PDF o PPTX).
+   - Le flashcard non hanno un download: usare lo snippet 2. In Chrome il download parte solo con un clic
+     vero sul link creato; se una scheda ha già avuto un download bloccato, farlo da un'altra scheda
+     (i dati si passano con `localStorage`).
+   - La mappa mentale è interattiva: si lascia online.
+   - L'audio (decine di MB) va in `.gitignore`.
+
+   Spostare tutto da `~/Downloads` in `study/<slug>/notebooklm/` con nomi fissi (`infografica.png`,
+   `slide.pdf`, `flashcard.md`, `podcast.m4a`) e scrivere un `README.md`.
+5. Controllare l'infografica, ridotta con `sips -Z 1600`: nelle immagini qualche scritta piccola può
+   uscire storpiata.
+
+### 8. Aggiungere l'esame a Passify
 - `src/components/UploadScreen.tsx`: nuova voce nell'array `SAMPLES` (`file`, `label`, `count`, `icon` emoji).
 - `README.md` della repo: riga nella tabella "Esami inclusi".
 - Verifica: `npx tsc --noEmit` e `npm run build`; poi `vite preview` (o dev server) e caricare l'esame
