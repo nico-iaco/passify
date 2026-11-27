@@ -1,0 +1,144 @@
+# Associate Cloud Engineer: 1062 opzioni sbagliate, 360 corrette. Colonne: parola, n. volte in sbagliate, in corrette
+## Quasi mai corrette
+value                               sbagliate  15  corrette 0
+download                            sbagliate  14  corrette 0
+on google                           sbagliate  13  corrette 0
+editor                              sbagliate  13  corrette 0
+instead of                          sbagliate  11  corrette 0
+instead                             sbagliate  11  corrette 0
+firestore                           sbagliate  11  corrette 0
+vpc to                              sbagliate   9  corrette 0
+json                                sbagliate   9  corrette 0
+file in                             sbagliate   9  corrette 0
+vpc and                             sbagliate   8  corrette 0
+projects in                         sbagliate   8  corrette 0
+project editor                      sbagliate   8  corrette 0
+label                               sbagliate   8  corrette 0
+editor role                         sbagliate   8  corrette 0
+copy the                            sbagliate   8  corrette 0
+to update                           sbagliate   7  corrette 0
+to provision                        sbagliate   7  corrette 0
+the metadata                        sbagliate   7  corrette 0
+system                              sbagliate   7  corrette 0
+ssh keys                            sbagliate   7  corrette 0
+organization and                    sbagliate   7  corrette 0
+key for                             sbagliate   7  corrette 0
+instances and                       sbagliate   7  corrette 0
+https                               sbagliate   7  corrette 0
+gpus                                sbagliate   7  corrette 0
+cpu usage                           sbagliate   7  corrette 0
+available                           sbagliate   7  corrette 0
+address and                         sbagliate   7  corrette 0
+zonal                               sbagliate   6  corrette 0
+use bigquery                        sbagliate   6  corrette 0
+to export                           sbagliate   6  corrette 0
+to deploy                           sbagliate   6  corrette 0
+the value                           sbagliate   6  corrette 0
+related                             sbagliate   6  corrette 0
+permissions to                      sbagliate   6  corrette 0
+new vpc                             sbagliate   6  corrette 0
+name of                             sbagliate   6  corrette 0
+job that                            sbagliate   6  corrette 0
+import                              sbagliate   6  corrette 0
+grant all                           sbagliate   6  corrette 0
+engine cluster                      sbagliate   6  corrette 0
+download the                        sbagliate   6  corrette 0
+day                                 sbagliate   6  corrette 0
+dataflow job                        sbagliate   6  corrette 0
+dashboard to                        sbagliate   6  corrette 0
+commands                            sbagliate   6  corrette 0
+address to                          sbagliate   6  corrette 0
+instance and                        sbagliate  16  corrette 1
+to read                             sbagliate   5  corrette 0
+to connect                          sbagliate   5  corrette 0
+the cpu                             sbagliate   5  corrette 0
+the admin                           sbagliate   5  corrette 0
+stackdriver                         sbagliate   5  corrette 0
+sink to                             sbagliate   5  corrette 0
+services in                         sbagliate   5  corrette 0
+separate                            sbagliate  15  corrette 1
+send the                            sbagliate   5  corrette 0
+scan                                sbagliate   5  corrette 0
+scale                               sbagliate   5  corrette 0
+resource manager                    sbagliate   5  corrette 0
+report                              sbagliate   5  corrette 0
+rely on                             sbagliate   5  corrette 0
+rely                                sbagliate   5  corrette 0
+regularly                           sbagliate   5  corrette 0
+public ssh                          sbagliate   5  corrette 0
+periodically                        sbagliate   5  corrette 0
+or delete                           sbagliate   5  corrette 0
+off                                 sbagliate   5  corrette 0
+manually                            sbagliate   5  corrette 0
+make                                sbagliate   5  corrette 0
+location                            sbagliate   5  corrette 0
+keys for                            sbagliate   5  corrette 0
+key in                              sbagliate   5  corrette 0
+key and                             sbagliate   5  corrette 0
+json private                        sbagliate   5  corrette 0
+ip of                               sbagliate   5  corrette 0
+installation                        sbagliate   5  corrette 0
+forward                             sbagliate   5  corrette 0
+file and                            sbagliate   5  corrette 0
+
+## Più frequenti nelle corrette
+stop                                corrette   5  sbagliate 1
+use spanner                         corrette   4  sbagliate 1
+stop the                            corrette   4  sbagliate 1
+data access                         corrette   4  sbagliate 2
+gcloud config                       corrette   7  sbagliate 4
+viewer role                         corrette   5  sbagliate 3
+marketplace                         corrette   5  sbagliate 3
+machine type                        corrette   5  sbagliate 3
+login                               corrette   5  sbagliate 3
+google group                        corrette   7  sbagliate 5
+coldline storage                    corrette   4  sbagliate 3
+cloud marketplace                   corrette   4  sbagliate 3
+autopilot cluster                   corrette   4  sbagliate 3
+alerting policy                     corrette   4  sbagliate 3
+alerting                            corrette   4  sbagliate 3
+autopilot                           corrette   6  sbagliate 5
+enable the                          corrette  10  sbagliate 10
+sub topic                           corrette   6  sbagliate 6
+group and                           corrette   6  sbagliate 6
+the required                        corrette   5  sbagliate 5
+schedule                            corrette   5  sbagliate 5
+command to                          corrette   5  sbagliate 5
+logs for                            corrette   4  sbagliate 4
+pool                                corrette   7  sbagliate 8
+node pool                           corrette   7  sbagliate 8
+destination                         corrette   7  sbagliate 8
+through the                         corrette   5  sbagliate 6
+googleapis com                      corrette   7  sbagliate 9
+googleapis                          corrette   7  sbagliate 9
+when creating                       corrette   4  sbagliate 5
+versions                            corrette   4  sbagliate 5
+the command                         corrette   4  sbagliate 5
+revision                            corrette   4  sbagliate 5
+modify the                          corrette   4  sbagliate 5
+appropriate                         corrette   9  sbagliate 12
+the appropriate                     corrette   6  sbagliate 8
+on-premises                         corrette   6  sbagliate 8
+current                             corrette   6  sbagliate 8
+to pub                              corrette   5  sbagliate 7
+the group                           corrette   5  sbagliate 7
+the custom                          corrette   5  sbagliate 7
+the current                         corrette   5  sbagliate 7
+terraform                           corrette   5  sbagliate 7
+service accounts                    corrette   5  sbagliate 7
+scope                               corrette   5  sbagliate 7
+role that                           corrette   5  sbagliate 7
+required                            corrette   7  sbagliate 10
+ingress                             corrette   6  sbagliate 9
+change the                          corrette   6  sbagliate 9
+traffic between                     corrette   4  sbagliate 6
+the destination                     corrette   4  sbagliate 6
+start                               corrette   4  sbagliate 6
+role roles                          corrette   4  sbagliate 6
+object lifecycle                    corrette   4  sbagliate 6
+modify                              corrette   4  sbagliate 6
+metric                              corrette   4  sbagliate 6
+export to                           corrette   4  sbagliate 6
+change                              corrette   7  sbagliate 11
+iam roles                           corrette  10  sbagliate 16
+type                                corrette  13  sbagliate 21

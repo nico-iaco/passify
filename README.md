@@ -41,6 +41,8 @@ La chiave viene salvata esclusivamente nel `localStorage` del browser — non vi
 | --- | --- |
 | Professional Cloud Developer | 288 |
 | Professional Cloud DevOps Engineer | 203 |
+| Generative AI Leader | 99 |
+| Associate Cloud Engineer | 354 |
 
 ---
 

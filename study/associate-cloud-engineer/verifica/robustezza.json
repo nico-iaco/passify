@@ -1,0 +1,778 @@
+{
+ "1": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "2": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "3": {
+  "key": "B",
+  "rot": [
+   "D",
+   "A"
+  ],
+  "unstable": true
+ },
+ "4": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "5": {
+  "key": "D",
+  "rot": [
+   "D",
+   "B"
+  ],
+  "unstable": true
+ },
+ "6": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "7": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "8": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "9": {
+  "key": "A",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": true
+ },
+ "10": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "11": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "13": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "14": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "15": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "16": {
+  "key": "C",
+  "rot": [
+   "B",
+   "C"
+  ],
+  "unstable": true
+ },
+ "17": {
+  "key": "A",
+  "rot": [
+   "A",
+   "B"
+  ],
+  "unstable": true
+ },
+ "18": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "19": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "20": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "21": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "22": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "23": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "24": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "25": {
+  "key": "B",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": true
+ },
+ "26": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "27": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "28": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "29": {
+  "key": "B",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": true
+ },
+ "30": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "31": {
+  "key": "B",
+  "rot": [
+   "A",
+   "D"
+  ],
+  "unstable": true
+ },
+ "32": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "33": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "34": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "35": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "36": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "37": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "38": {
+  "key": "CD",
+  "rot": [
+   "BC",
+   "CD"
+  ],
+  "unstable": true
+ },
+ "39": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "40": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "41": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "42": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "43": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "44": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "45": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "46": {
+  "key": "A",
+  "rot": [
+   "B",
+   "C"
+  ],
+  "unstable": true
+ },
+ "47": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "48": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "49": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "83": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "123": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "135": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "139": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "142": {
+  "key": "A",
+  "rot": [
+   "A",
+   "B"
+  ],
+  "unstable": true
+ },
+ "157": {
+  "key": "B",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": true
+ },
+ "166": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "183": {
+  "key": "BD",
+  "rot": [
+   "BD",
+   "BD"
+  ],
+  "unstable": false
+ },
+ "196": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "202": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "209": {
+  "key": "B",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": true
+ },
+ "216": {
+  "key": "AE",
+  "rot": [
+   "AE",
+   "AE"
+  ],
+  "unstable": false
+ },
+ "234": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "267": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "309": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "317": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "326": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "330": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "335": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "337": {
+  "key": "B",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": true
+ },
+ "338": {
+  "key": "C",
+  "rot": [
+   "D",
+   "C"
+  ],
+  "unstable": true
+ },
+ "340": {
+  "key": "C",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": true
+ },
+ "343": {
+  "key": "D",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": true
+ },
+ "344": {
+  "key": "B",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": true
+ },
+ "350": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "351": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "352": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "353": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "354": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "356": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "357": {
+  "key": "B",
+  "rot": [
+   "B",
+   "C"
+  ],
+  "unstable": true
+ },
+ "358": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "359": {
+  "key": "A",
+  "rot": [
+   "A",
+   "B"
+  ],
+  "unstable": true
+ },
+ "360": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "361": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "362": {
+  "key": "C",
+  "rot": [
+   "D",
+   "B"
+  ],
+  "unstable": true
+ },
+ "363": {
+  "key": "C",
+  "rot": [
+   "C",
+   "C"
+  ],
+  "unstable": false
+ },
+ "364": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "365": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "366": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "367": {
+  "key": "B",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": true
+ },
+ "368": {
+  "key": "B",
+  "rot": [
+   "B",
+   "B"
+  ],
+  "unstable": false
+ },
+ "369": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "370": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "371": {
+  "key": "D",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": false
+ },
+ "372": {
+  "key": "B",
+  "rot": [
+   "D",
+   "B"
+  ],
+  "unstable": true
+ },
+ "373": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "374": {
+  "key": "A",
+  "rot": [
+   "A",
+   "A"
+  ],
+  "unstable": false
+ },
+ "375": {
+  "key": "C",
+  "rot": [
+   "D",
+   "D"
+  ],
+  "unstable": true
+ }
+}

@@ -1,0 +1,6471 @@
+[
+ {
+  "id": 1,
+  "et": "T1Q169",
+  "sc": 0.72,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 20
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/47038-exam-associate-cloud-engineer-topic-1-question-169-discussion/",
+  "ets": "Your auditor wants to view your organization's use of data in Google Cloud. The auditor is",
+  "os": "An auditor for your organization wants to review how data in Google Cloud is being used. T"
+ },
+ {
+  "id": 2,
+  "et": "T1Q204",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 37,
+   "C": 9
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113114-exam-associate-cloud-engineer-topic-1-question-204-discussion/",
+  "ets": "All development (dev) teams in your organization are located in the United States. Each de",
+  "os": "All development (dev) teams in your organization are located in the United States. Each de"
+ },
+ {
+  "id": 3,
+  "et": "T1Q199",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21,
+   "D": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113246-exam-associate-cloud-engineer-topic-1-question-199-discussion/",
+  "ets": "You are building a multi-player gaming application that will store game information in a d",
+  "os": "You are building a multi-player gaming application that will store game information in a d"
+ },
+ {
+  "id": 4,
+  "et": "T1Q100",
+  "sc": 0.8,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22640-exam-associate-cloud-engineer-topic-1-question-100-discussion/",
+  "ets": "Your organization has strict requirements to control access to Google Cloud projects. You ",
+  "os": "Your organization enforces strict controls over access to Google Cloud projects. You need "
+ },
+ {
+  "id": 5,
+  "et": "T1Q63",
+  "sc": 0.98,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 32
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22725-exam-associate-cloud-engineer-topic-1-question-63-discussion/",
+  "ets": "You are hosting an application on bare-metal servers in your own data center. The applicat",
+  "os": "You are hosting an application on bare-metal servers in your own data center. The applicat"
+ },
+ {
+  "id": 6,
+  "et": "T1Q8",
+  "sc": 0.75,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 29
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/20300-exam-associate-cloud-engineer-topic-1-question-8-discussion/",
+  "ets": "You have an application that looks for its licensing server on the IP 10.0.3.21. You need ",
+  "os": "You have an application configured to locate its licensing server at the IP address 10.0.3"
+ },
+ {
+  "id": 8,
+  "et": "T1Q226",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 19
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117109-exam-associate-cloud-engineer-topic-1-question-226-discussion/",
+  "ets": "You have created an application that is packaged into a Docker image. You want to deploy t",
+  "os": "You have created an application that is packaged into a Docker image. You want to deploy t"
+ },
+ {
+  "id": 9,
+  "et": "T1Q115",
+  "sc": 0.71,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 30
+  },
+  "map": {
+   "C": "C",
+   "A": "A",
+   "D": "D",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24983-exam-associate-cloud-engineer-topic-1-question-115-discussion/",
+  "ets": "You need to reduce GCP service costs for a division of your company using the fewest possi",
+  "os": "You want to cut Google Cloud service costs for one division of your company, using as few "
+ },
+ {
+  "id": 10,
+  "et": "T1Q236",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 25,
+   "D": 6
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117120-exam-associate-cloud-engineer-topic-1-question-236-discussion/",
+  "ets": "Your team is running an on-premises ecommerce application. The application contains a comp",
+  "os": "Your team is running an on-premises ecommerce application. The application contains a comp"
+ },
+ {
+  "id": 11,
+  "et": "T1Q77",
+  "sc": 0.85,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 37,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22218-exam-associate-cloud-engineer-topic-1-question-77-discussion/",
+  "ets": "You need to provide a cost estimate for a Kubernetes cluster using the GCP pricing calcula",
+  "os": "You need to provide a cost estimate for a Kubernetes cluster using the Google Cloud Pricin"
+ },
+ {
+  "id": 13,
+  "et": "T1Q155",
+  "sc": 0.85,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 9
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28354-exam-associate-cloud-engineer-topic-1-question-155-discussion/",
+  "ets": "You are storing sensitive information in a Cloud Storage bucket. For legal reasons, you ne",
+  "os": "You are storing sensitive information in a Cloud Storage bucket. For legal reasons, you ne"
+ },
+ {
+  "id": 14,
+  "et": "T1Q251",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 17,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129837-exam-associate-cloud-engineer-topic-1-question-251-discussion/",
+  "ets": "You installed the Google Cloud CLI on your workstation and set the proxy configuration. Ho",
+  "os": "You installed the Google Cloud CLI on your workstation and set the proxy configuration. Ho"
+ },
+ {
+  "id": 15,
+  "et": "T1Q220",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 27
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117138-exam-associate-cloud-engineer-topic-1-question-220-discussion/",
+  "ets": "During a recent audit of your existing Google Cloud resources, you discovered several user",
+  "os": "During a recent audit of your existing Google Cloud resources, you discovered several user"
+ },
+ {
+  "id": 16,
+  "et": "T1Q72",
+  "sc": 0.81,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 15,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22899-exam-associate-cloud-engineer-topic-1-question-72-discussion/",
+  "ets": "You deployed a new application inside your Google Kubernetes Engine cluster using the YAML",
+  "os": "You deployed a new application inside your Google Kubernetes Engine cluster using the YAML"
+ },
+ {
+  "id": 17,
+  "et": "T1Q211",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 25,
+   "B": 5,
+   "C": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/115517-exam-associate-cloud-engineer-topic-1-question-211-discussion/",
+  "ets": "An external member of your team needs list access to compute images and disks in one of yo",
+  "os": "An external member of your team needs list access to compute images and disks in one of yo"
+ },
+ {
+  "id": 18,
+  "et": "T1Q336",
+  "sc": 0.81,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/382620-exam-associate-cloud-engineer-topic-1-question-336-discussion/",
+  "ets": "Your company plans to migrate its on-premises PostgreSQL database to Google Cloud. The wor",
+  "os": "Your company intends to migrate its on-premises PostgreSQL database to Google Cloud. The w"
+ },
+ {
+  "id": 19,
+  "et": "T1Q109",
+  "sc": 0.81,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24144-exam-associate-cloud-engineer-topic-1-question-109-discussion/",
+  "ets": "Your organization has user identities in Active Directory. Your organization wants to use ",
+  "os": "Your organization currently manages user identities in Active Directory and wants to conti"
+ },
+ {
+  "id": 20,
+  "et": "T1Q333",
+  "sc": 0.86,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/382623-exam-associate-cloud-engineer-topic-1-question-333-discussion/",
+  "ets": "Your company is active in the European Economic Area (EEA), and will adopt Google Cloud fo",
+  "os": "Your company operates in the European Economic Area (EEA) and will adopt Google Cloud for "
+ },
+ {
+  "id": 21,
+  "et": "T1Q195",
+  "sc": 0.99,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 40
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79797-exam-associate-cloud-engineer-topic-1-question-195-discussion/",
+  "ets": "You have been asked to create robust Virtual Private Network (VPN) connectivity between a ",
+  "os": "You have been asked to create robust Virtual Private Network (VPN) connectivity between a "
+ },
+ {
+  "id": 22,
+  "et": "T1Q123",
+  "sc": 0.95,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79852-exam-associate-cloud-engineer-topic-1-question-123-discussion/",
+  "ets": "You have a Compute Engine instance hosting a production application. You want to receive a",
+  "os": "You have a Compute Engine instance hosting a production application. You want to receive a"
+ },
+ {
+  "id": 23,
+  "et": "T1Q22",
+  "sc": 0.75,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 37
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/19550-exam-associate-cloud-engineer-topic-1-question-22-discussion/",
+  "ets": "You significantly changed a complex Deployment Manager template and want to confirm that t",
+  "os": "You have made substantial changes to a complex Deployment Manager template and want to ver"
+ },
+ {
+  "id": 24,
+  "et": "T1Q24",
+  "sc": 0.77,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 27,
+   "C": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16693-exam-associate-cloud-engineer-topic-1-question-24-discussion/",
+  "ets": "You have a project for your App Engine application that serves a development environment. ",
+  "os": "You currently have a project for your App Engine application that is serving a development"
+ },
+ {
+  "id": 25,
+  "et": "T1Q28",
+  "sc": 0.83,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 34
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18517-exam-associate-cloud-engineer-topic-1-question-28-discussion/",
+  "ets": "You are the project owner of a GCP project and want to delegate control to colleagues to m",
+  "os": "As the project owner of a Google Cloud project, you want to delegate control to your colle"
+ },
+ {
+  "id": 26,
+  "et": "T1Q323",
+  "sc": 1.0,
+  "key": "C",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/332603-exam-associate-cloud-engineer-topic-1-question-323-discussion/",
+  "ets": "You are implementing a company-wide standard to control SSH access for your Google Cloud p",
+  "os": "You are implementing a company-wide standard to control SSH access for your Google Cloud p"
+ },
+ {
+  "id": 27,
+  "et": "T1Q179",
+  "sc": 0.87,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 29
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51262-exam-associate-cloud-engineer-topic-1-question-179-discussion/",
+  "ets": "Your company is moving its entire workload to Compute Engine. Some servers should be acces",
+  "os": "Your company is migrating its entire workload to Compute Engine. Some servers need to be r"
+ },
+ {
+  "id": 28,
+  "et": "T1Q142",
+  "sc": 0.83,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 20,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28236-exam-associate-cloud-engineer-topic-1-question-142-discussion/",
+  "ets": "Your company has workloads running on Compute Engine and on-premises. The Google Cloud Vir",
+  "os": "Your organization runs workloads on Compute Engine as well as on-premises, and your Google"
+ },
+ {
+  "id": 29,
+  "et": "T1Q216",
+  "sc": 0.99,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 39,
+   "A": 2,
+   "C": 8
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "B": "B",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116247-exam-associate-cloud-engineer-topic-1-question-216-discussion/",
+  "ets": "You are working for a hospital that stores its medical images in an on-premises data room.",
+  "os": "You are working for a hospital that stores its medical images in an on-premises data room."
+ },
+ {
+  "id": 30,
+  "et": "T1Q262",
+  "sc": 0.99,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 15
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129847-exam-associate-cloud-engineer-topic-1-question-262-discussion/",
+  "ets": "You need to extract text from audio files by using the Speech-to-Text API. The audio files",
+  "os": "You need to extract text from audio files by using the Speech-to-Text API. The audio files"
+ },
+ {
+  "id": 31,
+  "et": "T1Q38",
+  "sc": 0.96,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 62,
+   "A": 8
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17345-exam-associate-cloud-engineer-topic-1-question-38-discussion/",
+  "ets": "You need to grant access for three users so that they can view and edit table data on a Cl",
+  "os": "You need to grant access for three users so that they can view and edit table data on a Sp"
+ },
+ {
+  "id": 32,
+  "et": "T1Q286",
+  "sc": 0.95,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 7
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303699-exam-associate-cloud-engineer-topic-1-question-286-discussion/",
+  "ets": "You are deploying an application to Cloud Run. Your application requires the use of an API",
+  "os": "You are deploying an application to Cloud Run. Your application requires the use of an API"
+ },
+ {
+  "id": 33,
+  "et": "T1Q209",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "D": 2,
+   "A": 16,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116733-exam-associate-cloud-engineer-topic-1-question-209-discussion/",
+  "ets": "Your continuous integration and delivery (CI/CD) server can\u2019t execute Google Cloud actions",
+  "os": "Your continuous integration and delivery (CI/CD) server can\u2019t execute Google Cloud actions"
+ },
+ {
+  "id": 34,
+  "et": "T1Q270",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 16
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143927-exam-associate-cloud-engineer-topic-1-question-270-discussion/",
+  "ets": "You have two Google Cloud projects: project-a with VPC vpc-a (10.0.0.0/16) and project-b w",
+  "os": "You have two Google Cloud projects: project-a with VPC vpc-a (10.0.0.0/16) and project-b w"
+ },
+ {
+  "id": 35,
+  "et": "T1Q15",
+  "sc": 0.82,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 39
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/19441-exam-associate-cloud-engineer-topic-1-question-15-discussion/",
+  "ets": "You need to run an important query in BigQuery but expect it to return a lot of records. Y",
+  "os": "You need to run an important query in BigQuery, and you expect it to return a large number"
+ },
+ {
+  "id": 36,
+  "et": "T1Q54",
+  "sc": 0.81,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 70
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18614-exam-associate-cloud-engineer-topic-1-question-54-discussion/",
+  "ets": "You are given a project with a single Virtual Private Cloud (VPC) and a single subnetwork ",
+  "os": "You have a project that contains a single Virtual Private Cloud (VPC) with a single subnet"
+ },
+ {
+  "id": 37,
+  "et": "T1Q126",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 22
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46590-exam-associate-cloud-engineer-topic-1-question-126-discussion/",
+  "ets": "You have designed a solution on Google Cloud that uses multiple Google Cloud products. You",
+  "os": "You have designed a solution on Google Cloud that uses multiple Google Cloud products. You"
+ },
+ {
+  "id": 38,
+  "et": "T1Q326",
+  "sc": 1.0,
+  "key": "CD",
+  "top": "CD",
+  "votes": {
+   "CD": 6,
+   "BC": 2
+  },
+  "map": {
+   "E": "E",
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/309775-exam-associate-cloud-engineer-topic-1-question-326-discussion/",
+  "ets": "You need to create and manage service accounts for your workloads running on Google Cloud.",
+  "os": "You need to create and manage service accounts for your workloads running on Google Cloud."
+ },
+ {
+  "id": 40,
+  "et": "T1Q245",
+  "sc": 0.95,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 28,
+   "D": 13
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117163-exam-associate-cloud-engineer-topic-1-question-245-discussion/",
+  "ets": "You want to set up a Google Kubernetes Engine cluster. Verifiable node identity and integr",
+  "os": "You want to set up a Google Kubernetes Engine cluster. Verifiable node identity and integr"
+ },
+ {
+  "id": 41,
+  "et": "T1Q295",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303706-exam-associate-cloud-engineer-topic-1-question-295-discussion/",
+  "ets": "Your company was recently impacted by a service disruption that caused multiple Dataflow j",
+  "os": "Your company was recently impacted by a service disruption that caused multiple Dataflow j"
+ },
+ {
+  "id": 42,
+  "et": "T1Q269",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/144168-exam-associate-cloud-engineer-topic-1-question-269-discussion/",
+  "ets": "You are deploying an application on Google Cloud that requires a relational database for s",
+  "os": "You are deploying an application on Google Cloud that requires a relational database for s"
+ },
+ {
+  "id": 43,
+  "et": "T1Q217",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117116-exam-associate-cloud-engineer-topic-1-question-217-discussion/",
+  "ets": "Your company has an internal application for managing transactional orders. The applicatio",
+  "os": "Your company has an internal application for managing transactional orders. The applicatio"
+ },
+ {
+  "id": 44,
+  "et": "T1Q4",
+  "sc": 0.9,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 57,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16782-exam-associate-cloud-engineer-topic-1-question-4-discussion/",
+  "ets": "You want to configure autohealing for network load balancing for a group of Compute Engine",
+  "os": "You want to configure autohealing for a group of Compute Engine instances that run across "
+ },
+ {
+  "id": 45,
+  "et": "T1Q228",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 32
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117121-exam-associate-cloud-engineer-topic-1-question-228-discussion/",
+  "ets": "You have a batch workload that runs every night and uses a large number of virtual machine",
+  "os": "You have a batch workload that runs every night and uses a large number of virtual machine"
+ },
+ {
+  "id": 46,
+  "et": "T1Q118",
+  "sc": 0.83,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 16
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24908-exam-associate-cloud-engineer-topic-1-question-118-discussion/",
+  "ets": "You need to create a custom IAM role for use with a GCP service. All permissions in the ro",
+  "os": "You need to create a custom IAM role for use with a Google Cloud service. All permissions "
+ },
+ {
+  "id": 47,
+  "et": "T1Q318",
+  "sc": 0.99,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/335872-exam-associate-cloud-engineer-topic-1-question-318-discussion/",
+  "ets": "You assist different engineering teams in deploying their infrastructure on Google Cloud. ",
+  "os": "You assist different engineering teams in deploying their infrastructure on Google Cloud. "
+ },
+ {
+  "id": 48,
+  "et": "T1Q230",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 23
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117609-exam-associate-cloud-engineer-topic-1-question-230-discussion/",
+  "ets": "Your company has a large quantity of unstructured data in different file formats. You want",
+  "os": "Your company has a large quantity of unstructured data in different file formats. You want"
+ },
+ {
+  "id": 49,
+  "et": "T1Q213",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 28
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116245-exam-associate-cloud-engineer-topic-1-question-213-discussion/",
+  "ets": "You are building a data lake on Google Cloud for your Internet of Things (IoT) application",
+  "os": "You are building a data lake on Google Cloud for your Internet of Things (IoT) application"
+ },
+ {
+  "id": 50,
+  "et": "T1Q292",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 11,
+   "A": 5
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "B": "B",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303704-exam-associate-cloud-engineer-topic-1-question-292-discussion/",
+  "ets": "Your company stores data from multiple sources that have different data storage requiremen",
+  "os": "Your company stores data from multiple sources that have different data storage requiremen"
+ },
+ {
+  "id": 51,
+  "et": "T1Q275",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "C": 3,
+   "A": 13
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143953-exam-associate-cloud-engineer-topic-1-question-275-discussion/",
+  "ets": "You have several hundred microservice applications running in a Google Kubernetes Engine (",
+  "os": "You have several hundred microservice applications running in a Google Kubernetes Engine ("
+ },
+ {
+  "id": 52,
+  "et": "T1Q80",
+  "sc": 0.89,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 35,
+   "A": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24056-exam-associate-cloud-engineer-topic-1-question-80-discussion/",
+  "ets": "You want to add a new auditor to a Google Cloud Platform project. The auditor should be al",
+  "os": "You need to add a new auditor to a Google Cloud project. This auditor should have permissi"
+ },
+ {
+  "id": 53,
+  "et": "T1Q274",
+  "sc": 0.87,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 12
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143952-exam-associate-cloud-engineer-topic-1-question-274-discussion/",
+  "ets": "You are deploying a web application using Compute Engine. You created a managed instance g",
+  "os": "You are deploying a web application using Compute Engine. You created a managed instance g"
+ },
+ {
+  "id": 54,
+  "et": "T1Q238",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 17
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117449-exam-associate-cloud-engineer-topic-1-question-238-discussion/",
+  "ets": "You are working in a team that has developed a new application that needs to be deployed o",
+  "os": "You are working in a team that has developed a new application that needs to be deployed o"
+ },
+ {
+  "id": 55,
+  "et": "T1Q221",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 23,
+   "C": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117106-exam-associate-cloud-engineer-topic-1-question-221-discussion/",
+  "ets": "Your application is running on Google Cloud in a managed instance group (MIG). You see err",
+  "os": "Your application is running on Google Cloud in a managed instance group (MIG). You see err"
+ },
+ {
+  "id": 56,
+  "et": "T1Q183",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 33
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74599-exam-associate-cloud-engineer-topic-1-question-183-discussion/",
+  "ets": "You need to manage a third-party application that will run on a Compute Engine instance. O",
+  "os": "You need to manage a third-party application that will run on a Compute Engine instance. O"
+ },
+ {
+  "id": 57,
+  "et": "T1Q264",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 15
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129848-exam-associate-cloud-engineer-topic-1-question-264-discussion/",
+  "ets": "The core business of your company is to rent out construction equipment at large scale. Al",
+  "os": "The core business of your company is to rent out construction equipment at large scale. Al"
+ },
+ {
+  "id": 58,
+  "et": "T1Q35",
+  "sc": 0.82,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 82,
+   "D": 13,
+   "A": 12,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16705-exam-associate-cloud-engineer-topic-1-question-35-discussion/",
+  "ets": "You need to create a new billing account and then link it with an existing Google Cloud Pl",
+  "os": "You need to create a new billing account and then link it to an already existing Google Cl"
+ },
+ {
+  "id": 59,
+  "et": "T1Q89",
+  "sc": 0.7,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 38,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22237-exam-associate-cloud-engineer-topic-1-question-89-discussion/",
+  "ets": "You are migrating a production-critical on-premises application that requires 96 vCPUs to ",
+  "os": "You are migrating a production-critical on-premises application that needs 96 vCPUs to car"
+ },
+ {
+  "id": 60,
+  "et": "T1Q2",
+  "sc": 0.8,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 130,
+   "A": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16611-exam-associate-cloud-engineer-topic-1-question-2-discussion/",
+  "ets": "You need to create a custom VPC with a single subnet. The subnet's range must be as large ",
+  "os": "You need to create a custom VPC that contains just one subnet, and that subnet's IP range "
+ },
+ {
+  "id": 62,
+  "et": "T1Q112",
+  "sc": 0.97,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/25016-exam-associate-cloud-engineer-topic-1-question-112-discussion/",
+  "ets": "You have a workload running on Compute Engine that is critical to your business. You want ",
+  "os": "You have a business-critical workload running on Compute Engine. You want to ensure that t"
+ },
+ {
+  "id": 63,
+  "et": "T1Q45",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 46,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16707-exam-associate-cloud-engineer-topic-1-question-45-discussion/",
+  "ets": "You recently deployed a new version of an application to App Engine and then discovered a ",
+  "os": "You recently deployed a new version of an application to App Engine and then discovered a "
+ },
+ {
+  "id": 64,
+  "et": "T1Q164",
+  "sc": 0.77,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 11
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46495-exam-associate-cloud-engineer-topic-1-question-164-discussion/",
+  "ets": "You have experimented with Google Cloud using your own credit card and expensed the costs ",
+  "os": "You have been experimenting with Google Cloud using your personal credit card, and the res"
+ },
+ {
+  "id": 65,
+  "et": "T1Q344",
+  "sc": 0.78,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "C": "C",
+   "A": "A",
+   "B": "B",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414926-exam-associate-cloud-engineer-topic-1-question-344-discussion/",
+  "ets": "You are managing logging for your organization by aggregating logs into a centralized Goog",
+  "os": "You manage your organization's logging by aggregating logs into a centralized Google Cloud"
+ },
+ {
+  "id": 66,
+  "et": "T1Q281",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 6,
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/152557-exam-associate-cloud-engineer-topic-1-question-281-discussion/",
+  "ets": "You need to deploy a third-party software application onto a single Compute Engine VM inst",
+  "os": "You need to deploy a third-party software application onto a single Compute Engine VM inst"
+ },
+ {
+  "id": 67,
+  "et": "T1Q297",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 8
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303707-exam-associate-cloud-engineer-topic-1-question-297-discussion/",
+  "ets": "You have an application running inside a Compute Engine instance. You want to provide the ",
+  "os": "You have an application running inside a Compute Engine instance. You want to provide the "
+ },
+ {
+  "id": 68,
+  "et": "T1Q300",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303708-exam-associate-cloud-engineer-topic-1-question-300-discussion/",
+  "ets": "Your company is seeking a scalable solution to retain and explore application logs hosted ",
+  "os": "Your company is seeking a scalable solution to retain and explore application logs hosted "
+ },
+ {
+  "id": 69,
+  "et": "T1Q303",
+  "sc": 0.87,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "B": 9,
+   "C": 13
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303710-exam-associate-cloud-engineer-topic-1-question-303-discussion/",
+  "ets": "You are managing the security configuration of your company\u2019s Google Cloud organization. T",
+  "os": "You are managing the security configuration of your company\u2019s Google Cloud organization. T"
+ },
+ {
+  "id": 70,
+  "et": "T1Q39",
+  "sc": 0.72,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 19
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/19613-exam-associate-cloud-engineer-topic-1-question-39-discussion/",
+  "ets": "You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it alwa",
+  "os": "You have just created a new Google Kubernetes Engine (GKE) cluster and you want to guarant"
+ },
+ {
+  "id": 72,
+  "et": "T1Q191",
+  "sc": 0.94,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 20,
+   "C": 6,
+   "D": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74496-exam-associate-cloud-engineer-topic-1-question-191-discussion/",
+  "ets": "You have deployed multiple Linux instances on Compute Engine. You plan on adding more inst",
+  "os": "You have deployed multiple Linux instances on Compute Engine. You plan on adding more inst"
+ },
+ {
+  "id": 73,
+  "et": "T1Q218",
+  "sc": 0.76,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "D": 16,
+   "B": 34,
+   "A": 12
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116249-exam-associate-cloud-engineer-topic-1-question-218-discussion/",
+  "ets": "Your company runs one batch process in an on-premises server that takes around 30 hours to",
+  "os": "A company runs a single batch process on an on-premises server that takes approximately 30"
+ },
+ {
+  "id": 74,
+  "et": "T1Q57",
+  "sc": 0.82,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 45
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18197-exam-associate-cloud-engineer-topic-1-question-57-discussion/",
+  "ets": "You have a web application deployed as a managed instance group. You have a new version of",
+  "os": "Your web application is deployed as a managed instance group and is currently serving live"
+ },
+ {
+  "id": 75,
+  "et": "T1Q280",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/152655-exam-associate-cloud-engineer-topic-1-question-280-discussion/",
+  "ets": "You use Cloud Logging to capture application logs. You now need to use SQL to analyze the ",
+  "os": "You use Cloud Logging to capture application logs. You now need to use SQL to analyze the "
+ },
+ {
+  "id": 76,
+  "et": "T1Q246",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 28
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117164-exam-associate-cloud-engineer-topic-1-question-246-discussion/",
+  "ets": "Your company wants to migrate their on-premises workloads to Google Cloud. The current on-",
+  "os": "Your company wants to migrate their on-premises workloads to Google Cloud. The current on-"
+ },
+ {
+  "id": 77,
+  "et": "T1Q5",
+  "sc": 0.81,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "B": 2,
+   "A": 48,
+   "C": 16,
+   "D": 40
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/20299-exam-associate-cloud-engineer-topic-1-question-5-discussion/",
+  "ets": "You are using multiple configurations for gcloud. You want to review the configured Kubern",
+  "os": "You are working with multiple gcloud configurations. You need to review the Kubernetes Eng"
+ },
+ {
+  "id": 78,
+  "et": "T1Q86",
+  "sc": 0.81,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 53
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22028-exam-associate-cloud-engineer-topic-1-question-86-discussion/",
+  "ets": "You need to verify that a Google Cloud Platform service account was created at a particula",
+  "os": "You need to confirm the exact time a Google Cloud service account was created. What should"
+ },
+ {
+  "id": 79,
+  "et": "T1Q129",
+  "sc": 0.84,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "B": 7,
+   "A": 71,
+   "C": 55
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/27827-exam-associate-cloud-engineer-topic-1-question-129-discussion/",
+  "ets": "Your Dataproc cluster runs in a single Virtual Private Cloud (VPC) network in a single sub",
+  "os": "You have a Dataproc cluster deployed in a single Virtual Private Cloud (VPC) network, with"
+ },
+ {
+  "id": 80,
+  "et": "T1Q93",
+  "sc": 0.92,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 48
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22731-exam-associate-cloud-engineer-topic-1-question-93-discussion/",
+  "ets": "Your company uses BigQuery for data warehousing. Over time, many different business units ",
+  "os": "Your company uses BigQuery for data warehousing. Over time, many different business units "
+ },
+ {
+  "id": 81,
+  "et": "T1Q50",
+  "sc": 0.82,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 65,
+   "B": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17484-exam-associate-cloud-engineer-topic-1-question-50-discussion/",
+  "ets": "You have production and test workloads that you want to deploy on Compute Engine. Producti",
+  "os": "You need to deploy production and test workloads on Compute Engine. The production VMs mus"
+ },
+ {
+  "id": 84,
+  "et": "T1Q210",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 26,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/115514-exam-associate-cloud-engineer-topic-1-question-210-discussion/",
+  "ets": "Your team is using Linux instances on Google Cloud. You need to ensure that your team logs",
+  "os": "Your team is using Linux instances on Google Cloud. You need to ensure that your team logs"
+ },
+ {
+  "id": 85,
+  "et": "T1Q173",
+  "sc": 0.82,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 30,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51203-exam-associate-cloud-engineer-topic-1-question-173-discussion/",
+  "ets": "You are developing a financial trading application that will be used globally. Data is sto",
+  "os": "You are building a globally used financial trading application. The application data is st"
+ },
+ {
+  "id": 86,
+  "et": "T1Q194",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 32
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79796-exam-associate-cloud-engineer-topic-1-question-194-discussion/",
+  "ets": "You have been asked to set up the billing configuration for a new Google Cloud customer. Y",
+  "os": "You have been asked to set up the billing configuration for a new Google Cloud customer. Y"
+ },
+ {
+  "id": 87,
+  "et": "T1Q135",
+  "sc": 0.93,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 12
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28091-exam-associate-cloud-engineer-topic-1-question-135-discussion/",
+  "ets": "You need to create a Compute Engine instance in a new project that doesn't exist yet. What",
+  "os": "You need to create a Compute Engine instance in a new project that doesn't exist yet. What"
+ },
+ {
+  "id": 88,
+  "et": "T1Q91",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 33
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22127-exam-associate-cloud-engineer-topic-1-question-91-discussion/",
+  "ets": "Your company's infrastructure is on-premises, but all machines are running at maximum capa",
+  "os": "Your company's infrastructure is on-premises, but all machines are running at maximum capa"
+ },
+ {
+  "id": 89,
+  "et": "T1Q193",
+  "sc": 0.98,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 43,
+   "D": 20,
+   "C": 9,
+   "A": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79798-exam-associate-cloud-engineer-topic-1-question-193-discussion/",
+  "ets": "You are using Data Studio to visualize a table from your data warehouse that is built on t",
+  "os": "You are using Data Studio to visualize a table from your data warehouse that is built on t"
+ },
+ {
+  "id": 90,
+  "et": "T1Q81",
+  "sc": 0.73,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 34
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22026-exam-associate-cloud-engineer-topic-1-question-81-discussion/",
+  "ets": "You are operating a Google Kubernetes Engine (GKE) cluster for your company where differen",
+  "os": "You manage a Google Kubernetes Engine (GKE) cluster that is shared by different teams for "
+ },
+ {
+  "id": 91,
+  "et": "T1Q11",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 66,
+   "C": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74372-exam-associate-cloud-engineer-topic-1-question-11-discussion/",
+  "ets": "You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications wil",
+  "os": "You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications wil"
+ },
+ {
+  "id": 92,
+  "et": "T1Q201",
+  "sc": 0.98,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 25
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113247-exam-associate-cloud-engineer-topic-1-question-201-discussion/",
+  "ets": "Your company has multiple projects linked to a single billing account in Google Cloud. You",
+  "os": "Your company has multiple projects linked to a single billing account in Google Cloud. You"
+ },
+ {
+  "id": 93,
+  "et": "T1Q79",
+  "sc": 0.85,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 20
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22222-exam-associate-cloud-engineer-topic-1-question-79-discussion/",
+  "ets": "You need to enable traffic between multiple groups of Compute Engine instances that are cu",
+  "os": "You need to enable traffic between multiple groups of Compute Engine instances that curren"
+ },
+ {
+  "id": 94,
+  "et": "T1Q273",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "D": 2,
+   "C": 17
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143951-exam-associate-cloud-engineer-topic-1-question-273-discussion/",
+  "ets": "You are a Google Cloud organization administrator. You need to configure organization poli",
+  "os": "You are a Google Cloud organization administrator. You need to configure organization poli"
+ },
+ {
+  "id": 95,
+  "et": "T1Q334",
+  "sc": 0.96,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/381922-exam-associate-cloud-engineer-topic-1-question-334-discussion/",
+  "ets": "You are deploying a large, multi-tiered application with more than 1,000 IP addresses in a",
+  "os": "You are deploying a large, multi-tiered application with more than 1,000 IP addresses in a"
+ },
+ {
+  "id": 96,
+  "et": "T1Q102",
+  "sc": 0.9,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 40,
+   "B": 4,
+   "A": 35,
+   "C": 2
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22304-exam-associate-cloud-engineer-topic-1-question-102-discussion/",
+  "ets": "Your organization needs to grant users access to query datasets in BigQuery but prevent th",
+  "os": "Your organization needs to grant users access so they can query datasets in BigQuery, but "
+ },
+ {
+  "id": 97,
+  "et": "T1Q242",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "A": 2,
+   "C": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117267-exam-associate-cloud-engineer-topic-1-question-242-discussion/",
+  "ets": "You recently discovered that your developers are using many service account keys during th",
+  "os": "You recently discovered that your developers are using many service account keys during th"
+ },
+ {
+  "id": 98,
+  "et": "T1Q148",
+  "sc": 0.83,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 13
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28240-exam-associate-cloud-engineer-topic-1-question-148-discussion/",
+  "ets": "A colleague handed over a Google Cloud Platform project for you to maintain. As part of a ",
+  "os": "You have taken over maintenance of a Google Cloud project from a colleague. As part of a s"
+ },
+ {
+  "id": 99,
+  "et": "T1Q34",
+  "sc": 0.61,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 16
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16703-exam-associate-cloud-engineer-topic-1-question-34-discussion/",
+  "ets": "You want to verify the IAM users and roles assigned within a GCP project named my-project.",
+  "os": "You need to check the IAM users and roles that have been assigned within a Google Cloud pr"
+ },
+ {
+  "id": 100,
+  "et": "T1Q301",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303709-exam-associate-cloud-engineer-topic-1-question-301-discussion/",
+  "ets": "You are deploying an application to Google Kubernetes Engine (GKE). The application needs ",
+  "os": "You are deploying an application to Google Kubernetes Engine (GKE). The application needs "
+ },
+ {
+  "id": 101,
+  "et": "T1Q141",
+  "sc": 0.83,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "D": 7,
+   "A": 13
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28468-exam-associate-cloud-engineer-topic-1-question-141-discussion/",
+  "ets": "You created several resources in multiple Google Cloud projects. All projects are linked t",
+  "os": "You have created several resources across multiple Google Cloud projects, and each project"
+ },
+ {
+  "id": 102,
+  "et": "T1Q247",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "A": 5,
+   "D": 16
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/130019-exam-associate-cloud-engineer-topic-1-question-247-discussion/",
+  "ets": "Your company is moving its continuous integration and delivery (CI/CD) pipeline to Compute",
+  "os": "Your company is moving its continuous integration and delivery (CI/CD) pipeline to Compute"
+ },
+ {
+  "id": 103,
+  "et": "T1Q166",
+  "sc": 0.95,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 15
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46417-exam-associate-cloud-engineer-topic-1-question-166-discussion/",
+  "ets": "Your web application has been running successfully on Cloud Run for Anthos. You want to ev",
+  "os": "Your web application has been running successfully on Cloud Run. You want to evaluate an u"
+ },
+ {
+  "id": 104,
+  "et": "T1Q347",
+  "sc": 0.8,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414929-exam-associate-cloud-engineer-topic-1-question-347-discussion/",
+  "ets": "You manage IAM policies for your organization\u2019s Google Cloud project. A new operations tea",
+  "os": "You administer IAM policies for your organization\u2019s Google Cloud project. A new operations"
+ },
+ {
+  "id": 105,
+  "et": "T1Q285",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303698-exam-associate-cloud-engineer-topic-1-question-285-discussion/",
+  "ets": "Your organization is migrating to Google Cloud. You want only users with company-issued Go",
+  "os": "Your organization is migrating to Google Cloud. You want only users with company-issued Go"
+ },
+ {
+  "id": 106,
+  "et": "T1Q268",
+  "sc": 0.94,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 15
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/144167-exam-associate-cloud-engineer-topic-1-question-268-discussion/",
+  "ets": "Your team is building a website that handles votes from a large user population. The incom",
+  "os": "Your team is building a website that handles votes from a large user population. The incom"
+ },
+ {
+  "id": 107,
+  "et": "T1Q143",
+  "sc": 0.75,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 29,
+   "A": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28465-exam-associate-cloud-engineer-topic-1-question-143-discussion/",
+  "ets": "Your team maintains the infrastructure for your organization. The current infrastructure r",
+  "os": "Your team is responsible for managing your organization's infrastructure, and the existing"
+ },
+ {
+  "id": 108,
+  "et": "T1Q282",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 9
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/152558-exam-associate-cloud-engineer-topic-1-question-282-discussion/",
+  "ets": "You have a VM instance running in a VPC with single-stack subnets. You need to ensure that",
+  "os": "You have a VM instance running in a VPC with single-stack subnets. You need to ensure that"
+ },
+ {
+  "id": 109,
+  "et": "T1Q294",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/313918-exam-associate-cloud-engineer-topic-1-question-294-discussion/",
+  "ets": "You are managing a fleet of Compute Engine Linux instances in a Google Cloud project. Your",
+  "os": "You are managing a fleet of Compute Engine Linux instances in a Google Cloud project. Your"
+ },
+ {
+  "id": 110,
+  "et": "T1Q64",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 26,
+   "B": 15
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22259-exam-associate-cloud-engineer-topic-1-question-64-discussion/",
+  "ets": "You want to deploy an application on Cloud Run that processes messages from a Cloud Pub/Su",
+  "os": "You want to deploy an application on Cloud Run that processes messages from a Pub/Sub topi"
+ },
+ {
+  "id": 111,
+  "et": "T1Q293",
+  "sc": 0.61,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303705-exam-associate-cloud-engineer-topic-1-question-293-discussion/",
+  "ets": "You work for a financial services company that operates as a stock market broker. Your com",
+  "os": "You work for a financial services company that operates as a stock market broker. Your com"
+ },
+ {
+  "id": 112,
+  "et": "T1Q314",
+  "sc": 0.97,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 4
+  },
+  "map": {
+   "A": "A",
+   "D": "D",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/332624-exam-associate-cloud-engineer-topic-1-question-314-discussion/",
+  "ets": "You are deploying an application to Google Kubernetes Engine (GKE) that needs to call an e",
+  "os": "You are deploying an application to Google Kubernetes Engine (GKE) that needs to call an e"
+ },
+ {
+  "id": 113,
+  "et": "T1Q46",
+  "sc": 0.67,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 46,
+   "A": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16708-exam-associate-cloud-engineer-topic-1-question-46-discussion/",
+  "ets": "You deployed an App Engine application using gcloud app deploy, but it did not deploy to t",
+  "os": "After deploying an App Engine application with `gcloud app deploy`, you discover it was de"
+ },
+ {
+  "id": 114,
+  "et": "T1Q160",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 13
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46581-exam-associate-cloud-engineer-topic-1-question-160-discussion/",
+  "ets": "Your company wants to standardize the creation and management of multiple Google Cloud res",
+  "os": "Your company wants to standardize the creation and management of multiple Google Cloud res"
+ },
+ {
+  "id": 115,
+  "et": "T1Q26",
+  "sc": 0.81,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 73,
+   "B": 2,
+   "A": 2
+  },
+  "map": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16698-exam-associate-cloud-engineer-topic-1-question-26-discussion/",
+  "ets": "You need to set up permissions for a set of Compute Engine instances to enable them to wri",
+  "os": "You need to configure permissions for a group of Compute Engine instances so that they can"
+ },
+ {
+  "id": 116,
+  "et": "T1Q180",
+  "sc": 0.98,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 31,
+   "B": 4,
+   "C": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74600-exam-associate-cloud-engineer-topic-1-question-180-discussion/",
+  "ets": "You have just created a new project which will be used to deploy a globally distributed ap",
+  "os": "You have just created a new project which will be used to deploy a globally distributed ap"
+ },
+ {
+  "id": 119,
+  "et": "T1Q71",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 22
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22192-exam-associate-cloud-engineer-topic-1-question-71-discussion/",
+  "ets": "You are using Container Registry to centrally store your company's container images in a s",
+  "os": "You are using Container Registry to centrally store your company's container images in a s"
+ },
+ {
+  "id": 120,
+  "et": "T1Q52",
+  "sc": 0.88,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 83,
+   "A": 2,
+   "D": 24
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18612-exam-associate-cloud-engineer-topic-1-question-52-discussion/",
+  "ets": "Your company has a Google Cloud Platform project that uses BigQuery for data warehousing. ",
+  "os": "Your company has a Google Cloud project that uses BigQuery for data warehousing. Your data"
+ },
+ {
+  "id": 122,
+  "et": "T1Q149",
+  "sc": 0.64,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 12
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28242-exam-associate-cloud-engineer-topic-1-question-149-discussion/",
+  "ets": "You are running multiple VPC-native Google Kubernetes Engine clusters in the same subnet. ",
+  "os": "You are operating several VPC-native Google Kubernetes Engine (GKE) clusters that all shar"
+ },
+ {
+  "id": 124,
+  "et": "T1Q59",
+  "sc": 0.86,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 163,
+   "A": 114,
+   "D": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17333-exam-associate-cloud-engineer-topic-1-question-59-discussion/",
+  "ets": "You are the organization and billing administrator for your company. The engineering team ",
+  "os": "You are the organization and billing administrator for your company. The engineering team "
+ },
+ {
+  "id": 125,
+  "et": "T1Q289",
+  "sc": 0.96,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 11,
+   "B": 8
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/156756-exam-associate-cloud-engineer-topic-1-question-289-discussion/",
+  "ets": "You are the Organization Administrator for your company's Google Cloud resources. Your com",
+  "os": "You are the Organization Administrator for your company's Google Cloud resources. Your com"
+ },
+ {
+  "id": 126,
+  "et": "T1Q90",
+  "sc": 0.85,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 28
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22961-exam-associate-cloud-engineer-topic-1-question-90-discussion/",
+  "ets": "You want to configure a solution for archiving data in a Cloud Storage bucket. The solutio",
+  "os": "You need to design an archiving solution for data stored in a Cloud Storage bucket, and it"
+ },
+ {
+  "id": 128,
+  "et": "T1Q43",
+  "sc": 0.74,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 36
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21292-exam-associate-cloud-engineer-topic-1-question-43-discussion/",
+  "ets": "You are running an application on multiple virtual machines within a managed instance grou",
+  "os": "You are running an application across multiple virtual machine instances within a managed "
+ },
+ {
+  "id": 129,
+  "et": "T1Q151",
+  "sc": 0.95,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 38,
+   "D": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28244-exam-associate-cloud-engineer-topic-1-question-151-discussion/",
+  "ets": "You are working with a user to set up an application in a new VPC behind a firewall. The u",
+  "os": "You are working with a user to set up an application in a new VPC that sits behind a firew"
+ },
+ {
+  "id": 130,
+  "et": "T1Q171",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 16
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46865-exam-associate-cloud-engineer-topic-1-question-171-discussion/",
+  "ets": "You are working with a Cloud SQL MySQL database at your company. You need to retain a mont",
+  "os": "You are working with a Cloud SQL for MySQL database at your company. You need to retain a "
+ },
+ {
+  "id": 131,
+  "et": "T1Q162",
+  "sc": 0.76,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 19
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46958-exam-associate-cloud-engineer-topic-1-question-162-discussion/",
+  "ets": "Your company has embraced a hybrid cloud strategy where some of the applications are deplo",
+  "os": "Your organization follows a hybrid cloud strategy, with some applications running on Googl"
+ },
+ {
+  "id": 133,
+  "et": "T1Q127",
+  "sc": 0.62,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 52,
+   "A": 25
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24898-exam-associate-cloud-engineer-topic-1-question-127-discussion/",
+  "ets": "You have an application that receives SSL-encrypted TCP traffic on port 443. Clients for t",
+  "os": "You run an application that accepts SSL-encrypted TCP traffic on port 443. Its clients are"
+ },
+ {
+  "id": 134,
+  "et": "T1Q82",
+  "sc": 0.78,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 43,
+   "C": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22525-exam-associate-cloud-engineer-topic-1-question-82-discussion/",
+  "ets": "Your VMs are running in a subnet that has a subnet mask of 255.255.255.240. The current su",
+  "os": "You have virtual machines running in a subnet whose subnet mask is 255.255.255.240. This s"
+ },
+ {
+  "id": 136,
+  "et": "T1Q219",
+  "sc": 0.99,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 26
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116899-exam-associate-cloud-engineer-topic-1-question-219-discussion/",
+  "ets": "You are planning to migrate the following on-premises data management solutions to Google ",
+  "os": "You are planning to migrate the following on-premises data management solutions to Google "
+ },
+ {
+  "id": 137,
+  "et": "T1Q254",
+  "sc": 0.92,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 20
+  },
+  "map": {
+   "A": "A",
+   "D": "D",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129840-exam-associate-cloud-engineer-topic-1-question-254-discussion/",
+  "ets": "Your company's security vulnerability management policy wants a member of the security tea",
+  "os": "Your company's security vulnerability management policy wants a member of the security tea"
+ },
+ {
+  "id": 138,
+  "et": "T1Q212",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 24,
+   "D": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/115518-exam-associate-cloud-engineer-topic-1-question-212-discussion/",
+  "ets": "You are running a web application on Cloud Run for a few hundred users. Some of your users",
+  "os": "You are running a web application on Cloud Run for a few hundred users. Some of your users"
+ },
+ {
+  "id": 139,
+  "et": "T1Q198",
+  "sc": 0.95,
+  "key": "A",
+  "top": "B",
+  "votes": {
+   "B": 36,
+   "A": 7
+  },
+  "map": {
+   "A": "B",
+   "D": "D",
+   "C": "C",
+   "B": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113199-exam-associate-cloud-engineer-topic-1-question-198-discussion/",
+  "ets": "You deployed an application on a managed instance group in Compute Engine. The application",
+  "os": "You deployed an application on a managed instance group in Compute Engine. The application"
+ },
+ {
+  "id": 140,
+  "et": "T1Q305",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303711-exam-associate-cloud-engineer-topic-1-question-305-discussion/",
+  "ets": "You are planning to deploy an application to Google Cloud. Your application processes asyn",
+  "os": "You are planning to deploy an application to Google Cloud. Your application processes asyn"
+ },
+ {
+  "id": 141,
+  "et": "T1Q33",
+  "sc": 0.82,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "B": 42,
+   "A": 57
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/20724-exam-associate-cloud-engineer-topic-1-question-33-discussion/",
+  "ets": "You are deploying an application to a Compute Engine VM in a managed instance group. The a",
+  "os": "You are deploying an application to a Compute Engine VM that belongs to a managed instance"
+ },
+ {
+  "id": 142,
+  "et": "T1Q322",
+  "sc": 0.95,
+  "key": "A",
+  "top": "B",
+  "votes": {
+   "B": 7,
+   "A": 6
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/312511-exam-associate-cloud-engineer-topic-1-question-322-discussion/",
+  "ets": "Your digital media company stores a large number of video files on-premises. Each video fi",
+  "os": "Your digital media company stores a large number of video files on-premises. Each video fi"
+ },
+ {
+  "id": 143,
+  "et": "T1Q341",
+  "sc": 0.87,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414923-exam-associate-cloud-engineer-topic-1-question-341-discussion/",
+  "ets": "You are managing Google Cloud infrastructure with Terraform. The Terraform configuration f",
+  "os": "You manage Google Cloud infrastructure using Terraform, and the Terraform configuration fi"
+ },
+ {
+  "id": 144,
+  "et": "T1Q16",
+  "sc": 0.89,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 31
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16684-exam-associate-cloud-engineer-topic-1-question-16-discussion/",
+  "ets": "You have a single binary application that you want to run on Google Cloud Platform. You de",
+  "os": "You have a single binary application that you want to run on Google Cloud. You have decide"
+ },
+ {
+  "id": 145,
+  "et": "T1Q56",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 24
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17514-exam-associate-cloud-engineer-topic-1-question-56-discussion/",
+  "ets": "You have a website hosted on App Engine standard environment. You want 1% of your users to",
+  "os": "You have a website hosted on the App Engine standard environment. You want 1% of your user"
+ },
+ {
+  "id": 146,
+  "et": "T1Q243",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 34,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117253-exam-associate-cloud-engineer-topic-1-question-243-discussion/",
+  "ets": "Your company is running a three-tier web application on virtual machines that use a MySQL ",
+  "os": "Your company is running a three-tier web application on virtual machines that use a MySQL "
+ },
+ {
+  "id": 147,
+  "et": "T1Q47",
+  "sc": 0.82,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 60
+  },
+  "map": {
+   "C": "C",
+   "A": "A",
+   "B": "B",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46362-exam-associate-cloud-engineer-topic-1-question-47-discussion/",
+  "ets": "You want to configure 10 Compute Engine instances for availability when maintenance occurs",
+  "os": "You need to configure 10 Compute Engine instances so they remain available during maintena"
+ },
+ {
+  "id": 149,
+  "et": "T1Q298",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/334886-exam-associate-cloud-engineer-topic-1-question-298-discussion/",
+  "ets": "You have an application that is currently processing transactions by using a group of mana",
+  "os": "You have an application that is currently processing transactions by using a group of mana"
+ },
+ {
+  "id": 150,
+  "et": "T1Q244",
+  "sc": 0.97,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 26,
+   "B": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117440-exam-associate-cloud-engineer-topic-1-question-244-discussion/",
+  "ets": "You have a Bigtable instance that consists of three nodes that store personally identifiab",
+  "os": "You have a Bigtable instance that consists of three nodes that store personally identifiab"
+ },
+ {
+  "id": 151,
+  "et": "T1Q296",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/313919-exam-associate-cloud-engineer-topic-1-question-296-discussion/",
+  "ets": "Your company is modernizing its applications and refactoring them to containerized microse",
+  "os": "Your company is modernizing its applications and refactoring them to containerized microse"
+ },
+ {
+  "id": 152,
+  "et": "T1Q261",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 10
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129846-exam-associate-cloud-engineer-topic-1-question-261-discussion/",
+  "ets": "You are in charge of provisioning access for all Google Cloud users in your organization. ",
+  "os": "You are in charge of provisioning access for all Google Cloud users in your organization. "
+ },
+ {
+  "id": 153,
+  "et": "T1Q1",
+  "sc": 0.85,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 153,
+   "D": 8,
+   "B": 2
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21681-exam-associate-cloud-engineer-topic-1-question-1-discussion/",
+  "ets": "Every employee of your company has a Google account. Your operational team needs to manage",
+  "os": "Every employee in your company has a Google account. Your operations team must manage a la"
+ },
+ {
+  "id": 154,
+  "et": "T1Q161",
+  "sc": 0.9,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 42,
+   "A": 2
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/75144-exam-associate-cloud-engineer-topic-1-question-161-discussion/",
+  "ets": "You are performing a monthly security check of your Google Cloud environment and want to k",
+  "os": "You are performing a monthly security check of your Google Cloud environment and want to k"
+ },
+ {
+  "id": 155,
+  "et": "T1Q287",
+  "sc": 0.98,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 6
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303700-exam-associate-cloud-engineer-topic-1-question-287-discussion/",
+  "ets": "Your company uses a multi-cloud strategy that includes Google Cloud. You want to centraliz",
+  "os": "Your company uses a multi-cloud strategy that includes Google Cloud. You want to centraliz"
+ },
+ {
+  "id": 156,
+  "et": "T1Q207",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113120-exam-associate-cloud-engineer-topic-1-question-207-discussion/",
+  "ets": "Your team wants to deploy a specific content management system (CMS) solution to Google Cl",
+  "os": "Your team wants to deploy a specific content management system (CMS) solution to Google Cl"
+ },
+ {
+  "id": 157,
+  "et": "T1Q311",
+  "sc": 0.83,
+  "key": "B",
+  "top": "A",
+  "votes": {
+   "A": 10,
+   "B": 8
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/305693-exam-associate-cloud-engineer-topic-1-question-311-discussion/",
+  "ets": "You need to migrate multiple PostgreSQL databases from your on-premises data center to Goo",
+  "os": "You need to migrate multiple PostgreSQL databases from your on-premises data center to Goo"
+ },
+ {
+  "id": 158,
+  "et": "T1Q178",
+  "sc": 0.88,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 23
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51261-exam-associate-cloud-engineer-topic-1-question-178-discussion/",
+  "ets": "You are managing a project for the Business Intelligence (BI) department in your company. ",
+  "os": "You are managing a project for the Business Intelligence (BI) department in your company. "
+ },
+ {
+  "id": 159,
+  "et": "T1Q96",
+  "sc": 0.6,
+  "key": "BE",
+  "top": "BE",
+  "votes": {
+   "AB": 2,
+   "BE": 33,
+   "E": 2,
+   "D": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "E": "E"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24255-exam-associate-cloud-engineer-topic-1-question-96-discussion/",
+  "ets": "Your company implemented BigQuery as an enterprise data warehouse. Users from multiple bus",
+  "os": "Your organization has adopted BigQuery as its enterprise data warehouse, and users across "
+ },
+ {
+  "id": 160,
+  "et": "T1Q197",
+  "sc": 0.82,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "C": 29,
+   "A": 49,
+   "B": 16
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/80022-exam-associate-cloud-engineer-topic-1-question-197-discussion/",
+  "ets": "Your organization has three existing Google Cloud projects. You need to bill the Marketing",
+  "os": "Your organization already has three Google Cloud projects. You must charge the Marketing d"
+ },
+ {
+  "id": 161,
+  "et": "T1Q36",
+  "sc": 0.79,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 13
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/23110-exam-associate-cloud-engineer-topic-1-question-36-discussion/",
+  "ets": "You have one project called proj-sa where you manage all your service accounts. You want t",
+  "os": "You manage all your service accounts in a single project named proj-sa. You want to use a "
+ },
+ {
+  "id": 162,
+  "et": "T1Q239",
+  "sc": 0.97,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "C": 2,
+   "B": 26
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117153-exam-associate-cloud-engineer-topic-1-question-239-discussion/",
+  "ets": "You are responsible for a web application on Compute Engine. You want your support team to",
+  "os": "You are responsible for a web application on Compute Engine. You want your support team to"
+ },
+ {
+  "id": 163,
+  "et": "T1Q68",
+  "sc": 0.83,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 21,
+   "B": 2
+  },
+  "map": {
+   "A": "A",
+   "D": "D",
+   "B": "B",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/47413-exam-associate-cloud-engineer-topic-1-question-68-discussion/",
+  "ets": "For analysis purposes, you need to send all the logs from all of your Compute Engine insta",
+  "os": "You need to send all logs from all of your Compute Engine instances to a BigQuery dataset "
+ },
+ {
+  "id": 164,
+  "et": "T1Q349",
+  "sc": 0.86,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414931-exam-associate-cloud-engineer-topic-1-question-349-discussion/",
+  "ets": "You are responsible for Google Cloud governance at your company and recently implemented a",
+  "os": "You are responsible for Google Cloud governance at your company and recently introduced a "
+ },
+ {
+  "id": 165,
+  "et": "T1Q291",
+  "sc": 0.94,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303703-exam-associate-cloud-engineer-topic-1-question-291-discussion/",
+  "ets": "You are planning to migrate your containerized workloads to Google Kubernetes Engine (GKE)",
+  "os": "You are planning to migrate your containerized workloads to Google Kubernetes Engine (GKE)"
+ },
+ {
+  "id": 167,
+  "et": "T1Q85",
+  "sc": 0.81,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 25
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22875-exam-associate-cloud-engineer-topic-1-question-85-discussion/",
+  "ets": "You have a large 5-TB AVRO file stored in a Cloud Storage bucket. Your analysts are profic",
+  "os": "You have a large 5-TB AVRO file stored in a Cloud Storage bucket. Your analysts know only "
+ },
+ {
+  "id": 168,
+  "et": "T1Q308",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/334881-exam-associate-cloud-engineer-topic-1-question-308-discussion/",
+  "ets": "Your company has a rapidly growing social media platform and a user base primarily located",
+  "os": "Your company has a rapidly growing social media platform and a user base primarily located"
+ },
+ {
+  "id": 169,
+  "et": "T1Q222",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117104-exam-associate-cloud-engineer-topic-1-question-222-discussion/",
+  "ets": "You want to permanently delete a Pub/Sub topic managed by Config Connector in your Google ",
+  "os": "You want to permanently delete a Pub/Sub topic managed by Config Connector in your Google "
+ },
+ {
+  "id": 170,
+  "et": "T1Q53",
+  "sc": 0.73,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 13
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46621-exam-associate-cloud-engineer-topic-1-question-53-discussion/",
+  "ets": "Your company has a 3-tier solution running on Compute Engine. The configuration of the cur",
+  "os": "Your company runs a 3-tier solution on Compute Engine. The current infrastructure configur"
+ },
+ {
+  "id": 171,
+  "et": "T1Q272",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 12
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143949-exam-associate-cloud-engineer-topic-1-question-272-discussion/",
+  "ets": "Your company requires that Google Cloud products are created with a specific configuration",
+  "os": "Your company requires that Google Cloud products are created with a specific configuration"
+ },
+ {
+  "id": 172,
+  "et": "T1Q110",
+  "sc": 0.78,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 17,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22733-exam-associate-cloud-engineer-topic-1-question-110-discussion/",
+  "ets": "You have successfully created a development environment in a project for an application. T",
+  "os": "You have successfully set up a development environment within a project for an application"
+ },
+ {
+  "id": 173,
+  "et": "T1Q172",
+  "sc": 0.76,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 23
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46607-exam-associate-cloud-engineer-topic-1-question-172-discussion/",
+  "ets": "You are monitoring an application and receive user feedback that a specific error is spiki",
+  "os": "You are monitoring an application and receive user feedback that a particular error is spi"
+ },
+ {
+  "id": 174,
+  "et": "T1Q154",
+  "sc": 0.82,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 20
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28130-exam-associate-cloud-engineer-topic-1-question-154-discussion/",
+  "ets": "You have been asked to set up Object Lifecycle Management for objects stored in storage bu",
+  "os": "You need to configure Object Lifecycle Management for objects stored in storage buckets. T"
+ },
+ {
+  "id": 175,
+  "et": "T1Q340",
+  "sc": 0.91,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414922-exam-associate-cloud-engineer-topic-1-question-340-discussion/",
+  "ets": "Your organization has created hundreds of service accounts for different applications host",
+  "os": "Your organization has created hundreds of service accounts for different applications host"
+ },
+ {
+  "id": 176,
+  "et": "T1Q200",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 19
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113200-exam-associate-cloud-engineer-topic-1-question-200-discussion/",
+  "ets": "You are building an application that stores relational data from users. Users across the g",
+  "os": "You are building an application that stores relational data from users. Users across the g"
+ },
+ {
+  "id": 177,
+  "et": "T1Q167",
+  "sc": 0.68,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46427-exam-associate-cloud-engineer-topic-1-question-167-discussion/",
+  "ets": "Your company developed a mobile game that is deployed on Google Cloud. Gamers are connecti",
+  "os": "Your company built a mobile game that runs on Google Cloud. Players connect to the game fr"
+ },
+ {
+  "id": 178,
+  "et": "T1Q202",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 31
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113134-exam-associate-cloud-engineer-topic-1-question-202-discussion/",
+  "ets": "You have an application that runs on Compute Engine VM instances in a custom Virtual Priva",
+  "os": "You have an application that runs on Compute Engine VM instances in a custom Virtual Priva"
+ },
+ {
+  "id": 179,
+  "et": "T1Q319",
+  "sc": 0.99,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/335879-exam-associate-cloud-engineer-topic-1-question-319-discussion/",
+  "ets": "You ate managing an application deployed on Cloud Run. The development team has released a",
+  "os": "You are managing an application deployed on Cloud Run. The development team has released a"
+ },
+ {
+  "id": 180,
+  "et": "T1Q332",
+  "sc": 0.83,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/382622-exam-associate-cloud-engineer-topic-1-question-332-discussion/",
+  "ets": "You are writing a shell script that includes a few gcloud CLI commands to access some Goog",
+  "os": "You are creating a shell script that contains several gcloud CLI commands to access Google"
+ },
+ {
+  "id": 181,
+  "et": "T1Q103",
+  "sc": 0.94,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 67,
+   "D": 62
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24150-exam-associate-cloud-engineer-topic-1-question-103-discussion/",
+  "ets": "You have a developer laptop with the Cloud SDK installed on Ubuntu. The Cloud SDK was inst",
+  "os": "You have a developer laptop running Ubuntu with the Cloud SDK installed, where the Cloud S"
+ },
+ {
+  "id": 182,
+  "et": "T1Q235",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "B": 24,
+   "A": 40,
+   "C": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117119-exam-associate-cloud-engineer-topic-1-question-235-discussion/",
+  "ets": "The DevOps group in your organization needs full control of Compute Engine resources in yo",
+  "os": "The DevOps group in your organization needs full control of Compute Engine resources in yo"
+ },
+ {
+  "id": 184,
+  "et": "T1Q182",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 25,
+   "A": 22
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79790-exam-associate-cloud-engineer-topic-1-question-182-discussion/",
+  "ets": "Your company has developed a new application that consists of multiple microservices. You ",
+  "os": "Your company has developed a new application that consists of multiple microservices. You "
+ },
+ {
+  "id": 185,
+  "et": "T1Q131",
+  "sc": 0.83,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 62,
+   "B": 38
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/29004-exam-associate-cloud-engineer-topic-1-question-131-discussion/",
+  "ets": "You need to create a copy of a custom Compute Engine virtual machine (VM) to facilitate an",
+  "os": "You need to create a copy of a custom Compute Engine virtual machine (VM) in order to acco"
+ },
+ {
+  "id": 186,
+  "et": "T1Q250",
+  "sc": 0.95,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 13,
+   "B": 3
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129836-exam-associate-cloud-engineer-topic-1-question-250-discussion/",
+  "ets": "You need to migrate invoice documents stored on-premises to Cloud Storage. The documents h",
+  "os": "You need to migrate invoice documents stored on-premises to Cloud Storage. The documents h"
+ },
+ {
+  "id": 187,
+  "et": "T1Q232",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 20
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117615-exam-associate-cloud-engineer-topic-1-question-232-discussion/",
+  "ets": "You recently received a new Google Cloud project with an attached billing account where yo",
+  "os": "You recently received a new Google Cloud project with an attached billing account where yo"
+ },
+ {
+  "id": 188,
+  "et": "T1Q97",
+  "sc": 0.97,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 15
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/75008-exam-associate-cloud-engineer-topic-1-question-97-discussion/",
+  "ets": "You are building a product on top of Google Kubernetes Engine (GKE). You have a single GKE",
+  "os": "You are building a product on top of Google Kubernetes Engine (GKE). You have a single GKE"
+ },
+ {
+  "id": 189,
+  "et": "T1Q138",
+  "sc": 0.92,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 23,
+   "B": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28094-exam-associate-cloud-engineer-topic-1-question-138-discussion/",
+  "ets": "You have downloaded and installed the gcloud command line interface (CLI) and have authent",
+  "os": "You have downloaded and installed the gcloud command-line interface (CLI) and authenticate"
+ },
+ {
+  "id": 190,
+  "et": "T1Q88",
+  "sc": 0.78,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 25
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22714-exam-associate-cloud-engineer-topic-1-question-88-discussion/",
+  "ets": "You need to set a budget alert for use of Compute Engineer services on one of the three Go",
+  "os": "You need to configure a budget alert for the usage of Compute Engine services on one of th"
+ },
+ {
+  "id": 192,
+  "et": "T1Q99",
+  "sc": 0.57,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 10
+  },
+  "map": {
+   "C": "C",
+   "A": "A",
+   "B": "B",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22200-exam-associate-cloud-engineer-topic-1-question-99-discussion/",
+  "ets": "Your finance team wants to view the billing report for your projects. You want to make sur",
+  "os": "Your finance team wants to be able to view the billing report for your projects, and you n"
+ },
+ {
+  "id": 193,
+  "et": "T1Q253",
+  "sc": 0.92,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 24
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129839-exam-associate-cloud-engineer-topic-1-question-253-discussion/",
+  "ets": "You need to deploy an application in Google Cloud using serverless technology. You want to",
+  "os": "You need to deploy an application in Google Cloud using serverless technology. You want to"
+ },
+ {
+  "id": 194,
+  "et": "T1Q345",
+  "sc": 0.74,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414927-exam-associate-cloud-engineer-topic-1-question-345-discussion/",
+  "ets": "You are managing resources in a Google Cloud project. A new service account needs the abil",
+  "os": "You manage resources in a Google Cloud project. A new service account will be used to invo"
+ },
+ {
+  "id": 195,
+  "et": "T1Q51",
+  "sc": 0.74,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 58,
+   "C": 7
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17258-exam-associate-cloud-engineer-topic-1-question-51-discussion/",
+  "ets": "You need to create an autoscaling managed instance group for an HTTPS web application. You",
+  "os": "You need to set up an autoscaling managed instance group for an HTTPS web application, and"
+ },
+ {
+  "id": 196,
+  "et": "T1Q328",
+  "sc": 0.75,
+  "key": "D",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/382800-exam-associate-cloud-engineer-topic-1-question-328-discussion/",
+  "ets": "You are the Google Cloud systems administrator for your organization. User A reports that ",
+  "os": "You are the Google Cloud systems administrator for your organization. User A reports recei"
+ },
+ {
+  "id": 197,
+  "et": "T1Q78",
+  "sc": 0.89,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 29
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22220-exam-associate-cloud-engineer-topic-1-question-78-discussion/",
+  "ets": "You are using Google Kubernetes Engine with autoscaling enabled to host a new application.",
+  "os": "You are running a Google Kubernetes Engine cluster with autoscaling enabled to host a new "
+ },
+ {
+  "id": 198,
+  "et": "T1Q174",
+  "sc": 0.8,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "C": 2,
+   "D": 20
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51202-exam-associate-cloud-engineer-topic-1-question-174-discussion/",
+  "ets": "You are about to deploy a new Enterprise Resource Planning (ERP) system on Google Cloud. T",
+  "os": "You are preparing to deploy a new Enterprise Resource Planning (ERP) system on Google Clou"
+ },
+ {
+  "id": 199,
+  "et": "T1Q224",
+  "sc": 0.98,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117111-exam-associate-cloud-engineer-topic-1-question-224-discussion/",
+  "ets": "You want to host your video encoding software on Compute Engine. Your user base is growing",
+  "os": "You want to host your video encoding software on Compute Engine. Your user base is growing"
+ },
+ {
+  "id": 200,
+  "et": "T1Q124",
+  "sc": 0.92,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 20
+  },
+  "map": {
+   "A": "A",
+   "C": "C",
+   "B": "B",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46586-exam-associate-cloud-engineer-topic-1-question-124-discussion/",
+  "ets": "You have an application that uses Cloud Spanner as a backend database. The application has",
+  "os": "You have an application that uses Spanner as its backend database. The application experie"
+ },
+ {
+  "id": 201,
+  "et": "T1Q343",
+  "sc": 0.7,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414925-exam-associate-cloud-engineer-topic-1-question-343-discussion/",
+  "ets": "You are troubleshooting a complex application failure. You found several cryptic error mes",
+  "os": "You are diagnosing a complex application failure. In Cloud Logging, you found several unfa"
+ },
+ {
+  "id": 203,
+  "et": "T1Q263",
+  "sc": 0.93,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 13
+  },
+  "map": {
+   "B": "B",
+   "D": "D",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/130016-exam-associate-cloud-engineer-topic-1-question-263-discussion/",
+  "ets": "Your customer wants you to create a secure website with autoscaling based on the compute i",
+  "os": "Your customer wants you to create a secure website with autoscaling based on the compute i"
+ },
+ {
+  "id": 204,
+  "et": "T1Q186",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "D": 2,
+   "B": 5,
+   "A": 29
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74499-exam-associate-cloud-engineer-topic-1-question-186-discussion/",
+  "ets": "You need to add a group of new users to Cloud Identity. Some of the users already have exi",
+  "os": "You need to add a group of new users to Cloud Identity. Some of the users already have exi"
+ },
+ {
+  "id": 205,
+  "et": "T1Q31",
+  "sc": 0.67,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 28
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21111-exam-associate-cloud-engineer-topic-1-question-31-discussion/",
+  "ets": "You want to send and consume Cloud Pub/Sub messages from your App Engine application. The ",
+  "os": "You want your Cloud Run service to be able to send and consume Pub/Sub messages, but the P"
+ },
+ {
+  "id": 206,
+  "et": "T1Q248",
+  "sc": 0.95,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 26,
+   "B": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129835-exam-associate-cloud-engineer-topic-1-question-248-discussion/",
+  "ets": "Your application stores files on Cloud Storage by using the Standard Storage class. The ap",
+  "os": "Your application stores files on Cloud Storage by using the Standard Storage class. The ap"
+ },
+ {
+  "id": 207,
+  "et": "T1Q214",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 28,
+   "A": 12
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/115341-exam-associate-cloud-engineer-topic-1-question-214-discussion/",
+  "ets": "You are running out of primary internal IP addresses in a subnet for a custom mode VPC. Th",
+  "os": "You are running out of primary internal IP addresses in a subnet for a custom mode VPC. Th"
+ },
+ {
+  "id": 208,
+  "et": "T1Q156",
+  "sc": 0.78,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 15
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28436-exam-associate-cloud-engineer-topic-1-question-156-discussion/",
+  "ets": "You are the team lead of a group of 10 developers. You provided each developer with an ind",
+  "os": "You lead a team of 10 developers. Each developer has been given their own individual Googl"
+ },
+ {
+  "id": 209,
+  "et": "T1Q94",
+  "sc": 0.76,
+  "key": "B",
+  "top": "D",
+  "votes": {
+   "D": 62,
+   "B": 59
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22847-exam-associate-cloud-engineer-topic-1-question-94-discussion/",
+  "ets": "You create a Deployment with 2 replicas in a Google Kubernetes Engine cluster that has a s",
+  "os": "You create a Deployment with 2 replicas in a Google Kubernetes Engine cluster that has a s"
+ },
+ {
+  "id": 210,
+  "et": "T1Q187",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "D": 2,
+   "C": 42
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74440-exam-associate-cloud-engineer-topic-1-question-187-discussion/",
+  "ets": "You need to manage a Cloud Spanner instance for best query performance. Your instance in p",
+  "os": "You need to manage a Spanner instance for best query performance. Your instance in product"
+ },
+ {
+  "id": 211,
+  "et": "T1Q137",
+  "sc": 0.97,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 16
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28093-exam-associate-cloud-engineer-topic-1-question-137-discussion/",
+  "ets": "You are developing a new application and are looking for a Jenkins installation to build a",
+  "os": "You are developing a new application and need a Jenkins installation to build and deploy y"
+ },
+ {
+  "id": 212,
+  "et": "T1Q177",
+  "sc": 0.76,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51204-exam-associate-cloud-engineer-topic-1-question-177-discussion/",
+  "ets": "You are creating an application that will run on Google Kubernetes Engine. You have identi",
+  "os": "You are building an application intended to run on Google Kubernetes Engine. You have dete"
+ },
+ {
+  "id": 213,
+  "et": "T1Q30",
+  "sc": 0.85,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 49
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18519-exam-associate-cloud-engineer-topic-1-question-30-discussion/",
+  "ets": "You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler featur",
+  "os": "You are creating a Google Kubernetes Engine (GKE) cluster with the cluster autoscaler feat"
+ },
+ {
+  "id": 214,
+  "et": "T1Q159",
+  "sc": 0.89,
+  "key": "AB",
+  "top": "AB",
+  "votes": {
+   "AB": 22
+  },
+  "map": {
+   "E": "E",
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28356-exam-associate-cloud-engineer-topic-1-question-159-discussion/",
+  "ets": "You are building an application that processes data files uploaded from thousands of suppl",
+  "os": "You are building an application that processes data files uploaded from thousands of suppl"
+ },
+ {
+  "id": 215,
+  "et": "T1Q108",
+  "sc": 0.77,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "D": 46,
+   "A": 57,
+   "C": 3
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22312-exam-associate-cloud-engineer-topic-1-question-108-discussion/",
+  "ets": "A team of data scientists infrequently needs to use a Google Kubernetes Engine (GKE) clust",
+  "os": "A team of data scientists only occasionally needs to use a Google Kubernetes Engine (GKE) "
+ },
+ {
+  "id": 216,
+  "et": "T1Q265",
+  "sc": 1.0,
+  "key": "AE",
+  "top": "A",
+  "votes": {
+   "A": 22,
+   "E": 10
+  },
+  "map": {
+   "E": "E",
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129849-exam-associate-cloud-engineer-topic-1-question-265-discussion/",
+  "ets": "You just installed the Google Cloud CLI on your new corporate laptop. You need to list the",
+  "os": "You just installed the Google Cloud CLI on your new corporate laptop. You need to list the"
+ },
+ {
+  "id": 217,
+  "et": "T1Q335",
+  "sc": 0.83,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/382621-exam-associate-cloud-engineer-topic-1-question-335-discussion/",
+  "ets": "Your company is closely monitoring their cloud spend. You need to allow different teams to",
+  "os": "Your company closely monitors its cloud spending. You need to enable different teams to mo"
+ },
+ {
+  "id": 218,
+  "et": "T1Q175",
+  "sc": 0.8,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51200-exam-associate-cloud-engineer-topic-1-question-175-discussion/",
+  "ets": "You have developed an application that consists of multiple microservices, with each micro",
+  "os": "You have built an application composed of multiple microservices, with each microservice p"
+ },
+ {
+  "id": 219,
+  "et": "T1Q277",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 20
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143955-exam-associate-cloud-engineer-topic-1-question-277-discussion/",
+  "ets": "Your team has developed a stateless application which requires it to be run directly on vi",
+  "os": "Your team has developed a stateless application which requires it to be run directly on vi"
+ },
+ {
+  "id": 220,
+  "et": "T1Q307",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/334890-exam-associate-cloud-engineer-topic-1-question-307-discussion/",
+  "ets": "You are migrating your company\u2019s on-premises compute resources to Google Cloud. You need t",
+  "os": "You are migrating your company\u2019s on-premises compute resources to Google Cloud. You need t"
+ },
+ {
+  "id": 221,
+  "et": "T1Q107",
+  "sc": 0.63,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "B": 39,
+   "A": 42
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/23068-exam-associate-cloud-engineer-topic-1-question-107-discussion/",
+  "ets": "You are building an archival solution for your data warehouse and have selected Cloud Stor",
+  "os": "You are designing an archival solution for your data warehouse and have chosen Cloud Stora"
+ },
+ {
+  "id": 222,
+  "et": "T1Q29",
+  "sc": 0.94,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 36
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18518-exam-associate-cloud-engineer-topic-1-question-29-discussion/",
+  "ets": "You have an object in a Cloud Storage bucket that you want to share with an external compa",
+  "os": "You have an object stored in a Cloud Storage bucket that contains sensitive data, and you "
+ },
+ {
+  "id": 223,
+  "et": "T1Q49",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "C": 4,
+   "D": 27
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16710-exam-associate-cloud-engineer-topic-1-question-49-discussion/",
+  "ets": "You have a virtual machine that is currently configured with 2 vCPUs and 4 GB of memory. I",
+  "os": "You have a virtual machine that is currently configured with 2 vCPUs and 4 GB of memory. I"
+ },
+ {
+  "id": 224,
+  "et": "T1Q205",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 33
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113116-exam-associate-cloud-engineer-topic-1-question-205-discussion/",
+  "ets": "You are configuring Cloud DNS. You want to create DNS records to point home.mydomain.com, ",
+  "os": "You are configuring Cloud DNS. You want to create DNS records to point home.mydomain.com, "
+ },
+ {
+  "id": 225,
+  "et": "T1Q255",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 15
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129841-exam-associate-cloud-engineer-topic-1-question-255-discussion/",
+  "ets": "You want to enable your development team to deploy new features to an existing Cloud Run s",
+  "os": "You want to enable your development team to deploy new features to an existing Cloud Run s"
+ },
+ {
+  "id": 226,
+  "et": "T1Q113",
+  "sc": 0.88,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "D": 2,
+   "B": 15
+  },
+  "map": {
+   "A": "A",
+   "C": "C",
+   "D": "D",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24973-exam-associate-cloud-engineer-topic-1-question-113-discussion/",
+  "ets": "You need to assign a Cloud Identity and Access Management (Cloud IAM) role to an external ",
+  "os": "You need to assign an Identity and Access Management (IAM) role to an external auditor. Th"
+ },
+ {
+  "id": 227,
+  "et": "T1Q83",
+  "sc": 0.66,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21
+  },
+  "map": {
+   "C": "C",
+   "A": "A",
+   "B": "B",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22857-exam-associate-cloud-engineer-topic-1-question-83-discussion/",
+  "ets": "Your organization uses G Suite for communication and collaboration. All users in your orga",
+  "os": "Your organization uses Google Workspace for communication and collaboration, and every use"
+ },
+ {
+  "id": 229,
+  "et": "T1Q342",
+  "sc": 0.87,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414924-exam-associate-cloud-engineer-topic-1-question-342-discussion/",
+  "ets": "You work for a large company that recently acquired three smaller startups. All of the sta",
+  "os": "You work for a large company that has recently acquired three smaller startups. All Google"
+ },
+ {
+  "id": 230,
+  "et": "T1Q170",
+  "sc": 0.76,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 16,
+   "A": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46456-exam-associate-cloud-engineer-topic-1-question-170-discussion/",
+  "ets": "You received a JSON file that contained a private key of a Service Account in order to get",
+  "os": "You have received a JSON file containing the private key of a Service Account, which grant"
+ },
+ {
+  "id": 231,
+  "et": "T1Q9",
+  "sc": 0.95,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 25,
+   "B": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/20302-exam-associate-cloud-engineer-topic-1-question-9-discussion/",
+  "ets": "You are deploying an application to App Engine. You want the number of instances to scale ",
+  "os": "You are deploying an application to App Engine. You want the number of instances to scale "
+ },
+ {
+  "id": 232,
+  "et": "T1Q181",
+  "sc": 0.97,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 17
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79493-exam-associate-cloud-engineer-topic-1-question-181-discussion/",
+  "ets": "You have created a new project in Google Cloud through the gcloud command line interface (",
+  "os": "You have created a new project in Google Cloud through the gcloud command line interface ("
+ },
+ {
+  "id": 233,
+  "et": "T1Q128",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "A": 12,
+   "C": 21,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/25199-exam-associate-cloud-engineer-topic-1-question-128-discussion/",
+  "ets": "You have an application on a general-purpose Compute Engine instance that is experiencing ",
+  "os": "You have an application on a general-purpose Compute Engine instance that is experiencing "
+ },
+ {
+  "id": 235,
+  "et": "T1Q257",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 18,
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/130017-exam-associate-cloud-engineer-topic-1-question-257-discussion/",
+  "ets": "After a recent security incident, your startup company wants better insight into what is h",
+  "os": "After a recent security incident, your startup company wants better insight into what is h"
+ },
+ {
+  "id": 236,
+  "et": "T1Q41",
+  "sc": 0.67,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 29
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17901-exam-associate-cloud-engineer-topic-1-question-41-discussion/",
+  "ets": "You have 32 GB of data in a single file that you need to upload to a Nearline Storage buck",
+  "os": "You have a single file containing 32 GB of data that needs to be uploaded to a Nearline St"
+ },
+ {
+  "id": 237,
+  "et": "T1Q32",
+  "sc": 0.8,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "A": 2,
+   "C": 40,
+   "D": 9
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16702-exam-associate-cloud-engineer-topic-1-question-32-discussion/",
+  "ets": "You need to monitor resources that are distributed over different projects in Google Cloud",
+  "os": "You need to monitor resources that are distributed across different projects in Google Clo"
+ },
+ {
+  "id": 238,
+  "et": "T1Q284",
+  "sc": 0.98,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 7,
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/157270-exam-associate-cloud-engineer-topic-1-question-284-discussion/",
+  "ets": "You are developing an application that will be deployed on Google Cloud. The application w",
+  "os": "You are developing an application that will be deployed on Google Cloud. The application w"
+ },
+ {
+  "id": 239,
+  "et": "T1Q74",
+  "sc": 0.91,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 40,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22730-exam-associate-cloud-engineer-topic-1-question-74-discussion/",
+  "ets": "You want to configure an SSH connection to a single Compute Engine instance for users in t",
+  "os": "You need to set up an SSH connection to a single Compute Engine instance for the users in "
+ },
+ {
+  "id": 240,
+  "et": "T1Q111",
+  "sc": 0.97,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 29,
+   "D": 3,
+   "A": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22213-exam-associate-cloud-engineer-topic-1-question-111-discussion/",
+  "ets": "Your management has asked an external auditor to review all the resources in a specific pr",
+  "os": "Company management has asked an external auditor to review all the resources in a specific"
+ },
+ {
+  "id": 241,
+  "et": "T1Q165",
+  "sc": 0.77,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 20
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46746-exam-associate-cloud-engineer-topic-1-question-165-discussion/",
+  "ets": "You are running a data warehouse on BigQuery. A partner company is offering a recommendati",
+  "os": "You operate a data warehouse on BigQuery. A partner company wants to build a recommendatio"
+ },
+ {
+  "id": 242,
+  "et": "T1Q10",
+  "sc": 0.89,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 108,
+   "C": 2
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16682-exam-associate-cloud-engineer-topic-1-question-10-discussion/",
+  "ets": "You have a development project with appropriate IAM roles defined. You are creating a prod",
+  "os": "You have a development project with custom IAM roles defined. You are creating a new produ"
+ },
+ {
+  "id": 243,
+  "et": "T1Q18",
+  "sc": 0.77,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 108,
+   "A": 36,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21682-exam-associate-cloud-engineer-topic-1-question-18-discussion/",
+  "ets": "You need to set up a policy so that videos stored in a specific Cloud Storage Regional buc",
+  "os": "You need to configure a policy so that video files kept in a specific Cloud Storage bucket"
+ },
+ {
+  "id": 244,
+  "et": "T1Q130",
+  "sc": 0.78,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 71,
+   "A": 45
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28670-exam-associate-cloud-engineer-topic-1-question-130-discussion/",
+  "ets": "You manage an App Engine Service that aggregates and visualizes data from BigQuery. The ap",
+  "os": "You manage a Cloud Run service that aggregates and visualizes data from BigQuery. The serv"
+ },
+ {
+  "id": 245,
+  "et": "T1Q208",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "B": 3,
+   "A": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113121-exam-associate-cloud-engineer-topic-1-question-208-discussion/",
+  "ets": "You are working for a startup that was officially registered as a business 6 months ago. A",
+  "os": "You are working for a startup that was officially registered as a business 6 months ago. A"
+ },
+ {
+  "id": 246,
+  "et": "T1Q240",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "A": 17,
+   "D": 41
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117154-exam-associate-cloud-engineer-topic-1-question-240-discussion/",
+  "ets": "You have an on-premises data analytics set of binaries that processes data files in memory",
+  "os": "You have an on-premises data analytics set of binaries that processes data files in memory"
+ },
+ {
+  "id": 247,
+  "et": "T1Q37",
+  "sc": 0.78,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "C": 2,
+   "D": 75,
+   "B": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17331-exam-associate-cloud-engineer-topic-1-question-37-discussion/",
+  "ets": "You created a Google Cloud Platform project with an App Engine application inside the proj",
+  "os": "You have a Google Cloud Platform project that contains an App Engine application. The appl"
+ },
+ {
+  "id": 248,
+  "et": "T1Q258",
+  "sc": 0.88,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "C": 2,
+   "D": 13,
+   "A": 4
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129843-exam-associate-cloud-engineer-topic-1-question-258-discussion/",
+  "ets": "You are configuring service accounts for an application that spans multiple projects. Virt",
+  "os": "You are configuring service accounts for an application that spans multiple projects. Virt"
+ },
+ {
+  "id": 249,
+  "et": "T1Q7",
+  "sc": 0.69,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 39,
+   "C": 14
+  },
+  "map": {
+   "B": "B",
+   "D": "D",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18825-exam-associate-cloud-engineer-topic-1-question-7-discussion/",
+  "ets": "Several employees at your company have been creating projects with Cloud Platform and payi",
+  "os": "Some employees at your organization have been creating projects on Google Cloud and paying"
+ },
+ {
+  "id": 250,
+  "et": "T1Q23",
+  "sc": 0.62,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 77
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24012-exam-associate-cloud-engineer-topic-1-question-23-discussion/",
+  "ets": "You are building a pipeline to process time-series data. Which Google Cloud Platform servi",
+  "os": "You are designing a pipeline to process time-series data. Based on the architecture diagra"
+ },
+ {
+  "id": 251,
+  "et": "T1Q279",
+  "sc": 0.95,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 18,
+   "B": 11
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143957-exam-associate-cloud-engineer-topic-1-question-279-discussion/",
+  "ets": "You need to deploy a single stateless web application with a web interface and multiple en",
+  "os": "You need to deploy a single stateless web application with a web interface and multiple en"
+ },
+ {
+  "id": 252,
+  "et": "T1Q146",
+  "sc": 0.96,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "B": 11,
+   "D": 24
+  },
+  "map": {
+   "D": "D",
+   "A": "A",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28459-exam-associate-cloud-engineer-topic-1-question-146-discussion/",
+  "ets": "You have an application that uses Cloud Spanner as a database backend to keep current stat",
+  "os": "You have an application that uses Spanner as a database backend to keep current state info"
+ },
+ {
+  "id": 253,
+  "et": "T1Q101",
+  "sc": 0.94,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "C": 38,
+   "D": 53
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24149-exam-associate-cloud-engineer-topic-1-question-101-discussion/",
+  "ets": "You need to host an application on a Compute Engine instance in a project shared with othe",
+  "os": "You need to host an application on a Compute Engine instance within a project that is shar"
+ },
+ {
+  "id": 254,
+  "et": "T1Q55",
+  "sc": 0.53,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 30,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/19419-exam-associate-cloud-engineer-topic-1-question-55-discussion/",
+  "ets": "Your projects incurred more costs than you expected last month. Your research reveals that",
+  "os": "Last month your project costs were higher than expected. After investigating, you discover"
+ },
+ {
+  "id": 255,
+  "et": "T1Q267",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "C": 9,
+   "A": 18
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/144064-exam-associate-cloud-engineer-topic-1-question-267-discussion/",
+  "ets": "You want to deploy a new containerized application into Google Cloud by using a Kubernetes",
+  "os": "You want to deploy a new containerized application into Google Cloud by using a Kubernetes"
+ },
+ {
+  "id": 256,
+  "et": "T1Q317",
+  "sc": 0.92,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 5,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/305930-exam-associate-cloud-engineer-topic-1-question-317-discussion/",
+  "ets": "You are planning to migrate your on-premises VMs to Google Cloud. You need to set up a lan",
+  "os": "You are planning to migrate your on-premises VMs to Google Cloud. You need to set up a lan"
+ },
+ {
+  "id": 258,
+  "et": "T1Q152",
+  "sc": 0.81,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 44,
+   "A": 35,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28352-exam-associate-cloud-engineer-topic-1-question-152-discussion/",
+  "ets": "Your company runs its Linux workloads on Compute Engine instances. Your company will be wo",
+  "os": "A company runs its Linux workloads on Compute Engine instances. The company is about to st"
+ },
+ {
+  "id": 259,
+  "et": "T1Q189",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 35,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/75169-exam-associate-cloud-engineer-topic-1-question-189-discussion/",
+  "ets": "You are assigned to maintain a Google Kubernetes Engine (GKE) cluster named 'dev' that was",
+  "os": "You are assigned to maintain a Google Kubernetes Engine (GKE) cluster named 'dev' that was"
+ },
+ {
+  "id": 260,
+  "et": "T1Q338",
+  "sc": 0.77,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 2
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414920-exam-associate-cloud-engineer-topic-1-question-338-discussion/",
+  "ets": "You are deploying a new frontend service for an online game. The service was built using a",
+  "os": "You are deploying a new frontend service for an online game. The service uses a micro-fron"
+ },
+ {
+  "id": 261,
+  "et": "T1Q19",
+  "sc": 0.72,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 69,
+   "C": 37,
+   "D": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/19444-exam-associate-cloud-engineer-topic-1-question-19-discussion/",
+  "ets": "You have a Linux VM that must connect to Cloud SQL. You created a service account with the",
+  "os": "You are creating a Linux virtual machine that must connect to Cloud SQL. You have already "
+ },
+ {
+  "id": 262,
+  "et": "T1Q237",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 19
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117450-exam-associate-cloud-engineer-topic-1-question-237-discussion/",
+  "ets": "You are running multiple microservices in a Kubernetes Engine cluster. One microservice is",
+  "os": "You are running multiple microservices in a Kubernetes Engine cluster. One microservice is"
+ },
+ {
+  "id": 263,
+  "et": "T1Q13",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 41,
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18827-exam-associate-cloud-engineer-topic-1-question-13-discussion/",
+  "ets": "Your development team needs a new Jenkins server for their project. You need to deploy the",
+  "os": "Your development team needs a new Jenkins server for their project. You need to deploy the"
+ },
+ {
+  "id": 264,
+  "et": "T1Q98",
+  "sc": 0.62,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 45,
+   "B": 8,
+   "D": 18
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/79637-exam-associate-cloud-engineer-topic-1-question-98-discussion/",
+  "ets": "Your customer has implemented a solution that uses Cloud Spanner and notices some read lat",
+  "os": "Your customer has implemented a solution that uses Spanner and notices some read latency-r"
+ },
+ {
+  "id": 265,
+  "et": "T1Q69",
+  "sc": 0.87,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 30,
+   "D": 4
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22969-exam-associate-cloud-engineer-topic-1-question-69-discussion/",
+  "ets": "You are using Deployment Manager to create a Google Kubernetes Engine cluster. Using the s",
+  "os": "You are using Deployment Manager to provision a Google Kubernetes Engine cluster. Within t"
+ },
+ {
+  "id": 266,
+  "et": "T1Q114",
+  "sc": 0.84,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "A": 2,
+   "B": 17
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/25234-exam-associate-cloud-engineer-topic-1-question-114-discussion/",
+  "ets": "You are managing several Google Cloud Platform (GCP) projects and need access to all logs ",
+  "os": "You manage multiple Google Cloud projects and need access to all logs from the past 60 day"
+ },
+ {
+  "id": 268,
+  "et": "T1Q84",
+  "sc": 0.71,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 31
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24058-exam-associate-cloud-engineer-topic-1-question-84-discussion/",
+  "ets": "You have a Google Cloud Platform account with access to both production and development pr",
+  "os": "You hold a Google Cloud account that has access to both a production project and a develop"
+ },
+ {
+  "id": 269,
+  "et": "T1Q92",
+  "sc": 0.65,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 21
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22128-exam-associate-cloud-engineer-topic-1-question-92-discussion/",
+  "ets": "You want to select and configure a solution for storing and archiving data on Google Cloud",
+  "os": "You need to choose and configure a storage and archiving solution on Google Cloud. The sol"
+ },
+ {
+  "id": 270,
+  "et": "T1Q309",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/320344-exam-associate-cloud-engineer-topic-1-question-309-discussion/",
+  "ets": "You are migrating your on-premises workload to Google Cloud. Your company is implementing ",
+  "os": "You are migrating your on-premises workload to Google Cloud. Your company is implementing "
+ },
+ {
+  "id": 271,
+  "et": "T1Q48",
+  "sc": 0.83,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 56
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21294-exam-associate-cloud-engineer-topic-1-question-48-discussion/",
+  "ets": "You host a static website on Cloud Storage. Recently, you began to include links to PDF fi",
+  "os": "Your static website is hosted on Cloud Storage, and you have recently added links to PDF f"
+ },
+ {
+  "id": 272,
+  "et": "T1Q87",
+  "sc": 0.84,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 14
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22876-exam-associate-cloud-engineer-topic-1-question-87-discussion/",
+  "ets": "You deployed an LDAP server on Compute Engine that is reachable via TLS through port 636 u",
+  "os": "You have deployed an LDAP server on Compute Engine, and it is reachable via TLS on port 63"
+ },
+ {
+  "id": 273,
+  "et": "T1Q67",
+  "sc": 0.96,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 36
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22190-exam-associate-cloud-engineer-topic-1-question-67-discussion/",
+  "ets": "You built an application on Google Cloud that uses Cloud Spanner. Your support team needs ",
+  "os": "You have built an application on Google Cloud that uses Spanner. Your support team needs t"
+ },
+ {
+  "id": 274,
+  "et": "T1Q153",
+  "sc": 0.8,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 18
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28353-exam-associate-cloud-engineer-topic-1-question-153-discussion/",
+  "ets": "You have created a code snippet that should be triggered whenever a new file is uploaded t",
+  "os": "You have written a code snippet that needs to run automatically whenever a new file is upl"
+ },
+ {
+  "id": 275,
+  "et": "T1Q65",
+  "sc": 0.97,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 54
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22624-exam-associate-cloud-engineer-topic-1-question-65-discussion/",
+  "ets": "You need to deploy an application, which is packaged in a container image, in a new projec",
+  "os": "You need to deploy an application that is packaged as a container image into a new project"
+ },
+ {
+  "id": 276,
+  "et": "T1Q313",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/332623-exam-associate-cloud-engineer-topic-1-question-313-discussion/",
+  "ets": "You recently discovered an issue with your rolling update in Google Kubernetes Engine (GKE",
+  "os": "You recently discovered an issue with your rolling update in Google Kubernetes Engine (GKE"
+ },
+ {
+  "id": 277,
+  "et": "T1Q14",
+  "sc": 0.94,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 31
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18828-exam-associate-cloud-engineer-topic-1-question-14-discussion/",
+  "ets": "You need to update a deployment in Deployment Manager without any resource downtime in the",
+  "os": "You need to update a deployment in Deployment Manager without causing any resource downtim"
+ },
+ {
+  "id": 278,
+  "et": "T1Q256",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "A": 20,
+   "C": 24
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129842-exam-associate-cloud-engineer-topic-1-question-256-discussion/",
+  "ets": "You have deployed an application on a Compute Engine instance. An external consultant need",
+  "os": "You have deployed an application on a Compute Engine instance. An external consultant need"
+ },
+ {
+  "id": 279,
+  "et": "T1Q125",
+  "sc": 0.96,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 32,
+   "A": 2,
+   "D": 2,
+   "B": 3
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46589-exam-associate-cloud-engineer-topic-1-question-125-discussion/",
+  "ets": "Your company publishes large files on an Apache web server that runs on a Compute Engine i",
+  "os": "Your company publishes large files using an Apache web server that runs on a Compute Engin"
+ },
+ {
+  "id": 280,
+  "et": "T1Q27",
+  "sc": 0.54,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 83,
+   "A": 66
+  },
+  "map": {
+   "A": "A",
+   "D": "D",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16701-exam-associate-cloud-engineer-topic-1-question-27-discussion/",
+  "ets": "You have sensitive data stored in three Cloud Storage buckets and have enabled data access",
+  "os": "You store sensitive data in three Cloud Storage buckets and have turned on data access log"
+ },
+ {
+  "id": 281,
+  "et": "T1Q312",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/305694-exam-associate-cloud-engineer-topic-1-question-312-discussion/",
+  "ets": "Your company's machine learning team requires a scalable and flexible platform to fine-tun",
+  "os": "Your company's machine learning team requires a scalable and flexible platform to fine-tun"
+ },
+ {
+  "id": 282,
+  "et": "T1Q104",
+  "sc": 0.76,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 22,
+   "A": 2,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22305-exam-associate-cloud-engineer-topic-1-question-104-discussion/",
+  "ets": "Your company set up a complex organizational structure on Google Cloud. The structure incl",
+  "os": "Your organization has built a complex Google Cloud structure containing hundreds of folder"
+ },
+ {
+  "id": 283,
+  "et": "T1Q299",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/334885-exam-associate-cloud-engineer-topic-1-question-299-discussion/",
+  "ets": "Your company has many legacy third-party applications that rely on a shared NFS server for",
+  "os": "Your company has many legacy third-party applications that rely on a shared NFS server for"
+ },
+ {
+  "id": 284,
+  "et": "T1Q206",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 33,
+   "B": 10
+  },
+  "map": {
+   "C": "C",
+   "D": "D",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113117-exam-associate-cloud-engineer-topic-1-question-206-discussion/",
+  "ets": "You have two subnets (subnet-a and subnet-b) in the default VPC. Your database servers are",
+  "os": "You have two subnets (subnet-a and subnet-b) in the default VPC. Your database servers are"
+ },
+ {
+  "id": 286,
+  "et": "T1Q233",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 35
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117122-exam-associate-cloud-engineer-topic-1-question-233-discussion/",
+  "ets": "Your application development team has created Docker images for an application that will b",
+  "os": "Your application development team has created Docker images for an application that will b"
+ },
+ {
+  "id": 287,
+  "et": "T1Q105",
+  "sc": 0.87,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 34
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22732-exam-associate-cloud-engineer-topic-1-question-105-discussion/",
+  "ets": "Your company has a single sign-on (SSO) identity provider that supports Security Assertion",
+  "os": "Your company operates a single sign-on (SSO) identity provider that supports Security Asse"
+ },
+ {
+  "id": 288,
+  "et": "T1Q73",
+  "sc": 0.68,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 28
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22023-exam-associate-cloud-engineer-topic-1-question-73-discussion/",
+  "ets": "You are setting up a Windows VM on Compute Engine and want to make sure you can log in to ",
+  "os": "You are configuring a Windows virtual machine on Compute Engine and need to ensure you are"
+ },
+ {
+  "id": 289,
+  "et": "T1Q66",
+  "sc": 0.88,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 33,
+   "C": 5,
+   "B": 11
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22104-exam-associate-cloud-engineer-topic-1-question-66-discussion/",
+  "ets": "Your company has an existing GCP organization with hundreds of projects and a billing acco",
+  "os": "Your company has an existing Google Cloud organization with hundreds of projects and a bil"
+ },
+ {
+  "id": 290,
+  "et": "T1Q249",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 20,
+   "D": 4
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/130018-exam-associate-cloud-engineer-topic-1-question-249-discussion/",
+  "ets": "Your manager asks you to deploy a workload to a Kubernetes cluster. You are not sure of th",
+  "os": "Your manager asks you to deploy a workload to a Kubernetes cluster. You are not sure of th"
+ },
+ {
+  "id": 291,
+  "et": "T1Q42",
+  "sc": 0.76,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "C": 2,
+   "B": 50
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21685-exam-associate-cloud-engineer-topic-1-question-42-discussion/",
+  "ets": "You've deployed a microservice called myapp1 to a Google Kubernetes Engine cluster using t",
+  "os": "You have deployed a microservice named myapp1 to a Google Kubernetes Engine cluster using "
+ },
+ {
+  "id": 292,
+  "et": "T1Q260",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 23
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129845-exam-associate-cloud-engineer-topic-1-question-260-discussion/",
+  "ets": "You are building a backend service for an ecommerce platform that will persist transaction",
+  "os": "You are building a backend service for an ecommerce platform that will persist transaction"
+ },
+ {
+  "id": 293,
+  "et": "T1Q134",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 34,
+   "B": 31
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28090-exam-associate-cloud-engineer-topic-1-question-134-discussion/",
+  "ets": "You built an application on your development laptop that uses Google Cloud services. Your ",
+  "os": "You built an application on your development laptop that uses Google Cloud services. Your "
+ },
+ {
+  "id": 294,
+  "et": "T1Q215",
+  "sc": 0.97,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22,
+   "C": 4
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "D": "D",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116246-exam-associate-cloud-engineer-topic-1-question-215-discussion/",
+  "ets": "Your company requires all developers to have the same permissions, regardless of the Googl",
+  "os": "Your company requires all developers to have the same permissions, regardless of the Googl"
+ },
+ {
+  "id": 295,
+  "et": "T1Q225",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "C": 15,
+   "A": 28
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116982-exam-associate-cloud-engineer-topic-1-question-225-discussion/",
+  "ets": "Your managed instance group raised an alert stating that new instance creation has failed ",
+  "os": "Your managed instance group raised an alert stating that new instance creation has failed "
+ },
+ {
+  "id": 296,
+  "et": "T1Q60",
+  "sc": 0.78,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "A": 48,
+   "C": 57
+  },
+  "map": {
+   "B": "B",
+   "A": "A",
+   "C": "C",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/20773-exam-associate-cloud-engineer-topic-1-question-60-discussion/",
+  "ets": "You have an application running in Google Kubernetes Engine (GKE) with cluster autoscaling",
+  "os": "You have an application running on Google Kubernetes Engine (GKE) with cluster autoscaling"
+ },
+ {
+  "id": 299,
+  "et": "T1Q61",
+  "sc": 0.75,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 46,
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17515-exam-associate-cloud-engineer-topic-1-question-61-discussion/",
+  "ets": "Your organization is a financial company that needs to store audit log files for 3 years. ",
+  "os": "Your organization is a financial company that must retain audit log files for 3 years. You"
+ },
+ {
+  "id": 300,
+  "et": "T1Q117",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 24,
+   "A": 2
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74558-exam-associate-cloud-engineer-topic-1-question-117-discussion/",
+  "ets": "An employee was terminated, but their access to Google Cloud was not removed until 2 weeks",
+  "os": "An employee was terminated, but their access to Google Cloud was not removed until 2 weeks"
+ },
+ {
+  "id": 301,
+  "et": "T1Q203",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 33
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/113112-exam-associate-cloud-engineer-topic-1-question-203-discussion/",
+  "ets": "Your company completed the acquisition of a startup and is now merging the IT systems of b",
+  "os": "Your company completed the acquisition of a startup and is now merging the IT systems of b"
+ },
+ {
+  "id": 302,
+  "et": "T1Q288",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303701-exam-associate-cloud-engineer-topic-1-question-288-discussion/",
+  "ets": "You are planning to migrate a database and a backend application to a Standard Google Kube",
+  "os": "You are planning to migrate a database and a backend application to a Standard Google Kube"
+ },
+ {
+  "id": 303,
+  "et": "T1Q106",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22207-exam-associate-cloud-engineer-topic-1-question-106-discussion/",
+  "ets": "Your organization has a dedicated person who creates and manages all service accounts for ",
+  "os": "Your organization has a dedicated person who creates and manages all service accounts for "
+ },
+ {
+  "id": 304,
+  "et": "T1Q3",
+  "sc": 0.77,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 51
+  },
+  "map": {
+   "B": "B",
+   "D": "D",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/17330-exam-associate-cloud-engineer-topic-1-question-3-discussion/",
+  "ets": "You want to select and configure a cost-effective solution for relational data on Google C",
+  "os": "You need to choose and configure a cost-effective solution for relational data on Google C"
+ },
+ {
+  "id": 305,
+  "et": "T1Q283",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "D": 6,
+   "B": 17
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/152559-exam-associate-cloud-engineer-topic-1-question-283-discussion/",
+  "ets": "Your preview application, deployed on a single-zone Google Kubernetes Engine (GKE) cluster",
+  "os": "Your preview application, deployed on a single-zone Google Kubernetes Engine (GKE) cluster"
+ },
+ {
+  "id": 306,
+  "et": "T1Q339",
+  "sc": 0.97,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/414921-exam-associate-cloud-engineer-topic-1-question-339-discussion/",
+  "ets": "You are deploying a new internal web application behind an internal Application Load Balan",
+  "os": "You are deploying a new internal web application behind an internal Application Load Balan"
+ },
+ {
+  "id": 307,
+  "et": "T1Q95",
+  "sc": 0.79,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 37
+  },
+  "map": {
+   "B": "B",
+   "D": "D",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22385-exam-associate-cloud-engineer-topic-1-question-95-discussion/",
+  "ets": "You want to find out when users were added to Cloud Spanner Identity Access Management (IA",
+  "os": "You need to determine when users were granted Spanner Identity and Access Management (IAM)"
+ },
+ {
+  "id": 308,
+  "et": "T1Q25",
+  "sc": 0.84,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 80,
+   "C": 6,
+   "B": 13
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16694-exam-associate-cloud-engineer-topic-1-question-25-discussion/",
+  "ets": "You need to configure IAM access audit logging in BigQuery for external auditors. You want",
+  "os": "You need to set up IAM access audit logging in BigQuery for external auditors, following G"
+ },
+ {
+  "id": 310,
+  "et": "T1Q223",
+  "sc": 0.99,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 30,
+   "C": 23,
+   "A": 6
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117110-exam-associate-cloud-engineer-topic-1-question-223-discussion/",
+  "ets": "Your company is using Google Workspace to manage employee accounts. Anticipated growth wil",
+  "os": "Your company is using Google Workspace to manage employee accounts. Anticipated growth wil"
+ },
+ {
+  "id": 311,
+  "et": "T1Q252",
+  "sc": 0.93,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 22,
+   "C": 2
+  },
+  "map": {
+   "C": "C",
+   "B": "B",
+   "D": "D",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129838-exam-associate-cloud-engineer-topic-1-question-252-discussion/",
+  "ets": "Your company developed an application to deploy on Google Kubernetes Engine. Certain parts",
+  "os": "Your company developed an application to deploy on Google Kubernetes Engine. Certain parts"
+ },
+ {
+  "id": 312,
+  "et": "T1Q184",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 130,
+   "D": 93,
+   "C": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74598-exam-associate-cloud-engineer-topic-1-question-184-discussion/",
+  "ets": "You need to configure optimal data storage for files stored in Cloud Storage for minimal c",
+  "os": "You need to configure optimal data storage for files stored in Cloud Storage for minimal c"
+ },
+ {
+  "id": 313,
+  "et": "T1Q266",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 21,
+   "C": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/129850-exam-associate-cloud-engineer-topic-1-question-266-discussion/",
+  "ets": "You are planning to migrate your on-premises data to Google Cloud. The data includes: \u2022 20",
+  "os": "You are planning to migrate your on-premises data to Google Cloud. The data includes:  \n  "
+ },
+ {
+  "id": 314,
+  "et": "T1Q234",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 27,
+   "C": 7
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/116894-exam-associate-cloud-engineer-topic-1-question-234-discussion/",
+  "ets": "You are migrating a business critical application from your local data center into Google ",
+  "os": "You are migrating a business critical application from your local data center into Google "
+ },
+ {
+  "id": 315,
+  "et": "T1Q158",
+  "sc": 0.66,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "B": 3,
+   "C": 24
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28355-exam-associate-cloud-engineer-topic-1-question-158-discussion/",
+  "ets": "Your company uses a large number of Google Cloud services centralized in a single project.",
+  "os": "Your organization runs numerous Google Cloud services that are consolidated in a single pr"
+ },
+ {
+  "id": 318,
+  "et": "T1Q140",
+  "sc": 0.63,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 24
+  },
+  "map": {
+   "C": "C",
+   "A": "A",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/28495-exam-associate-cloud-engineer-topic-1-question-140-discussion/",
+  "ets": "You are asked to set up application performance monitoring on Google Cloud projects A, B, ",
+  "os": "You need to configure application performance monitoring for Google Cloud projects A, B, a"
+ },
+ {
+  "id": 319,
+  "et": "T1Q6",
+  "sc": 0.54,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "A": 41,
+   "D": 71,
+   "B": 2,
+   "C": 6
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "A": "A",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/18595-exam-associate-cloud-engineer-topic-1-question-6-discussion/",
+  "ets": "Your company uses Cloud Storage to store application backup files for disaster recovery pu",
+  "os": "Your company uses Cloud Storage to hold application backup files for disaster recovery pur"
+ },
+ {
+  "id": 320,
+  "et": "T1Q271",
+  "sc": 1.0,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 19
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143948-exam-associate-cloud-engineer-topic-1-question-271-discussion/",
+  "ets": "Your company is running a critical workload on a single Compute Engine VM instance. Your c",
+  "os": "Your company is running a critical workload on a single Compute Engine VM instance. Your c"
+ },
+ {
+  "id": 321,
+  "et": "T1Q176",
+  "sc": 0.8,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 21
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/51259-exam-associate-cloud-engineer-topic-1-question-176-discussion/",
+  "ets": "You will have several applications running on different Compute Engine instances in the sa",
+  "os": "You plan to run several applications, each on its own Compute Engine instance, within the "
+ },
+ {
+  "id": 322,
+  "et": "T1Q290",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 5
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/303702-exam-associate-cloud-engineer-topic-1-question-290-discussion/",
+  "ets": "Your company would like to store invoices and other financial documents in Google Cloud. Y",
+  "os": "Your company would like to store invoices and other financial documents in Google Cloud. Y"
+ },
+ {
+  "id": 323,
+  "et": "T1Q190",
+  "sc": 1.0,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 47
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74495-exam-associate-cloud-engineer-topic-1-question-190-discussion/",
+  "ets": "The sales team has a project named Sales Data Digest that has the ID acme-data-digest. You",
+  "os": "The sales team has a project named Sales Data Digest that has the ID acme-data-digest. You"
+ },
+ {
+  "id": 325,
+  "et": "T1Q44",
+  "sc": 0.91,
+  "key": "C",
+  "top": "C",
+  "votes": {
+   "C": 16
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/19510-exam-associate-cloud-engineer-topic-1-question-44-discussion/",
+  "ets": "You need to select and configure compute resources for a set of batch processing jobs. The",
+  "os": "You need to select and configure compute resources for a set of batch processing jobs. The"
+ },
+ {
+  "id": 326,
+  "et": "T1Q40",
+  "sc": 0.75,
+  "key": "A",
+  "top": "D",
+  "votes": {
+   "D": 31
+  },
+  "map": {
+   "D": "A",
+   "B": "B",
+   "C": "C",
+   "A": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/16973-exam-associate-cloud-engineer-topic-1-question-40-discussion/",
+  "ets": "You have an instance group that you want to load balance. You want the load balancer to te",
+  "os": "You have an instance group that you want to load balance. You want the load balancer to te"
+ },
+ {
+  "id": 327,
+  "et": "T1Q70",
+  "sc": 0.65,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "A": 9,
+   "B": 23
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "C": "C",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24342-exam-associate-cloud-engineer-topic-1-question-70-discussion/",
+  "ets": "You are building an application that will run in your data center. The application will us",
+  "os": "You are developing an application that will run in your own data center and will call Goog"
+ },
+ {
+  "id": 328,
+  "et": "T1Q276",
+  "sc": 1.0,
+  "key": "BD",
+  "top": "BD",
+  "votes": {
+   "BD": 20
+  },
+  "map": {
+   "E": "E",
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143954-exam-associate-cloud-engineer-topic-1-question-276-discussion/",
+  "ets": "Your company uses BigQuery to store and analyze data. Upon submitting your query in BigQue",
+  "os": "Your company uses BigQuery to store and analyze data. Upon submitting your query in BigQue"
+ },
+ {
+  "id": 329,
+  "et": "T1Q231",
+  "sc": 1.0,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 21,
+   "A": 3
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117117-exam-associate-cloud-engineer-topic-1-question-231-discussion/",
+  "ets": "You have deployed an application on a single Compute Engine instance. The application writ",
+  "os": "You have deployed an application on a single Compute Engine instance. The application writ"
+ },
+ {
+  "id": 331,
+  "et": "T1Q75",
+  "sc": 0.82,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 12,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22193-exam-associate-cloud-engineer-topic-1-question-75-discussion/",
+  "ets": "You need to produce a list of the enabled Google Cloud Platform APIs for a GCP project usi",
+  "os": "Using the gcloud command line in Cloud Shell, you need to generate a list of the APIs that"
+ },
+ {
+  "id": 332,
+  "et": "T1Q122",
+  "sc": 0.79,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 25,
+   "D": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/24994-exam-associate-cloud-engineer-topic-1-question-122-discussion/",
+  "ets": "Your company is moving from an on-premises environment to Google Cloud. You have multiple ",
+  "os": "Your company is transitioning from an on-premises environment to Google Cloud. Several dev"
+ },
+ {
+  "id": 333,
+  "et": "T1Q241",
+  "sc": 0.92,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 20
+  },
+  "map": {
+   "A": "A",
+   "D": "D",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/117006-exam-associate-cloud-engineer-topic-1-question-241-discussion/",
+  "ets": "You used the gcloud container clusters command to create two Google Cloud Kubernetes (GKE)",
+  "os": "You used the gcloud container clusters command to create two Google Kubernetes Engine (GKE"
+ },
+ {
+  "id": 334,
+  "et": "T1Q327",
+  "sc": 0.77,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 2
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/382799-exam-associate-cloud-engineer-topic-1-question-327-discussion/",
+  "ets": "Your company wants to migrate your data from an on-premises relational database to Google ",
+  "os": "Your company plans to migrate data from an on-premises relational database to Google Cloud"
+ },
+ {
+  "id": 336,
+  "et": "T1Q17",
+  "sc": 0.82,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 24
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/15898-exam-associate-cloud-engineer-topic-1-question-17-discussion/",
+  "ets": "You are analyzing Google Cloud Platform service costs from three separate projects. You wa",
+  "os": "You are reviewing Google Cloud service costs across three separate projects. You need to u"
+ },
+ {
+  "id": 337,
+  "et": "T1Q62",
+  "sc": 0.84,
+  "key": "B",
+  "top": "A",
+  "votes": {
+   "B": 19,
+   "D": 5,
+   "A": 32
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/21981-exam-associate-cloud-engineer-topic-1-question-62-discussion/",
+  "ets": "You want to run a single caching HTTP reverse proxy on GCP for a latency-sensitive website",
+  "os": "You need to run a single caching HTTP reverse proxy on Google Cloud for a latency-sensitiv"
+ },
+ {
+  "id": 339,
+  "et": "T1Q76",
+  "sc": 0.79,
+  "key": "D",
+  "top": "D",
+  "votes": {
+   "D": 23
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/22059-exam-associate-cloud-engineer-topic-1-question-76-discussion/",
+  "ets": "You are building a new version of an application hosted in an App Engine environment. You ",
+  "os": "You are developing a new version of an application that runs in the App Engine environment"
+ },
+ {
+  "id": 340,
+  "et": "T1Q278",
+  "sc": 1.0,
+  "key": "C",
+  "top": "A",
+  "votes": {
+   "D": 6,
+   "C": 6,
+   "A": 34
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/143956-exam-associate-cloud-engineer-topic-1-question-278-discussion/",
+  "ets": "Your web application is hosted on Cloud Run and needs to query a Cloud SQL database. Every",
+  "os": "Your web application is hosted on Cloud Run and needs to query a Cloud SQL database. Every"
+ },
+ {
+  "id": 341,
+  "et": "T1Q147",
+  "sc": 0.9,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 13
+  },
+  "map": {
+   "D": "D",
+   "B": "B",
+   "A": "A",
+   "C": "C"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46861-exam-associate-cloud-engineer-topic-1-question-147-discussion/",
+  "ets": "You are hosting an application from Compute Engine virtual machines (VMs) in us`\"central1`",
+  "os": "You are hosting an application on Compute Engine virtual machines (VMs) in us-central1-a. "
+ },
+ {
+  "id": 342,
+  "et": "T1Q145",
+  "sc": 0.88,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 12,
+   "D": 3
+  },
+  "map": {
+   "A": "A",
+   "C": "C",
+   "B": "B",
+   "D": "D"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46376-exam-associate-cloud-engineer-topic-1-question-145-discussion/",
+  "ets": "Your existing application running in Google Kubernetes Engine (GKE) consists of multiple p",
+  "os": "You have an application already running in Google Kubernetes Engine (GKE) that consists of"
+ },
+ {
+  "id": 344,
+  "et": "T1Q20",
+  "sc": 0.94,
+  "key": "B",
+  "top": "D",
+  "votes": {
+   "B": 64,
+   "D": 80
+  },
+  "map": {
+   "A": "A",
+   "D": "D",
+   "C": "C",
+   "B": "B"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/15899-exam-associate-cloud-engineer-topic-1-question-20-discussion/",
+  "ets": "You created an instance of SQL Server 2017 on Compute Engine to test features in the new v",
+  "os": "You created an instance of SQL Server 2017 on Compute Engine to test features in the new v"
+ },
+ {
+  "id": 345,
+  "et": "T1Q133",
+  "sc": 0.82,
+  "key": "B",
+  "top": "B",
+  "votes": {
+   "B": 17
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/27834-exam-associate-cloud-engineer-topic-1-question-133-discussion/",
+  "ets": "An application generates daily reports in a Compute Engine virtual machine (VM). The VM is",
+  "os": "An application produces daily reports on a Compute Engine virtual machine (VM) that reside"
+ },
+ {
+  "id": 347,
+  "et": "T1Q185",
+  "sc": 1.0,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 34
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/74507-exam-associate-cloud-engineer-topic-1-question-185-discussion/",
+  "ets": "You are developing a new web application that will be deployed on Google Cloud Platform. A",
+  "os": "You are developing a new web application that will be deployed on Google Cloud Platform. A"
+ },
+ {
+  "id": 349,
+  "et": "T1Q120",
+  "sc": 0.79,
+  "key": "A",
+  "top": "A",
+  "votes": {
+   "A": 30
+  },
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/46576-exam-associate-cloud-engineer-topic-1-question-120-discussion/",
+  "ets": "You need to manage multiple Google Cloud projects in the fewest steps possible. You want t",
+  "os": "You need to manage several Google Cloud projects using as few steps as possible. You want "
+ },
+ {
+  "id": 358,
+  "et": "T1Q367",
+  "sc": 0.84,
+  "key": "B",
+  "top": null,
+  "votes": {},
+  "map": {
+   "D": "D",
+   "C": "C",
+   "B": "B",
+   "A": "A"
+  },
+  "bijective": true,
+  "url": "https://www.examtopics.com/discussions/google/view/419683-exam-associate-cloud-engineer-topic-1-question-367-discussion/",
+  "ets": "You are managing your company's archival records that are stored in a Cloud Storage bucket",
+  "os": "You manage your company's archival records in a Cloud Storage bucket that uses the Multi-R"
+ }
+]

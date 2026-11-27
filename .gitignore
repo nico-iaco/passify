@@ -36,3 +36,7 @@ pnpm-debug.log*
 
 # TypeScript cache
 *.tsbuildinfo
+
+# Study audio from NotebookLM (too large for git)
+study/*/notebooklm/*.m4a
+study/*/notebooklm/*.mp3
