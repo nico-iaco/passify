@@ -19,6 +19,18 @@ const SAMPLES = [
     count: 203,
     icon: '⚙️',
   },
+  {
+    file: `${BASE}samples/google-generativeAiLeader-examcademy.json`,
+    label: 'Generative AI Leader',
+    count: 99,
+    icon: '✨',
+  },
+  {
+    file: `${BASE}samples/google-associateCloudEngineer-examcademy.json`,
+    label: 'Associate Cloud Engineer',
+    count: 354,
+    icon: '🛠️',
+  },
 ]
 
 interface Props {
