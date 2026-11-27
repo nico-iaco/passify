@@ -1,0 +1,3622 @@
+{
+ "1": {
+  "id": 1,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Storage access is logged in Data Access logs, not Admin Activity. Logs Explorer queries these logs directly."
+  }
+ },
+ "2": {
+  "id": 2,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Organization policies can restrict resource creation to specific locations; folders organize projects for policy application."
+  }
+ },
+ "4": {
+  "id": 4,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use Access Approval's approver role assigned to a group for best practice access control."
+  }
+ },
+ "5": {
+  "id": 5,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use private IP access via custom route advertisement and DNS CNAME to restricted.googleapis.com."
+  }
+ },
+ "6": {
+  "id": 6,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Reserve the static internal IP to match the app's configuration without changes."
+  }
+ },
+ "7": {
+  "id": 7,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Bigtable provides sub-millisecond latency for high-volume IoT data storage."
+  }
+ },
+ "8": {
+  "id": 8,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Upload to Artifact Registry and use a Deployment to manage the workload."
+  }
+ },
+ "9": {
+  "id": 9,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use 'Shut down' for projects, not deleting individual resources, to stop billing efficiently."
+  }
+ },
+ "10": {
+  "id": 10,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Run supports Docker containers and environment variables, making it the correct serverless choice for existing microservices."
+  }
+ },
+ "3": {
+  "id": 3,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Bigtable offers low-latency, globally distributed storage ideal for gaming stats without complex management."
+  },
+  "p2": {
+   "analysis": "A: Cloud SQL cross-region adds high complexity and latency, poor for gaming.\nB: Spanner offers global consistency, low latency, and scales well without extra management.\nC: BigQuery is for analytics, not real-time gaming; Redis adds complexity.\nD: Bigtable is good but Spanner is better for relational game data with global consistency.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Spanner provides global consistency, low latency, and scales automatically without increasing management complexity."
+  }
+ },
+ "11": {
+  "id": 11,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Select local SSD for high IOPS and fill in disk/snapshot storage costs."
+  }
+ },
+ "13": {
+  "id": 13,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Data Access audit logs record all read/write requests to Cloud Storage buckets."
+  }
+ },
+ "14": {
+  "id": 14,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Environment variables are not logged by default, unlike config file entries."
+  }
+ },
+ "15": {
+  "id": 15,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Organizational policies automatically enforce constraints without manual auditing or scanning tasks."
+  },
+  "p2": {
+   "analysis": "A/B require manual scanning. C uses policy to prevent future access. D adds manual cleanup step.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Organizational policies automatically enforce domain restrictions without needing manual audits or tasks."
+  }
+ },
+ "16": {
+  "id": 16,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Check pod events for scheduling or resource issues causing Pending status."
+  }
+ },
+ "17": {
+  "id": 17,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Start with least-privilege base role (Compute Image User) and add only needed disk permission."
+  },
+  "p2": {
+   "analysis": "A: Correct. Custom roles with includedPermissions follow least privilege. B: Incorrect base role. C: Too broad. D: Too broad, violates least privilege.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Custom roles with includedPermissions grant only needed permissions, following least privilege best practices."
+  }
+ },
+ "18": {
+  "id": 18,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "AlloyDB offers synchronous replication and storage-layer optimization for demanding workloads."
+  }
+ },
+ "19": {
+  "id": 19,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "GCDS syncs AD users to Cloud Identity, keeping AD as the source of truth while managing Google accounts centrally."
+  }
+ },
+ "20": {
+  "id": 20,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Organization policies are inherited. Define disallowed locations at the org level to enforce EEA compliance across all folders."
+  },
+  "p2": {
+   "analysis": "Folder policies apply to subfolders; allowlist ensures only EEA locations are used.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Folder-level allowlist restricts resources to specified EEA locations effectively."
+  }
+ },
+ "21": {
+  "id": 21,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Custom mode allows shared subnets; BGP handles dynamic routing; active/passive prevents tunnel overprovisioning."
+  }
+ },
+ "22": {
+  "id": 22,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Monitoring natively tracks CPU and supports alerting policies with email notifications."
+  }
+ },
+ "23": {
+  "id": 23,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "The --preview flag simulates deployment without applying changes, validating dependencies quickly."
+  }
+ },
+ "24": {
+  "id": 24,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Create a new project and deploy the app separately to avoid copying existing resources incorrectly."
+  }
+ },
+ "25": {
+  "id": 25,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Storage Object Admin allows managing objects and buckets, following least privilege for file management."
+  },
+  "p2": {
+   "analysis": "A: Too broad. B: Grants full bucket control, not recommended for just files. C: Grants full object control, ideal for managing files. D: Only creates objects, insufficient for management.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Storage Object Admin allows managing files without full bucket access, following least privilege."
+  }
+ },
+ "26": {
+  "id": 26,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "OS Login automates SSH key management and enforces audit compliance via organization policies."
+  }
+ },
+ "27": {
+  "id": 27,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Single VPC with separate subnets allows internal communication; firewall rules control ingress/egress as required."
+  }
+ },
+ "28": {
+  "id": 28,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Creating the instance without a public IP prevents direct internet access."
+  }
+ },
+ "29": {
+  "id": 29,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Pub/Sub triggers Cloud Run to automatically upload images, enabling a scalable, event-driven solution."
+  },
+  "p2": {
+   "analysis": "A: Trigger direction wrong. B: Cron is manual, not fully automated GCP-native. C: Correct flow: App->Pub/Sub->Cloud Run->Storage. D: Manual upload fails automation requirement.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "App sends images to Pub/Sub, which triggers Cloud Run to upload to Cloud Storage automatically."
+  }
+ },
+ "30": {
+  "id": 30,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud Run is serverless, fully managed, supports event triggers from Cloud Storage, and aligns with Google best practices for automation."
+  }
+ },
+ "31": {
+  "id": 31,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use spanner.databaseUser for view/edit access; add users to a group for easier management."
+  }
+ },
+ "32": {
+  "id": 32,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use internal ALB and Direct VPC egress for private, secure connectivity following best practices."
+  }
+ },
+ "33": {
+  "id": 33,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Check IAM roles assigned to the service account at project, folder, or organization levels to validate permissions."
+  }
+ },
+ "34": {
+  "id": 34,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "VPC peering is the recommended, cost-effective method for connecting VPCs in the same region with non-overlapping ranges."
+  }
+ },
+ "35": {
+  "id": 35,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Dry run estimates bytes read, which determines on-demand cost. Convert to dollars using the Pricing Calculator."
+  }
+ },
+ "36": {
+  "id": 36,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "VPC Flow Logs and shared VPC allow instances in different regions to communicate via private IPs without extra peering or load balancers."
+  }
+ },
+ "37": {
+  "id": 37,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use the pricing calculator for accurate estimates without provisioning resources."
+  }
+ },
+ "38": {
+  "id": 38,
+  "key": "CD",
+  "p1": {
+   "answer": "AC",
+   "confidence": 5,
+   "why": "Follow principle of least privilege: create single-purpose accounts and minimize their number."
+  },
+  "p2": {
+   "analysis": "A: Minimize count to reduce risk. B: Remove unused to prevent unauthorized access. C: Single-purpose limits blast radius. D: Treat as resources for lifecycle mgmt. E: Random names violate naming best practices.",
+   "answer": "AB",
+   "confidence": 5,
+   "why": "Minimize count, remove unused, and use single-purpose accounts follow Google's security best practices for IAM."
+  }
+ },
+ "39": {
+  "id": 39,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "The 'pull' command fetches messages, and '--auto-ack' automatically acknowledges them after delivery."
+  }
+ },
+ "40": {
+  "id": 40,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Autopilot reduces operational cost and private clusters meet network/integrity requirements."
+  }
+ },
+ "41": {
+  "id": 41,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Monitoring's data freshness metric directly detects stuck jobs with minimal setup."
+  }
+ },
+ "42": {
+  "id": 42,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud SQL Auth Proxy handles encryption and IAM authentication with minimal management."
+  }
+ },
+ "43": {
+  "id": 43,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud SQL supports PostgreSQL with ACID transactions and minimal migration effort."
+  }
+ },
+ "44": {
+  "id": 44,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Managed Instance Groups enable autohealing with minimal steps by setting a health check directly on the MIG."
+  }
+ },
+ "45": {
+  "id": 45,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Spot VMs are significantly cheaper and suitable for fault-tolerant batch workloads that can tolerate interruptions."
+  }
+ },
+ "46": {
+  "id": 46,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use 'testing' permissions and ALPHA stage for first version/custom roles in production testing."
+  },
+  "p2": {
+   "answer": "A",
+   "raw": "{\"analysis\":\"A: Supported perms are good for prod, but ALPHA stage implies testing, not prod use. B: Supported perms are good for prod, but BETA stage implies testing, not prod use. C: Testing perms a"
+  }
+ },
+ "47": {
+  "id": 47,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Terraform modules encapsulate best practices, allowing independent deployment without teams needing to know implementation details."
+  }
+ },
+ "48": {
+  "id": 48,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Storage is the standard input for Dataflow jobs and handles unstructured data in various formats."
+  }
+ },
+ "49": {
+  "id": 49,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Pub/Sub handles high-volume streaming; Dataflow processes it; Cloud Storage is the durable data lake repository."
+  }
+ },
+ "50": {
+  "id": 50,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud SQL for structured queries, Cloud Storage Archive for infrequent logs, and Bigtable for high-velocity, loss-tolerant sensor data."
+  }
+ },
+ "51": {
+  "id": 51,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "VPA automatically adjusts resource limits based on actual usage, fixing undersized limits."
+  }
+ },
+ "52": {
+  "id": 52,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use the built-in 'project viewer' role for read-only access to all project resources."
+  }
+ },
+ "53": {
+  "id": 53,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use external ALB for HTTP/HTTPS and A record in public DNS for user access."
+  }
+ },
+ "54": {
+  "id": 54,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Autopilot is recommended for reliability. Stable channel ensures production stability."
+  }
+ },
+ "55": {
+  "id": 55,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use 'recreate-instances' to force replacement of unhealthy VMs in a MIG quickly."
+  }
+ },
+ "56": {
+  "id": 56,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Create a dedicated service account for the instance and grant it specific Cloud Storage permissions to isolate access."
+  }
+ },
+ "57": {
+  "id": 57,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Bigtable handles high throughput, atomic writes, and time-based retrieval efficiently for IoT sensor data."
+  }
+ },
+ "58": {
+  "id": 58,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "You need Project Billing Manager role to link a billing account to a project. Create the new account first, then link it."
+  }
+ },
+ "59": {
+  "id": 59,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use n1-standard-96 to provision exactly 96 vCPUs at creation, ensuring equivalent performance."
+  }
+ },
+ "60": {
+  "id": 60,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "10.0.0.0/8 offers the largest valid private IP range (16 million addresses)."
+  }
+ },
+ "62": {
+  "id": 62,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use snapshot schedules for automated, cost-effective backups with automatic cleanup of old snapshots."
+  }
+ },
+ "63": {
+  "id": 63,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Route traffic to the previous version immediately via the Console Versions page."
+  }
+ },
+ "64": {
+  "id": 64,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Switch the project's billing account to the company's account to charge the invoice directly."
+  }
+ },
+ "65": {
+  "id": 65,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Log views allow filtering specific log entries and granting access only to those, enforcing least privilege efficiently."
+  }
+ },
+ "66": {
+  "id": 66,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Hyperdisk Extreme offers highest IOPS. Stateful MIG preserves disk data on instance failure for databases."
+  }
+ },
+ "67": {
+  "id": 67,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use a custom service account with dataset-level permissions for least privilege and long-term validity."
+  }
+ },
+ "68": {
+  "id": 68,
+  "key": "C",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "BigQuery is the recommended scalable, SQL-capable solution for log analysis and visualization."
+  },
+  "p2": {
+   "analysis": "A: Custom scripts violate managed practices. B: Logs Explorer lacks SQL. C: Log Analytics supports SQL and charts. D: Cloud SQL is for relational data, not logs.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Log Analytics enables SQL queries and visualization, following best practices with minimal ops."
+  }
+ },
+ "69": {
+  "id": 69,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Create a custom role with only required permissions to follow least privilege."
+  }
+ },
+ "70": {
+  "id": 70,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Selecting the latest supported version ensures automatic updates to stable, supported Kubernetes releases."
+  },
+  "p2": {
+   "analysis": "A repairs nodes, doesn't upgrade K8s. B upgrades nodes, not K8s version. C ensures latest stable K8s version. D is OS choice, not version control.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Selecting the latest available cluster version ensures the cluster runs a supported, stable Kubernetes release automatically updated by GKE."
+  }
+ },
+ "72": {
+  "id": 72,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "IAP allows SSH access without public IPs and scales automatically for new instances."
+  }
+ },
+ "73": {
+  "id": 73,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Spot VMs (A, C, D) interrupt if the price spikes, violating the 'uninterrupted run' requirement. Stopping a standard VM (B) incurs no cost when idle, minimizing expense for a monthly job."
+  }
+ },
+ "74": {
+  "id": 74,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "maxSurge=1 and maxUnavailable=0 ensures capacity never drops during rollout."
+  }
+ },
+ "75": {
+  "id": 75,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Enable Log Analytics to create a linked dataset in BigQuery for SQL analysis."
+  }
+ },
+ "76": {
+  "id": 76,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "App Engine and Cloud Run are serverless. Cloud Tasks with Cloud Run is the recommended serverless pattern for background jobs."
+  }
+ },
+ "77": {
+  "id": 77,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "kubectl config get-contexts lists all contexts, including those from inactive gcloud configurations, without activation steps."
+  },
+  "p2": {
+   "analysis": "A describes inactive configs. B activates then lists, but doesn't show cluster details. C lists contexts (clusters). D switches then views, more steps.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "kubectl config get-contexts lists all configured contexts (clusters) regardless of active config state."
+  }
+ },
+ "78": {
+  "id": 78,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Service Account creation is a configuration event logged under Configuration category for the Service Account resource."
+  }
+ },
+ "79": {
+  "id": 79,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Add a secondary IP range to the existing subnet to create new available IPs for VMs without changing the primary range or creating new VPCs."
+  },
+  "p2": {
+   "analysis": "A: Cannot modify existing subnet range. B: Secondary ranges allow new IPs in same VPC. C/D: Peering adds unnecessary complexity.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Secondary IP ranges provide new addresses without changing the primary subnet or creating new VPCs/peering."
+  }
+ },
+ "80": {
+  "id": 80,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use INFORMATION_SCHEMA.COLUMNS to scan all projects efficiently without manual setup or heavy infrastructure."
+  },
+  "p2": {
+   "analysis": "A uses Data Catalog search, efficient for metadata. B/C use SQL on INFORMATION_SCHEMA, accurate but heavy. D overcomplicates with Dataflow.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Data Catalog's search feature efficiently scans metadata across projects without complex scripting or heavy queries."
+  }
+ },
+ "81": {
+  "id": 81,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Different VPCs allow cross-region communication without manual routing, satisfying the requirement."
+  },
+  "p2": {
+   "analysis": "A: Different regions break internal connectivity. B: Same CIDR causes IP conflicts. C: Different VPCs prevent internal communication. D: Same VPC allows internal routing between subnets in same region.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Same VPC enables internal routing; same region avoids routing issues; different subnets separate workloads."
+  }
+ },
+ "83": {
+  "id": 83,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud Run supports static sites and scales to zero, minimizing costs and meeting requirements."
+  }
+ },
+ "84": {
+  "id": 84,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "IAP provides secure, cost-free SSH access without public IPs or bastion hosts."
+  }
+ },
+ "85": {
+  "id": 85,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Spanner provides global consistency and low latency across regions for relational data."
+  }
+ },
+ "86": {
+  "id": 86,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Folders allow grouping resources to apply common IAM policies via folder-level bindings."
+  }
+ },
+ "87": {
+  "id": 87,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Create project, enable API, then create instance specifying the new project ID."
+  }
+ },
+ "88": {
+  "id": 88,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud VPN creates a secure private connection allowing direct communication using private IP ranges between on-premises and GCP."
+  }
+ },
+ "89": {
+  "id": 89,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Error Reporting shows Data Studio-specific errors like broken charts or data refresh failures."
+  },
+  "p2": {
+   "analysis": "A: Error Reporting shows Data Studio errors. B: BigQuery logs show job failures. C: Debugger is for app code, not ETL. D: Logging filters don't show job errors.",
+   "answer": "AB",
+   "confidence": 4,
+   "why": "Check Error Reporting for Data Studio issues and BigQuery logs for job failures."
+  }
+ },
+ "90": {
+  "id": 90,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Add GPU node pool and use nodeSelector for targeted scheduling."
+  }
+ },
+ "91": {
+  "id": 91,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Deployment Manager is Google's recommended tool for dynamic, template-based provisioning of GCP resources like VMs."
+  }
+ },
+ "92": {
+  "id": 92,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "BigQuery export enables dynamic, automated metrics on large datasets, unlike static console reports or CSV exports."
+  }
+ },
+ "93": {
+  "id": 93,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use Shared VPC to connect instances across projects in the same organization."
+  }
+ },
+ "94": {
+  "id": 94,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Folders allow hierarchical policies; sinks must be on projects, but policies on folders apply to all projects within."
+  }
+ },
+ "95": {
+  "id": 95,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Custom mode VPCs minimize cost/complexity. One /16 VPC with tiered subnets and subnet-based firewall rules provides required isolation efficiently."
+  }
+ },
+ "96": {
+  "id": 96,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Google recommends using custom roles and groups for least privilege access control."
+  }
+ },
+ "97": {
+  "id": 97,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Org policies enforce key lifetime limits and restrict creation to the centralized project, meeting all requirements cost-effectively."
+  }
+ },
+ "98": {
+  "id": 98,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "gcloud projects get-iam-policy lists all role bindings, including Project Owner."
+  }
+ },
+ "99": {
+  "id": 99,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "The IAM section in the console lists all users and roles assigned within the project."
+  }
+ },
+ "100": {
+  "id": 100,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use Workload Identity to bind GCP SA to K8s SA without keys, following security best practices."
+  }
+ },
+ "101": {
+  "id": 101,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "BigQuery export provides real-time data and allows custom visualization in Data Studio across multiple projects."
+  }
+ },
+ "102": {
+  "id": 102,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use minimal permissions, separate service accounts, and Secret Manager for security best practices."
+  }
+ },
+ "103": {
+  "id": 103,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Run uses services for traffic splitting; revisions are for rollouts, not canary percentages."
+  },
+  "p2": {
+   "analysis": "A: New service allows traffic splitting. B: Revisions don't support direct traffic splitting. C/D: ALB unnecessary for Cloud Run traffic splitting.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Run uses services for traffic splitting; revisions alone cannot split traffic directly."
+  }
+ },
+ "104": {
+  "id": 104,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Create a custom role with only start, stop, and reset permissions to strictly enforce the minimum required access."
+  }
+ },
+ "105": {
+  "id": 105,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use org policies to block non-company emails and IAM roles for departmental access."
+  }
+ },
+ "106": {
+  "id": 106,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Pub/Sub handles variable rates and triggers Cloud Run for scalable processing."
+  }
+ },
+ "107": {
+  "id": 107,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Store infrastructure code in Cloud Source Repositories for version control and collaboration, following Git best practices."
+  }
+ },
+ "108": {
+  "id": 108,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Internal IPs are free; external IPs cost money. Use internal static IP for VPC communication."
+  }
+ },
+ "109": {
+  "id": 109,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "OS Login with groups automates SSH key management and reduces overhead when team members change."
+  }
+ },
+ "110": {
+  "id": 110,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use Pub/Sub push with a dedicated service account for secure, scalable message delivery to Cloud Run."
+  }
+ },
+ "111": {
+  "id": 111,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Premium Tier offers lower latency for production; Standard Tier is cost-effective for development."
+  }
+ },
+ "112": {
+  "id": 112,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use private nodes with static Cloud NAT IPs for stable allowlisting."
+  }
+ },
+ "113": {
+  "id": 113,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "gcloud config list shows the active project used for the deployment command."
+  }
+ },
+ "114": {
+  "id": 114,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Deployment Manager templates reduce repetitive code by defining resources declaratively."
+  }
+ },
+ "115": {
+  "id": 115,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use least privilege: storage.objectCreator grants write-only access, following Google-recommended practices."
+  }
+ },
+ "116": {
+  "id": 116,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Enable the Cloud Spanner API before creating any resources."
+  }
+ },
+ "119": {
+  "id": 119,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "GKE nodes need a service account with Container Registry access. Use imagePullSecrets to authenticate image pulls securely."
+  },
+  "p2": {
+   "analysis": "A: Wrong role for images. B: Irrelevant to image pulling. C: Correct method for private registries. D: Wrong resource (Cloud Storage vs Container Registry).",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use imagePullSecrets with a service account having Container Registry access for private images."
+  }
+ },
+ "120": {
+  "id": 120,
+  "key": "C",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use groups for management and Data Viewer for read-only access per best practices."
+  },
+  "p2": {
+   "analysis": "A: Manual IAM per user is inefficient. B: Data Viewer lacks query execution rights. C: Job User role is for service accounts, not humans. D: Group + Data Viewer follows best practices for teams.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Groups simplify management; Data Viewer allows safe querying without data modification rights."
+  }
+ },
+ "122": {
+  "id": 122,
+  "key": "D",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Add an alias IP range to the subnet to provide additional IP addresses for node pools without changing the subnet CIDR."
+  },
+  "p2": {
+   "analysis": "A: New subnet allows scaling but requires reconfiguration. B: Alias IPs extend node IP space without changing subnet CIDR. C: Peering adds complexity and doesn't directly solve node IP exhaustion. D: Expanding CIDR is not possible for existing subnets.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Add an alias IP range to extend available node IPs without changing the subnet CIDR block."
+  }
+ },
+ "123": {
+  "id": 123,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Billing export to BigQuery enables detailed analysis; Data Studio allows flexible, multi-view dashboards."
+  }
+ },
+ "124": {
+  "id": 124,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Finance gets link permission; Engineering loses it. Finance cannot edit projects."
+  }
+ },
+ "125": {
+  "id": 125,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Pub/Sub notifications automatically alert on object changes with minimal overhead, unlike manual log viewing or custom scripts."
+  }
+ },
+ "126": {
+  "id": 126,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Nearline is cost-effective for infrequent access (monthly) and supports versioning updates, unlike Coldline which is for archival only."
+  },
+  "p2": {
+   "analysis": "A: Coldline is too cheap for monthly access. B: Nearline fits 30-day retention and monthly access. C/D: Lifecycle rules target objects, not 'regional storage'.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Nearline Storage is cost-effective for data accessed monthly after 30 days. Lifecycle rules apply to objects, not regional storage."
+  }
+ },
+ "128": {
+  "id": 128,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Increase initial delay to prevent premature scaling before instances are ready."
+  }
+ },
+ "129": {
+  "id": 129,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Default deny (high priority) then allow specific ports (low priority)."
+  }
+ },
+ "130": {
+  "id": 130,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use scheduled export jobs to create point-in-time copies and store them in Archive class storage for long-term retention."
+  }
+ },
+ "131": {
+  "id": 131,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Private zones allow using DNS names instead of IPs, avoiding updates when IPs change."
+  }
+ },
+ "133": {
+  "id": 133,
+  "key": "C",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Global external ALB provides SSL termination and global distribution to minimize latency."
+  },
+  "p2": {
+   "analysis": "A: Global ALB optimizes latency via global routing and SSL termination. B: Passthrough NLB lacks global routing. C: Proxy NLB is deprecated. D: Internal NLB is not global.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Global ALB provides global traffic distribution and SSL termination, minimizing client latency."
+  }
+ },
+ "134": {
+  "id": 134,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "GCP subnets cannot be expanded. Deleting and recreating with a larger range is the only way to get more IPs."
+  },
+  "p2": {
+   "analysis": "A: gcloud cannot expand subnet IP range. B: Deleting recreates subnet but doesn't solve immediate need. C: Shared VPC doesn't add IPs to existing subnet. D: Creating new subnet with wider range allows new VMs.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Creating a new subnet with a wider range provides the needed IPs while maintaining connectivity."
+  }
+ },
+ "135": {
+  "id": 135,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "GCDS automates sync between LDAP OUs and Cloud Identity, handling joins/moves/leaves automatically."
+  }
+ },
+ "136": {
+  "id": 136,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud SQL for MySQL, Pub/Sub for Kafka, and BigQuery for PostgreSQL analytics are the standard Google-recommended managed services for these workloads."
+  },
+  "p2": {
+   "analysis": "Cloud SQL/BigQuery/Pub/Sub are Google-recommended for MySQL/Postgres/Kafka respectively, offering managed scalability.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud SQL manages MySQL/Postgres, Pub/Sub handles Kafka streaming, and BigQuery suits analytics."
+  }
+ },
+ "137": {
+  "id": 137,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "OS Config agent collects vulnerability data; osconfig.vulnerabilityReportViewer grants read access to reports."
+  }
+ },
+ "138": {
+  "id": 138,
+  "key": "A",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "HTTP/2 multiplexing reduces latency for initial page loads compared to HTTP/1.1."
+  },
+  "p2": {
+   "analysis": "A: Increases cold starts, worsening the issue. B: Reduces parallelism, increasing wait times. C: Increases cost without fixing cold starts. D: HTTP/2 multiplexing reduces latency for multiple resources, addressing the initial load delay.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "HTTP/2 multiplexing allows multiple resources to load simultaneously, mitigating the initial page load delay caused by sequential requests."
+  }
+ },
+ "139": {
+  "id": 139,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "External passthrough NLB preserves client IP for TCP traffic."
+  }
+ },
+ "140": {
+  "id": 140,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud Run scales to zero (no cost when idle) and Eventarc standardizes event delivery from Google services."
+  }
+ },
+ "141": {
+  "id": 141,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Autoscaling ensures the app stays running. Min=1 and Max=1 limits it to exactly one instance."
+  }
+ },
+ "142": {
+  "id": 142,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Transfer Appliance handles large, infrequent data with minimal bandwidth impact and low cost."
+  },
+  "p2": {
+   "analysis": "A: Transfer Service handles large migrations efficiently. B: Transfer Appliance ideal for large data with bandwidth constraints. C: Filestore is for frequent access, not cold data. D: Direct copy lacks bandwidth control and is inefficient for large volumes.",
+   "answer": "AB",
+   "confidence": 5,
+   "why": "Transfer Service and Transfer Appliance are best for large, infrequent data with bandwidth limits. Filestore is wrong for cold data. Direct copy is inefficient."
+  }
+ },
+ "143": {
+  "id": 143,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Storage backend enables concurrent state management and avoids local sensitive data storage."
+  }
+ },
+ "144": {
+  "id": 144,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Managed Instance Groups with autoscaling meet VM policy and CPU-based scaling requirements efficiently."
+  }
+ },
+ "145": {
+  "id": 145,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use --splits to route 1% traffic to the new version within the same app, minimizing complexity."
+  }
+ },
+ "146": {
+  "id": 146,
+  "key": "D",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use the Pricing Calculator's Cloud Operations template for accurate, detailed estimates."
+  },
+  "p2": {
+   "analysis": "A: Manual spreadsheets are error-prone and not the recommended tool. B: The Pricing Calculator lacks a specific 'Cloud Operations' template for this. C: Real load testing is accurate but expensive and time-consuming for estimates. D: The Pricing Calculator is the official tool; comparing instance sizes is valid practice.",
+   "answer": "D",
+   "confidence": 4,
+   "why": "The Pricing Calculator is the official tool. Comparing instance sizes helps estimate costs accurately without over-provisioning."
+  }
+ },
+ "147": {
+  "id": 147,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Instance templates allow setting Automatic Restart and On-host maintenance (Migrate) for high availability during maintenance."
+  }
+ },
+ "149": {
+  "id": 149,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Pub/Sub handles async messaging serverlessly; Cloud Run scales VMs to zero, minimizing overhead."
+  }
+ },
+ "150": {
+  "id": 150,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Enable Bigtable audit logs (Data Read/Write/Admin Read) and use a Logging sink to Pub/Sub for SIEM ingestion."
+  }
+ },
+ "151": {
+  "id": 151,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "GKE Autopilot minimizes management overhead by managing node pools and scaling automatically, suitable for microservices without public exposure."
+  }
+ },
+ "152": {
+  "id": 152,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use gcloud iam roles copy to replicate custom roles from the source org to the destination org."
+  }
+ },
+ "153": {
+  "id": 153,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Uses IAM roles for OS login, enabling efficient credential management and audit trails via Google accounts."
+  }
+ },
+ "154": {
+  "id": 154,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "IAM permissions define who can access project data; reviewing roles identifies viewers."
+  }
+ },
+ "155": {
+  "id": 155,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Pub/Sub provides near real-time streaming with minimal latency compared to batch-based sinks like BigQuery or Cloud Storage."
+  }
+ },
+ "156": {
+  "id": 156,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Marketplace offers one-click deployment for quick and easy installation without complex CLI or Terraform setup."
+  }
+ },
+ "157": {
+  "id": 157,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "AlloyDB offers PostgreSQL compatibility, high performance, and cost efficiency for large datasets, fitting all requirements."
+  },
+  "p2": {
+   "analysis": "AlloyDB offers PostgreSQL compatibility with high performance and cost efficiency, ideal for large migrations with minimal schema changes.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "AlloyDB is the recommended managed PostgreSQL service on GCP, offering high performance and compatibility without schema changes."
+  }
+ },
+ "158": {
+  "id": 158,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Assigning BigQuery User role to the group grants direct query access to the latest data."
+  }
+ },
+ "159": {
+  "id": 159,
+  "key": "BE",
+  "p1": {
+   "answer": "AD",
+   "confidence": 5,
+   "why": "Splitting projects isolates costs and quotas; splitting warehouses prevents cross-unit data access and cost sharing."
+  },
+  "p2": {
+   "analysis": "A isolates costs by project. B enforces limits directly. C/D are inefficient. E is for performance, not cost control.",
+   "answer": "AB",
+   "confidence": 5,
+   "why": "Splitting projects (A) and setting quotas (B) directly isolate and limit costs per business unit."
+  }
+ },
+ "160": {
+  "id": 160,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Link project to a specific billing account to isolate charges; labels do not affect billing."
+  },
+  "p2": {
+   "analysis": "A: Wrong role scope. B: Labels don't isolate billing. C: Correct roles and linking. D: Labels don't isolate billing.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Linking to a separate billing account is required for isolated charges; Organization Admin is needed to create accounts/projects."
+  }
+ },
+ "161": {
+  "id": 161,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Grant the service account Compute Storage Admin role in the VM project to allow snapshot creation."
+  }
+ },
+ "162": {
+  "id": 162,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Alert policies are the recommended, no-code solution for automatic notifications on metric thresholds."
+  }
+ },
+ "163": {
+  "id": 163,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud Logging sinks directly export logs to BigQuery with minimal cost and no custom code needed."
+  }
+ },
+ "164": {
+  "id": 164,
+  "key": "D",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "The creator label is automatically set when a project is created and identifies the creator's email."
+  },
+  "p2": {
+   "analysis": "A: Creator label is set automatically at project creation. B: Folders don't store creator info. C: Billing owner differs from project creator. D: IAM Owner role may not be the original creator.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "The creator label is automatically set when a project is created and identifies the original creator."
+  }
+ },
+ "165": {
+  "id": 165,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Autopilot provides high availability, minimal downtime, automatic security updates, and pay-per-use billing without node management."
+  }
+ },
+ "166": {
+  "id": 166,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud Run jobs are serverless and cost-effective for sporadic batch workloads. Cloud Scheduler triggers them automatically with built-in retry support."
+  }
+ },
+ "167": {
+  "id": 167,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "External tables avoid data loading costs and allow direct SQL access to Cloud Storage files."
+  }
+ },
+ "168": {
+  "id": 168,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud SQL for PostgreSQL supports automatic scaling, multi-region replication, and low latency for North America users."
+  },
+  "p2": {
+   "analysis": "A: BigQuery is for analytics, not transactional apps. B: Spanner offers auto-scaling, multi-region, and low latency. C: Cloud SQL lacks native multi-region. D: Bigtable is for NoSQL, not PostgreSQL.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Spanner provides the required auto-scaling, multi-region support, and low latency for PostgreSQL workloads."
+  }
+ },
+ "169": {
+  "id": 169,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Config Connector requires the 'deleted-by-cnrm' label set to 'true' to trigger permanent deletion of managed resources."
+  },
+  "p2": {
+   "analysis": "A: CNRM deletion label works. B: kubectl delete fails if Config Connector manages it. C: gcloud delete fails if Config Connector manages it. D: Label update doesn't trigger deletion.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Config Connector resources require the 'deleted-by-cnrm' label set to 'true' for permanent deletion via kubectl."
+  }
+ },
+ "170": {
+  "id": 170,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use service accounts as source/destinations for precise tier-to-tier communication on specific port 8080."
+  }
+ },
+ "171": {
+  "id": 171,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Terraform modules enforce consistent, preconfigured deployments via Infrastructure as Code, ideal for security compliance."
+  }
+ },
+ "172": {
+  "id": 172,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Separate projects ensure strict network isolation, meeting security requirements and following Google best practices."
+  }
+ },
+ "173": {
+  "id": 173,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Create a custom log-based metric to trigger alerts automatically for specific errors."
+  }
+ },
+ "174": {
+  "id": 174,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Standard is best for frequent access. Coldline offers lower cost for infrequent access (1 year). Archive is cheapest for long retention (2 years)."
+  },
+  "p2": {
+   "analysis": "Standard is best for frequent access. Coldline is cheaper than Nearline for infrequent access. Archive is cheapest for long retention.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Standard handles frequent access; Coldline reduces cost for the next year; Archive minimizes cost for the final two years."
+  }
+ },
+ "175": {
+  "id": 175,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use Asset Inventory to search for ServiceAccountKey resources older than 90 days."
+  }
+ },
+ "176": {
+  "id": 176,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Spanner offers global scaling and automatic sharding with minimal configuration changes."
+  }
+ },
+ "177": {
+  "id": 177,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use external passthrough NLB for UDP traffic to preserve packet headers and enable direct client-to-backend communication."
+  }
+ },
+ "178": {
+  "id": 178,
+  "key": "C",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Private Service Access allows VMs to reach Google services via internal IPs without internet access."
+  },
+  "p2": {
+   "analysis": "A enables private access for GCP services. B restricts internet but doesn't enable private access. C allows internet, violating policy. D requires internet, violating policy.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Private Service Access allows VMs to reach Cloud Storage using internal IPs without internet access."
+  }
+ },
+ "179": {
+  "id": 179,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Revision autoscaling ensures new instances are ready before traffic is routed, minimizing startup time and overhead."
+  }
+ },
+ "180": {
+  "id": 180,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Impersonation avoids storing keys locally, using the local machine's credentials to access the service account securely."
+  }
+ },
+ "181": {
+  "id": 181,
+  "key": "C",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use 'gcloud components install' to add the Datastore emulator to the SDK."
+  },
+  "p2": {
+   "analysis": "A exports data, not for local testing. B creates indexes, not for local testing. C uses apt, incorrect for SDK components. D uses gcloud, correct for SDK components.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use gcloud components install to get the emulator from the SDK repository."
+  }
+ },
+ "182": {
+  "id": 182,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use predefined compute.instanceAdmin.* roles to grant specific Compute Engine permissions without broader access."
+  },
+  "p2": {
+   "analysis": "A: Viewer+Compute Admin allows non-Compute edits. B: Custom policy restricts to Compute only. C: Custom role at folder limits scope. D: Editor allows all resource edits.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Predefined Compute Admin + Viewer allows editing non-Compute resources. Custom policy restricts strictly to Compute Instance Admin tasks."
+  }
+ },
+ "183": {
+  "id": 183,
+  "key": "BD",
+  "p1": {
+   "answer": "BD",
+   "confidence": 5,
+   "why": "Deploy VMs globally and use a Global App LB to minimize latency and handle growth."
+  }
+ },
+ "184": {
+  "id": 184,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Enable autoscaling on the node pool to handle future application scaling without manual intervention."
+  }
+ },
+ "185": {
+  "id": 185,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Create a custom image from a snapshot, then launch instances from that image to scale capacity."
+  }
+ },
+ "186": {
+  "id": 186,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Object versioning handles revisions; lifecycle rules automate storage class changes and deletion per Google best practices."
+  }
+ },
+ "187": {
+  "id": 187,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Enable only required APIs (Compute and Storage) to follow best practices and minimize costs."
+  }
+ },
+ "188": {
+  "id": 188,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "gVisor provides strong process isolation via a userspace kernel, preventing customer code from escaping the Pod."
+  }
+ },
+ "189": {
+  "id": 189,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use gcloud config set compute/zone to set the default zone for CLI commands."
+  }
+ },
+ "190": {
+  "id": 190,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Budgets are created at the billing account level but scoped to specific projects. You need Billing Account admin/costs manager role."
+  }
+ },
+ "192": {
+  "id": 192,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "billing.viewer allows viewing reports without extra permissions."
+  }
+ },
+ "193": {
+  "id": 193,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Run supports gradual rollouts via traffic splitting for serverless deployments."
+  }
+ },
+ "194": {
+  "id": 194,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "roles/iam.serviceAccountAdmin allows managing IAM policies for specific service accounts."
+  }
+ },
+ "195": {
+  "id": 195,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Health checks detect unhealthy instances, triggering automatic replacement in MIGs."
+  }
+ },
+ "196": {
+  "id": 196,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Always analyze the specific error message first to determine the root cause before checking other potential issues."
+  }
+ },
+ "197": {
+  "id": 197,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use NodePort for internal routing and Ingress to manage external HTTPS traffic via Cloud Load Balancer."
+  }
+ },
+ "198": {
+  "id": 198,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "In-memory databases require high I/O throughput and low latency, which local SSDs provide directly attached to the instance."
+  },
+  "p2": {
+   "analysis": "A: Preemptible instances are unreliable for persistent ERP databases. B: GPUs are for compute-intensive tasks, not memory optimization. C: Local SSDs provide high I/O but do not increase RAM. D: M1 machines offer high memory-to-cost ratio, ideal for in-memory databases.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "M1 machines provide high memory capacity at a lower cost, essential for in-memory databases, unlike other options."
+  }
+ },
+ "199": {
+  "id": 199,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Managed Instance Groups with autoscaling are the recommended practice for high availability and automated scaling based on metrics like CPU."
+  }
+ },
+ "200": {
+  "id": 200,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Webhooks enable automatic, programmatic scaling without manual intervention or fixed schedules."
+  }
+ },
+ "201": {
+  "id": 201,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use Gemini Cloud Assist in Logs Explorer to instantly summarize unfamiliar logs without manual research or code access."
+  }
+ },
+ "202": {
+  "id": 202,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud Asset Inventory is a managed service designed to track resources and their attributes, making it ideal for this task."
+  }
+ },
+ "203": {
+  "id": 203,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Global ALB with managed SSL and URL map for static content is the correct secure, scalable setup."
+  }
+ },
+ "204": {
+  "id": 204,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Google recommends inviting users to transfer their existing account to avoid conflicts and data loss."
+  }
+ },
+ "205": {
+  "id": 205,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "APIs must be explicitly enabled in the API Library before use, even with service account permissions."
+  }
+ },
+ "206": {
+  "id": 206,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Lifecycle rules automatically transition infrequently accessed objects to cheaper storage classes like Archive, saving costs without deleting data."
+  }
+ },
+ "207": {
+  "id": 207,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Add a secondary IP range to the existing subnet to expand available addresses without recreating it."
+  },
+  "p2": {
+   "analysis": "A adds IPs without changing range. B/C change existing range, losing addresses. D switches protocol, not solving IPv4 shortage.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Adding a secondary range provides more IPs without disrupting existing VMs or losing current addresses."
+  }
+ },
+ "208": {
+  "id": 208,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Create a budget per project to track individual spending and set alerts for each exceeding $500."
+  }
+ },
+ "209": {
+  "id": 209,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Spot nodes are preempted; the pod is rescheduled on a new node, causing a temporary Pending state."
+  },
+  "p2": {
+   "analysis": "A: Resource limits prevent scheduling on single node. B: Cluster full prevents scheduling. C: Image pull error shows ImagePullBackOff, not Pending. D: Spot node preemption causes Pending during rescheduling.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Spot nodes can be preempted, causing Pods to remain Pending while Kubernetes reschedules them on new nodes."
+  }
+ },
+ "210": {
+  "id": 210,
+  "key": "C",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Rewrite queries is faster than scaling. 65% is the recommended CPU threshold for Spanner alerts."
+  },
+  "p2": {
+   "analysis": "A/C: Scaling is slow. B: Optimizing queries is fastest. D: 65% threshold is too high for best practices.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Query optimization is fastest. 45% CPU threshold aligns with Google best practices for proactive scaling/optimization."
+  }
+ },
+ "211": {
+  "id": 211,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Google Cloud Marketplace offers a pre-configured Jenkins image for instant, automated deployment."
+  }
+ },
+ "212": {
+  "id": 212,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "MongoDB Atlas provides a managed environment with support SLAs via the Marketplace."
+  }
+ },
+ "213": {
+  "id": 213,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "DaemonSet ensures a pod runs on every node in the cluster, ideal for monitoring agents."
+  }
+ },
+ "214": {
+  "id": 214,
+  "key": "AB",
+  "p1": {
+   "answer": "AB",
+   "confidence": 5,
+   "why": "Lifecycle policies automate deletion; signed URLs enforce time-limited access."
+  }
+ },
+ "215": {
+  "id": 215,
+  "key": "A",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Autoscaling with min=1 ensures GPUs are available when needed but scale down to zero when idle, minimizing cost for occasional use."
+  },
+  "p2": {
+   "analysis": "A: Auto-provisioning adds overhead. B: VPA doesn't solve GPU availability. C: Spot VMs with GPUs are unreliable for long jobs. D: Autoscaling with min=1 ensures readiness while scaling down when idle.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Autoscaling with min=1 ensures GPUs are ready for occasional use, minimizing cost by scaling down when idle, unlike Spot which is unreliable for long jobs."
+  }
+ },
+ "216": {
+  "id": 216,
+  "key": "AE",
+  "p1": {
+   "answer": "AE",
+   "confidence": 5,
+   "why": "You must authenticate (A) and set the default project (E) to list instances."
+  }
+ },
+ "217": {
+  "id": 217,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use native billing alerts and BigQuery exports for cost monitoring and analysis."
+  }
+ },
+ "218": {
+  "id": 218,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Deployments manage ReplicaSets and pods, allowing independent scaling for each microservice."
+  }
+ },
+ "219": {
+  "id": 219,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Managed Instance Groups with autoscaling run stateless apps directly on VMs and handle fluctuating traffic."
+  }
+ },
+ "220": {
+  "id": 220,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Spot VMs are cost-effective for fault-tolerant, interruptible workloads like batch jobs."
+  }
+ },
+ "221": {
+  "id": 221,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Coldline is cheapest for data accessed rarely (quarterly)."
+  }
+ },
+ "222": {
+  "id": 222,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Signed URLs provide time-limited, secure access without requiring external Google accounts, meeting all constraints."
+  }
+ },
+ "223": {
+  "id": 223,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "GCP requires stopping the VM to change machine type (CPU/RAM) via gcloud or console. Metadata cannot resize memory."
+  },
+  "p2": {
+   "analysis": "A: Live migration doesn't change VM resources. B: Metadata cannot increase VM memory. C: Changing machine type requires stopping the VM. D: Memory changes require stopping the VM.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Changing the machine type (and thus memory) requires stopping the VM. Metadata cannot alter hardware specs."
+  }
+ },
+ "224": {
+  "id": 224,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use A record for root domain, CNAMEs for subdomains pointing to root."
+  }
+ },
+ "225": {
+  "id": 225,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Gradual rollout minimizes risk by splitting traffic, allowing rollback without extra cost or customer action."
+  }
+ },
+ "226": {
+  "id": 226,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Custom role with list permission allows log review; exporting to Cloud Storage enables access for external users."
+  },
+  "p2": {
+   "analysis": "A: privateLogViewer lacks IAM policy change access. B: Same role, but lacks explicit IAM policy change permission. C: Custom role grants list access but lacks IAM policy change permission. D: Custom role grants list access and explicitly includes IAM policy change review.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Custom role grants log list access and explicitly includes IAM policy change review permission."
+  }
+ },
+ "227": {
+  "id": 227,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Grant IAM roles directly using existing Google Workspace email addresses to provide access."
+  }
+ },
+ "229": {
+  "id": 229,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Separate billing accounts ensure separate invoices per startup within one organization."
+  }
+ },
+ "230": {
+  "id": 230,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use 'gcloud auth activate-service-account' with the private key file path to authenticate."
+  }
+ },
+ "231": {
+  "id": 231,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Automatic Scaling allows setting min_idle_instances to keep specific number of idle instances ready."
+  }
+ },
+ "232": {
+  "id": 232,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "APIs must be enabled before creating resources like Compute Engine instances."
+  }
+ },
+ "233": {
+  "id": 233,
+  "key": "C",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Increasing disk size increases IOPS and throughput for Zonal SSDs, addressing throttling while keeping costs lower than Local SSDs or Regional SSDs."
+  },
+  "p2": {
+   "analysis": "A: Larger Zonal SSDs have higher IOPS but not necessarily higher throughput for large sequential reads. B: CPU does not affect disk throughput. C: Local SSDs are ephemeral and not suitable for application data. D: Regional SSDs offer higher throughput and are cost-effective for large sequential reads.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Regional SSDs provide higher throughput for large sequential reads at a lower cost per GB than Zonal SSDs."
+  }
+ },
+ "234": {
+  "id": 234,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Terraform is the standard IaC tool for multi-cloud provisioning, supporting GCP, AWS, Azure, etc., with a single workflow."
+  }
+ },
+ "235": {
+  "id": 235,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Log-based metrics provide simple, real-time monitoring and alerting for specific events like firewall changes and instance creation using Cloud Logging."
+  }
+ },
+ "236": {
+  "id": 236,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Parallel composite uploads utilize multiple connections to maximize bandwidth for large files."
+  }
+ },
+ "237": {
+  "id": 237,
+  "key": "C",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use a single metrics scope and create a Group to filter metrics from multiple projects."
+  },
+  "p2": {
+   "analysis": "A: Shared VPC is for networking, not monitoring consolidation. B: Incorrect; metrics scopes are global, not per-project. C: Correct; a single scope covers all projects. D: Correct; groups filter metrics across projects within a scope.",
+   "answer": "CD",
+   "confidence": 5,
+   "why": "Use one metrics scope and either link projects directly (C) or use a Group to filter them (D)."
+  }
+ },
+ "238": {
+  "id": 238,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Impersonation avoids storing keys locally, following security best practices for testing service account access."
+  }
+ },
+ "239": {
+  "id": 239,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "OS Login with compute.osLogin role restricts SSH access to authorized users via Cloud Shell, meeting the single-instance requirement securely."
+  }
+ },
+ "240": {
+  "id": 240,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Domain Restricted Sharing requires a Cloud Identity domain. Create a temp account and assign Viewer role for read-only access."
+  }
+ },
+ "241": {
+  "id": 241,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Partner creates a service account in their project and grants it access to your dataset via IAM bindings."
+  }
+ },
+ "242": {
+  "id": 242,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "gcloud iam roles copy directly replicates custom roles to the destination project with minimal steps."
+  }
+ },
+ "243": {
+  "id": 243,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Lifecycle rules use age from object creation. Transition at 90 days, delete at 365 days."
+  }
+ },
+ "244": {
+  "id": 244,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Grant BigQuery Data Viewer role on the remote dataset to access data without modifying local IAM."
+  }
+ },
+ "245": {
+  "id": 245,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Create one billing account with a payment method, then allow engineers to associate it with projects."
+  }
+ },
+ "246": {
+  "id": 246,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Lift-and-shift to a VM with an instance schedule requires minimal effort and handles large memory usage cost-effectively for infrequent jobs."
+  }
+ },
+ "247": {
+  "id": 247,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "App Engine region is set per application, not project. Create a new app with the desired region."
+  },
+  "p2": {
+   "analysis": "A: Project region doesn't control App Engine region. B: App Engine region is immutable after deployment. C: Cannot change region of existing app; must create new. D: Correct; create new app in new project with desired region.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "App Engine region is immutable. Create a new app in a new project set to asia-northeast1."
+  }
+ },
+ "248": {
+  "id": 248,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Grant least privilege: dataViewer on target project, needed roles on source project."
+  }
+ },
+ "249": {
+  "id": 249,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Create a new billing account and add a corporate payment method to consolidate costs."
+  }
+ },
+ "250": {
+  "id": 250,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Pub/Sub ingests data, Dataflow processes it, Bigtable stores time-series, BigQuery analyzes it."
+  }
+ },
+ "251": {
+  "id": 251,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud Run with Private Service Connect allows on-premises access via Private Service Connect endpoints, minimizing infrastructure management for stateless apps."
+  }
+ },
+ "252": {
+  "id": 252,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "BigQuery can query Spanner and Bigtable directly via external tables, enabling efficient ad-hoc joins without moving data."
+  }
+ },
+ "253": {
+  "id": 253,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Deletion protection prevents instances from being accidentally deleted by other users/teams."
+  }
+ },
+ "254": {
+  "id": 254,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Add an exclusion filter in the Logs Router to stop billing for specific container logs."
+  }
+ },
+ "255": {
+  "id": 255,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "GKE Autopilot provides full Kubernetes control with minimal infrastructure management by automatically managing nodes."
+  }
+ },
+ "256": {
+  "id": 256,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Host VPC minimizes costs; hierarchical firewall policies manage ports centrally across projects."
+  }
+ },
+ "258": {
+  "id": 258,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "SSH keys allow non-Google Account users secure access to VMs without external network changes."
+  }
+ },
+ "259": {
+  "id": 259,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use gcloud config set container/cluster to set the default cluster for CLI commands."
+  }
+ },
+ "260": {
+  "id": 260,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "GKE Autopilot manages node count automatically; HPA/VPA control pod scaling within the mesh."
+  },
+  "p2": {
+   "analysis": "A: Fixed MIG count doesn't dynamically control compute instances based on load.\nB: Cloud Run scales automatically; max/min instances control the number of containers.\nC: Autopilot manages nodes; autoscaling controls pods, not the underlying compute instance count directly.\nD: Fixed node pool doesn't dynamically adjust compute instances based on workload.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Run allows setting min/max instances to control the number of running compute instances for the service."
+  }
+ },
+ "261": {
+  "id": 261,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Specify the service account in the 'Identity and API Access' section when creating the VM."
+  }
+ },
+ "262": {
+  "id": 262,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use compute-optimized nodes for CPU-heavy workloads and general-purpose for balanced ones."
+  }
+ },
+ "263": {
+  "id": 263,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "GCP Marketplace provides a one-click deployment with pre-configured Jenkins, requiring the fewest steps."
+  }
+ },
+ "264": {
+  "id": 264,
+  "key": "C",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Storing profile_picture in the index avoids fetching it from the base table, reducing read latency for queries filtering by person_id."
+  },
+  "p2": {
+   "answer": "D",
+   "raw": "{\"analysis\":\"A: Removing fields doesn't fix read latency for specific queries. B: Secondary index on PK is redundant. C: Changing PK is unnecessary and risky. D: Correct; stores heavy column in index "
+  }
+ },
+ "265": {
+  "id": 265,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Deployment Manager cannot directly provision GKE resources like DaemonSets. A startup script on a Compute Engine instance can run kubectl to create the DaemonSet after the cluster is ready."
+  },
+  "p2": {
+   "analysis": "A requires custom provider setup. B is not a standard DM feature. C uses a startup script to run kubectl, which is the standard workaround. D metadata keys are not for arbitrary manifests.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Deployment Manager lacks native GKE resource types; a startup script running kubectl is the standard workaround."
+  }
+ },
+ "266": {
+  "id": 266,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Exporting to BigQuery is the recommended practice for analyzing large volumes of logs across multiple projects."
+  }
+ },
+ "267": {
+  "id": 267,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Grant role on the specific bucket to limit access to only that bucket's objects."
+  },
+  "p2": {
+   "analysis": "A: Custom role on project is too broad. B: Project role grants access to all buckets. C: Correct, limits access to specific bucket. D: Correct, limits access to specific bucket.",
+   "answer": "CD",
+   "confidence": 5,
+   "why": "Granting roles on the specific bucket restricts access to that bucket only, preventing access to other project resources. Both Object User and Object Viewer roles provide read-only access."
+  }
+ },
+ "268": {
+  "id": 268,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use gcloud config for Compute Engine; gsutil is for storage. Scripting handles multiple projects."
+  }
+ },
+ "269": {
+  "id": 269,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Region ensures single location compliance; Nearline is cost-effective for annual access after 30 days."
+  },
+  "p2": {
+   "analysis": "A: Multi-region violates single-location compliance. B: Multi-region violates single-location compliance. C: Region meets location; Nearline suits 30-day retention/access. D: Region meets location; Coldline is overkill for 30-day retention.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Region ensures single location. Nearline is cost-effective for 30-day retention with annual access needs."
+  }
+ },
+ "270": {
+  "id": 270,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Enable billing, link account, then view data in BigQuery dataset."
+  },
+  "p2": {
+   "analysis": "A: Export enabled at account creation. B: Link billing account and view data. C: Data Transfer API not for billing. D: IAM/Location irrelevant for billing data.",
+   "answer": "AB",
+   "confidence": 5,
+   "why": "Enable export at account creation or link billing account to access BigQuery datasets."
+  }
+ },
+ "271": {
+  "id": 271,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Set Content-Type to application/pdf to instruct browsers to render PDFs directly."
+  }
+ },
+ "272": {
+  "id": 272,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Firewall rules in GCP use network tags to scope ingress/egress rules. Tags alone don't open ports; a firewall rule is required."
+  }
+ },
+ "273": {
+  "id": 273,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "monitoring.viewer grants monitoring access without data access, following least privilege."
+  }
+ },
+ "274": {
+  "id": 274,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Run supports event-driven execution via Cloud Functions triggers, allowing direct bucket upload triggers."
+  }
+ },
+ "275": {
+  "id": 275,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Run is serverless and charges only for compute used, ideal for low-traffic apps."
+  }
+ },
+ "276": {
+  "id": 276,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "kubectl rollout undo reverts the deployment to the previous revision."
+  }
+ },
+ "277": {
+  "id": 277,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "The 'update' command applies changes to an existing deployment, supporting zero-downtime updates via rolling strategies."
+  }
+ },
+ "278": {
+  "id": 278,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Add consultant's public key to instance metadata; they use private key for SSH access."
+  }
+ },
+ "279": {
+  "id": 279,
+  "key": "C",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Set a project budget alert for egress costs exceeding $100 with email notification."
+  },
+  "p2": {
+   "analysis": "A: Project budget ignores specific service. B: Billing account budget allows specific service filtering. C/D: Overly complex manual solutions.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Billing account budgets support specific service filtering (e.g., network egress) unlike project budgets."
+  }
+ },
+ "280": {
+  "id": 280,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud Logging (Logs Explorer) is the correct tool to filter Activity logs for specific users and metadata changes."
+  }
+ },
+ "281": {
+  "id": 281,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "GKE with hardware accelerators offers the scalability and flexibility needed for fine-tuning large models on proprietary data."
+  }
+ },
+ "282": {
+  "id": 282,
+  "key": "C",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use groups for scalability and iam.roleViewer for read-only access to the hierarchy."
+  },
+  "p2": {
+   "analysis": "A: Direct user assignment lacks scalability. B: roleViewer doesn't show resource hierarchy. C: Groups enable scalability but roleViewer lacks hierarchy view. D: Groups + roleViewer still lacks hierarchy view.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use groups for scalability; roles/browser grants necessary resource hierarchy visibility."
+  }
+ },
+ "283": {
+  "id": 283,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Filestore is a managed NFS service with minimal application changes required."
+  }
+ },
+ "284": {
+  "id": 284,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use network tags on VMs and create an egress rule from app-server tag to db-server tag."
+  },
+  "p2": {
+   "analysis": "A: GCP firewall rules cannot filter by service accounts. B: Tags work for source/dest; egress on app allows traffic to DB. C: Targeting subnets is valid but less specific than tags; ingress direction is wrong for app->DB flow control. D: Mixing tag source and SA target is invalid; firewall rules don't target SAs.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "GCP firewall rules use source/dest IP or tags, not service accounts. Egress rule on app servers allows traffic to DB subnet/tag."
+  }
+ },
+ "286": {
+  "id": 286,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud Run is serverless, handles scaling automatically, and uses Artifact Registry for images."
+  }
+ },
+ "287": {
+  "id": 287,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use third-party IdP as identity provider and Google as service provider for SAML SSO."
+  }
+ },
+ "288": {
+  "id": 288,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Set 'windows-password' metadata to generate RDP credentials automatically."
+  },
+  "p2": {
+   "analysis": "A: Google accounts don't work for RDP. B: Resets password but doesn't provide it directly. C: Correct; sets password via metadata for RDP. D: JSON keys are for SSH, not RDP.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Windows VMs require a password set via metadata key 'windows-password' for RDP access. Google accounts and SSH keys are not used for RDP login."
+  }
+ },
+ "289": {
+  "id": 289,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Migrating projects to the same organization and linking to one billing account consolidates costs immediately."
+  },
+  "p2": {
+   "analysis": "A: Linking projects to a billing account consolidates costs. C: Merging orgs also works but is complex. B/D do not consolidate invoices directly.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Linking projects to the primary billing account consolidates all costs onto a single invoice immediately."
+  }
+ },
+ "290": {
+  "id": 290,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "VPA recommendations suggest resource limits; HPA scales pods for availability based on CPU/memory."
+  }
+ },
+ "291": {
+  "id": 291,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use Kubernetes Secrets for sensitive data like passwords, not ConfigMaps or plain text."
+  }
+ },
+ "292": {
+  "id": 292,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Spanner offers global, highly available SQL with strong consistency, ideal for transactional ecommerce data."
+  }
+ },
+ "293": {
+  "id": 293,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Compute Engine VMs automatically use the VM's service account. Grant it necessary permissions to access Google services."
+  }
+ },
+ "294": {
+  "id": 294,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Create org-level custom role and assign to group for minimal effort across projects."
+  }
+ },
+ "295": {
+  "id": 295,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Ensure valid instance template syntax and ensure instance/disk names differ to avoid conflicts."
+  },
+  "p2": {
+   "analysis": "A: Deletes disks unnecessarily. B: Checks syntax and prevents name conflicts. C: Deletes disks unnecessarily. D: Unnecessary deletion of template.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Option B correctly addresses syntax validity and prevents the specific error of matching instance and disk names without unnecessary destructive actions."
+  }
+ },
+ "296": {
+  "id": 296,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Peer VPCs and use Internal Load Balancer for cross-VPC access."
+  }
+ },
+ "299": {
+  "id": 299,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Coldline storage is cost-effective for long-term retention of infrequently accessed audit logs in Cloud Storage."
+  }
+ },
+ "300": {
+  "id": 300,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Data Access logs record resource access attempts, which is needed to check for sensitive data access."
+  }
+ },
+ "301": {
+  "id": 301,
+  "key": "A",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use Resource Manager drag-and-drop with Org Admin role to move projects easily."
+  },
+  "p2": {
+   "analysis": "A: projects.move is deprecated. B: Drag-and-drop in Resource Manager is the correct, minimal-effort method. C: Marketplace catalog is for purchasing, not moving existing projects. D: IaC rebuild is high effort, not minimal.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use Resource Manager drag-and-drop to move the project and update billing in one step."
+  }
+ },
+ "302": {
+  "id": 302,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "StatefulSets are required for databases to maintain identity and persistent storage. Cluster Autoscaling ensures node availability."
+  }
+ },
+ "303": {
+  "id": 303,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "serviceAccountAdmin allows creating and managing service accounts, which is the minimum required role."
+  }
+ },
+ "304": {
+  "id": 304,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud SQL supports point-in-time recovery via binary logging, ideal for small regional datasets."
+  }
+ },
+ "305": {
+  "id": 305,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use --region to create a multi-zone cluster for high availability and resilience."
+  },
+  "p2": {
+   "analysis": "A: Zonal clusters lack multi-zone HA. B: Autopilot in a region provides multi-zone HA. C: Update doesn't change zone count. D: Update doesn't change zone count.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Autopilot clusters in a region automatically span multiple zones for high availability, following Google best practices."
+  }
+ },
+ "306": {
+  "id": 306,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Cloud DNS private zones provide internal resolution with minimal overhead, avoiding public exposure and manual host file edits."
+  }
+ },
+ "307": {
+  "id": 307,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "IAM roles are assigned via Admin Activity logs in Cloud Logging, not Spanner or Monitoring consoles."
+  }
+ },
+ "308": {
+  "id": 308,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use predefined roles for auditors to follow least privilege and Google-recommended practices."
+  }
+ },
+ "309": {
+  "id": 309,
+  "key": "C",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use non-overlapping CIDR and static IPs to preserve hard-coded connections without code changes."
+  },
+  "p2": {
+   "analysis": "A: DNS migration doesn't solve hard-coded IPs. B: Non-overlapping CIDR breaks hard-coded IPs. C: Same CIDR preserves hard-coded IPs. D: Single subnet/NAT doesn't preserve internal IPs.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Matching CIDR ranges preserves hard-coded IPs; static IPs maintain connectivity without code changes."
+  }
+ },
+ "310": {
+  "id": 310,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Organize users in groups and enforce MFA to scale securely without complexity."
+  }
+ },
+ "311": {
+  "id": 311,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use standard VMs for critical apps and Spot VMs for fault-tolerant apps to optimize cost."
+  }
+ },
+ "312": {
+  "id": 312,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Standard class is optimal for frequent access; regional storage is sufficient for US users."
+  }
+ },
+ "313": {
+  "id": 313,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Transfer Appliance handles large on-prem data; BQ Data Transfer handles Redshift; Storage Transfer Service handles S3 to GCS."
+  }
+ },
+ "314": {
+  "id": 314,
+  "key": "D",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Regional disks provide immediate availability across zones. Snapshots ensure data recovery if the disk itself fails or is corrupted during a zonal outage."
+  },
+  "p2": {
+   "analysis": "A: Zonal disks fail in zonal outages; snapshots cause downtime. B: Zonal disks fail in zonal outages. C: Regional disks survive zonal failures; snapshots add unnecessary downtime. D: Regional disks survive zonal failures; no downtime.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Regional persistent disks span multiple zones, ensuring immediate availability during a zonal failure without needing snapshots or recreating disks."
+  }
+ },
+ "315": {
+  "id": 315,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use custom roles on specific projects to prevent permission creep from new GCP features."
+  }
+ },
+ "317": {
+  "id": 317,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Vertical Pod Autoscaler adjusts CPU/RAM for a single replica, fitting the constraint and peak demand needs."
+  }
+ },
+ "318": {
+  "id": 318,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Add projects to metrics scope for unified monitoring."
+  }
+ },
+ "319": {
+  "id": 319,
+  "key": "D",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Standard multi-region offers best durability and fastest access for disaster recovery."
+  },
+  "p2": {
+   "analysis": "Standard multi-region offers best durability and quick restoration for critical DR backups.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Standard multi-region provides high durability and fast access, ideal for critical disaster recovery needs per Google best practices."
+  }
+ },
+ "320": {
+  "id": 320,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Persistent disk snapshots are the native, secure, and simplest method for backing up Compute Engine instances with automatic retention management."
+  }
+ },
+ "321": {
+  "id": 321,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Specify a unique service account for each instance during creation for granular control."
+  }
+ },
+ "322": {
+  "id": 322,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Cloud Storage is cost-effective for documents. Lifecycle rules move data to Coldline after 6 months for cheap archival."
+  }
+ },
+ "323": {
+  "id": 323,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Create a separate project for independent organization and resource deployment."
+  }
+ },
+ "325": {
+  "id": 325,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Spot VMs are cheapest for fault-tolerant batch jobs; Compute Engine offers better cost control than GKE for simple workloads."
+  }
+ },
+ "326": {
+  "id": 326,
+  "key": "A",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "External proxy NLB with SSL offload terminates client SSL and follows best practices for public HTTPS apps."
+  },
+  "p2": {
+   "analysis": "A: External ALB handles SSL termination and HTTPS, following best practices for public apps.\nB: Internal NLB is for private networks, not public apps.\nC: External proxy NLB with SSL offload is legacy; ALB is preferred.\nD: TCP proxy does not handle HTTPS/SSL termination.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "External ALB terminates SSL and serves HTTPS, aligning with Google best practices for public apps."
+  }
+ },
+ "327": {
+  "id": 327,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Service account key files are required for on-premises apps to authenticate to Google Cloud APIs."
+  }
+ },
+ "328": {
+  "id": 328,
+  "key": "BD",
+  "p1": {
+   "answer": "BE",
+   "confidence": 5,
+   "why": "Cloud Monitoring shows quota errors; INFORMATION_SCHEMA views list quota usage details."
+  },
+  "p2": {
+   "analysis": "A: BI Engine is for analytics, not quota debugging. B: INFORMATION_SCHEMA holds quota metrics. C: Cloud Trace is for latency, not quotas. D: Audit logs record quota errors. E: Monitoring shows quota usage graphs.",
+   "answer": "BE",
+   "confidence": 5,
+   "why": "INFORMATION_SCHEMA and Cloud Audit Logs provide specific quota error details and usage metrics."
+  }
+ },
+ "329": {
+  "id": 329,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Ops Agent streams logs to Cloud Logging for centralized monitoring and debugging."
+  }
+ },
+ "330": {
+  "id": 330,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Folders allow grouping projects for centralized budget alerts, automating notifications at 90% threshold within the $1,000 limit."
+  }
+ },
+ "331": {
+  "id": 331,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use 'gcloud services list' with '--project' flag to list enabled APIs for a specific project."
+  }
+ },
+ "332": {
+  "id": 332,
+  "key": "B",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Snapshots enable quick, isolated instance creation with minimal ongoing support."
+  },
+  "p2": {
+   "analysis": "A: Manual guide is slow. B: Marketplace images may lack isolation. C: Snapshots enable quick, isolated instance creation. D: Unnecessary complexity with Cloud Storage.",
+   "answer": "C",
+   "confidence": 5,
+   "why": "Snapshots allow rapid, isolated instance creation with minimal ongoing support, meeting all requirements efficiently."
+  }
+ },
+ "333": {
+  "id": 333,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Switch context to dev-cluster and list nodes."
+  }
+ },
+ "334": {
+  "id": 334,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Spanner provides global scaling, strong consistency, and fully managed operations, fitting all requirements."
+  }
+ },
+ "335": {
+  "id": 335,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "OS Login uses IAM for access, simplifying management and reducing costs by eliminating custom scripts."
+  }
+ },
+ "336": {
+  "id": 336,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "BigQuery is the standard tool for analyzing billing data with SQL queries for projections."
+  }
+ },
+ "337": {
+  "id": 337,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "n1-standard-1 provides 32 GB RAM (3 vCPU + 32 GB) at lowest cost, meeting memory needs without SSD requirement for cache."
+  },
+  "p2": {
+   "analysis": "A: Memorystore is managed, but likely costs more than a small VM for this specific low-CPU workload.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Custom VMs allow precise memory allocation (32GB) at lower cost than managed services or over-provisioned nodes."
+  }
+ },
+ "338": {
+  "id": 338,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Cloud Run services auto-scale to zero when idle, minimizing costs for unpredictable traffic."
+  }
+ },
+ "339": {
+  "id": 339,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "App Engine supports traffic splitting via the 'Traffic split' setting in the console for different versions of the same app."
+  }
+ },
+ "340": {
+  "id": 340,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Increase max instances to handle traffic spikes and reduce API quota errors."
+  }
+ },
+ "341": {
+  "id": 341,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Deploying VMs in a second zone (us-central1-b) and balancing load ensures zone failure tolerance with minimal cost increase."
+  }
+ },
+ "342": {
+  "id": 342,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Create a new node pool with the required machine type to add capacity without downtime."
+  }
+ },
+ "343": {
+  "id": 343,
+  "key": "D",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Delete and recreate subnet with larger range; peering adds cost, firewall doesn't solve capacity, and IP ranges are fixed on creation."
+  },
+  "p2": {
+   "analysis": "A: Peering adds complexity and cost. B: Deleting subnets causes downtime. C: Firewall rules don't increase IP capacity. D: Subnet IP ranges are immutable; create a new subnet.",
+   "answer": "B",
+   "confidence": 3,
+   "why": "Subnet IP ranges are immutable. To add capacity, create a new subnet. Option B is the only one involving a new subnet, despite the 'delete' wording causing downtime. It's the intended solution for capacity issues."
+  }
+ },
+ "344": {
+  "id": 344,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "GCP console RDP uses port 3389 and requires credentials set in the console plus an open firewall rule."
+  },
+  "p2": {
+   "analysis": "A: Manual RDP setup requires extra steps. B: Manual RDP client installation adds steps. C: Port 22 is SSH, not RDP. D: Uses built-in RDP button with correct port 3389.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Option D uses the console's built-in RDP button and correct port 3389, minimizing steps by avoiding manual client installation."
+  }
+ },
+ "345": {
+  "id": 345,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Granting the VM's service account the Storage Object Creator role allows it to write objects to the bucket with minimal steps and follows IAM best practices."
+  }
+ },
+ "347": {
+  "id": 347,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "App Engine supports traffic splitting between versions of the same service for canary deployments."
+  }
+ },
+ "349": {
+  "id": 349,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Create and activate separate configurations for each project to switch easily."
+  }
+ },
+ "350": {
+  "id": 350,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "IAM conditions on uniform ACL allow prefix-based access without extra buckets or per-object ACLs."
+  }
+ },
+ "351": {
+  "id": 351,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Hyperdisk Extreme provides the highest IOPS (up to 1M) and durability required for SAP HANA, persisting independently of VM state."
+  }
+ },
+ "352": {
+  "id": 352,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Organize code by application in separate root directories for independent management."
+  }
+ },
+ "353": {
+  "id": 353,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud NAT allows VMs without external IPs to access the internet via a shared gateway IP."
+  }
+ },
+ "354": {
+  "id": 354,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Enable the Kubernetes Engine API using gcloud services enable container.googleapis.com."
+  }
+ },
+ "356": {
+  "id": 356,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Config Connector extends GKE to manage GCP resources declaratively via Kubernetes manifests."
+  }
+ },
+ "357": {
+  "id": 357,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Enable both standard and detailed exports to BigQuery for full resource-level data with minimal overhead."
+  }
+ },
+ "358": {
+  "id": 358,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Use Lifecycle Management with age condition to auto-transition to Archive storage."
+  }
+ },
+ "359": {
+  "id": 359,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Owner role grants full admin access needed for experimentation. Policies restrict location and services at folder level."
+  }
+ },
+ "360": {
+  "id": 360,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Pub/Sub + Cloud Run offers near-real-time, serverless, and minimal maintenance for Slack notifications."
+  }
+ },
+ "361": {
+  "id": 361,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Store in Cloud Storage and use external tables to avoid loading overhead and minimize costs."
+  }
+ },
+ "362": {
+  "id": 362,
+  "key": "C",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Enable Workload Identity to allow nodes to pull images using the configured service account without exposing keys."
+  },
+  "p2": {
+   "analysis": "A: ServiceAccountName is for pods, not image pulling. B: Workload Identity allows nodes to pull images using IAM. C: Nodes use default service account, not specified one. D: Storing keys is insecure and unnecessary with Workload Identity.",
+   "answer": "B",
+   "confidence": 5,
+   "why": "Workload Identity enables nodes to authenticate to Artifact Registry using IAM without storing keys."
+  }
+ },
+ "363": {
+  "id": 363,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "Use built-in CPU metric with Cloud Monitoring alert policy for near-real-time notifications."
+  }
+ },
+ "364": {
+  "id": 364,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Database Center provides a unified view for monitoring Bigtable, Cloud SQL, Memorystore, and Spanner health and risks."
+  }
+ },
+ "365": {
+  "id": 365,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Dedicated SA with objectCreator role on specific bucket ensures least privilege."
+  }
+ },
+ "366": {
+  "id": 366,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Use Google Groups with security labels for IAM-based access control to simplify management and follow security best practices."
+  }
+ },
+ "367": {
+  "id": 367,
+  "key": "B",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Use a custom policy with CEL to explicitly allow only the two specific regions."
+  },
+  "p2": {
+   "analysis": "A: Correct CEL syntax for specific regions. B: Invalid constraint syntax. C: Wrong logic for allowing specific regions. D: Too broad, allows other Australia regions.",
+   "answer": "A",
+   "confidence": 5,
+   "why": "Option A correctly restricts resources to the two specified regions using CEL. Other options use invalid syntax or incorrect logic."
+  }
+ },
+ "368": {
+  "id": 368,
+  "key": "B",
+  "p1": {
+   "answer": "B",
+   "confidence": 5,
+   "why": "Log connections in the app and create a custom metric in Cloud Monitoring to track them."
+  }
+ },
+ "369": {
+  "id": 369,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud Run supports scaling to zero and is the fastest path for containerized apps."
+  }
+ },
+ "370": {
+  "id": 370,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "The container.developer role allows deploying containers to GKE without cluster management access, adhering to least privilege."
+  }
+ },
+ "371": {
+  "id": 371,
+  "key": "D",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Workload Identity Federation allows pods to impersonate service accounts without creating keys, adhering to security policies."
+  }
+ },
+ "372": {
+  "id": 372,
+  "key": "B",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "Cloud Billing budgets can automatically disable billable resources at 100% spend if configured."
+  },
+  "p2": {
+   "analysis": "A: Wrong. New account doesn't stop current project spend. B: Complex, manual intervention needed, not automatic stop. C: Adjusts budget, doesn't stop spend. D: Correct. Budgets can auto-disable resources at 100%.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "Budgets can be configured to automatically disable billable resources when the limit is reached at 100%."
+  }
+ },
+ "373": {
+  "id": 373,
+  "key": "A",
+  "p1": {
+   "answer": "D",
+   "confidence": 5,
+   "why": "allAuthenticatedUsers grants access to any signed-in user, including employees in the specified domain."
+  },
+  "p2": {
+   "analysis": "A restricts to specific domain, not all employees. B allows anonymous access, insecure. C requires creating a service account, unnecessary. D grants access to all authenticated users in the project.",
+   "answer": "D",
+   "confidence": 5,
+   "why": "allAuthenticatedUsers grants access to any user authenticated via Cloud Identity, covering all employees."
+  }
+ },
+ "374": {
+  "id": 374,
+  "key": "A",
+  "p1": {
+   "answer": "A",
+   "confidence": 5,
+   "why": "Grant IAM roles to the new service account to allow Pub/Sub access without using personal credentials."
+  }
+ },
+ "375": {
+  "id": 375,
+  "key": "C",
+  "p1": {
+   "answer": "C",
+   "confidence": 5,
+   "why": "roles/iam.serviceAccountTokenCreator allows creating tokens to impersonate the service account for testing without exposing keys."
+  }
+ }
+}

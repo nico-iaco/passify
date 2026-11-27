@@ -1,0 +1,356 @@
+1 A A  15s
+2 A A  4s
+3 B D ? 197s
+4 D D  3s
+5 D D  4s
+6 A A  3s
+7 B B  3s
+8 D D  3s
+9 A A  4s
+10 A A  4s
+3 B D B 11s
+11 A A  3s
+13 D D  3s
+14 D D  3s
+15 D C C 7s
+16 C C  3s
+17 A B A 9s
+18 C C  3s
+19 A A  4s
+20 B D A 8s
+21 C C  4s
+22 B B  4s
+23 D D  3s
+24 A A  3s
+25 B C C 8s
+26 C C  3s
+27 A A  4s
+28 A A  3s
+29 B C C 10s
+30 D D  4s
+31 B B  3s
+32 D D  4s
+33 A A  3s
+34 B B  4s
+35 B B  4s
+36 A A  4s
+37 A A  3s
+38 CD AC AB 9s
+39 C C  3s
+40 A A  3s
+41 B B  3s
+42 C C  3s
+43 C C  3s
+44 C C  4s
+45 A A  4s
+46 A C A 36s
+47 C C  4s
+48 B B  3s
+49 A A  3s
+50 C C  4s
+51 A A  3s
+52 C C  3s
+53 D D  3s
+54 B B  3s
+55 B B  3s
+56 C C  3s
+57 D D  3s
+58 B B  4s
+59 A A  3s
+60 B B  3s
+62 B B  3s
+63 C C  3s
+64 D D  3s
+65 D D  4s
+66 C C  3s
+67 B B  3s
+68 C A C 9s
+69 C C  3s
+70 B C C 9s
+72 B B  3s
+73 B B  5s
+74 B B  3s
+75 B B  3s
+76 B B  4s
+77 A C C 9s
+78 A A  3s
+79 A B B 10s
+80 A C A 9s
+81 A C D 10s
+83 C C  3s
+84 B B  3s
+85 C C  3s
+86 B B  3s
+87 A A  3s
+88 D D  3s
+89 B A AB 9s
+90 D D  3s
+91 A A  3s
+92 D D  3s
+93 B B  3s
+94 C C  3s
+95 B B  5s
+96 D D  3s
+97 C C  4s
+98 D D  3s
+99 C C  3s
+100 B B  4s
+101 A A  3s
+102 D D  3s
+103 B A A 9s
+104 C C  4s
+105 B B  3s
+106 D D  3s
+107 B B  3s
+108 B B  3s
+109 D D  3s
+110 C C  4s
+111 B B  3s
+112 B B  3s
+113 D D  3s
+114 A A  3s
+115 C C  3s
+116 A A  3s
+119 A C C 9s
+120 C D D 10s
+122 D B B 10s
+123 B B  3s
+124 C C  3s
+125 D D  4s
+126 B D B 10s
+128 D D  3s
+129 A A  3s
+130 A A  3s
+131 B B  3s
+133 C A A 8s
+134 A B D 10s
+135 D D  4s
+136 B A A 9s
+137 C C  4s
+138 A D D 11s
+139 A A  3s
+140 D D  3s
+141 A A  4s
+142 A B AB 11s
+143 B B  3s
+144 B B  3s
+145 B B  4s
+146 D B D 11s
+147 A A  4s
+149 C C  3s
+150 C C  4s
+151 A A  3s
+152 C C  3s
+153 C C  4s
+154 B B  3s
+155 B B  4s
+156 B B  3s
+157 B A A 9s
+158 D D  3s
+159 BE AD AB 9s
+160 A C C 9s
+161 C C  3s
+162 B B  3s
+163 C C  4s
+164 D A A 9s
+165 D D  4s
+166 C C  4s
+167 C C  3s
+168 B C B 10s
+169 B A A 10s
+170 B B  5s
+171 D D  3s
+172 A A  4s
+173 C C  3s
+174 B D D 10s
+175 D D  3s
+176 C C  3s
+177 D D  3s
+178 C A A 9s
+179 C C  3s
+180 B B  3s
+181 C D D 8s
+182 A B B 9s
+183 BD BD  3s
+184 C C  3s
+185 D D  3s
+186 D D  4s
+187 B B  3s
+188 C C  4s
+189 A A  3s
+190 A A  4s
+192 C C  3s
+193 A A  3s
+194 A A  3s
+195 A A  3s
+196 D D  3s
+197 A A  4s
+198 D C D 10s
+199 D D  4s
+200 D D  3s
+201 C C  3s
+202 C C  3s
+203 A A  3s
+204 A A  3s
+205 A A  3s
+206 A A  3s
+207 B A A 8s
+208 C C  3s
+209 B D D 10s
+210 C D B 10s
+211 A A  3s
+212 B B  3s
+213 B B  3s
+214 AB AB  3s
+215 A D D 11s
+216 AE AE  3s
+217 D D  3s
+218 D D  3s
+219 A A  3s
+220 C C  3s
+221 A A  2s
+222 A A  3s
+223 D C C 10s
+224 C C  3s
+225 B B  3s
+226 B C D 10s
+227 B B  3s
+229 B B  3s
+230 B B  3s
+231 D D  3s
+232 C C  3s
+233 C A D 11s
+234 B B  4s
+235 B B  4s
+236 B B  3s
+237 C D CD 10s
+238 C C  3s
+239 A A  4s
+240 C C  3s
+241 D D  3s
+242 A A  3s
+243 B B  4s
+244 B B  3s
+245 A A  3s
+246 D D  4s
+247 D C D 10s
+248 D D  3s
+249 D D  3s
+250 D D  3s
+251 C C  4s
+252 D D  4s
+253 D D  3s
+254 A A  3s
+255 A A  3s
+256 D D  3s
+258 D D  3s
+259 A A  3s
+260 D C B 12s
+261 A A  3s
+262 B B  3s
+263 D D  3s
+264 C D D 10s
+265 A C C 10s
+266 B B  3s
+267 D C CD 10s
+268 A A  3s
+269 D C C 11s
+270 A B AB 9s
+271 C C  3s
+272 C C  4s
+273 A A  3s
+274 B B  3s
+275 A A  3s
+276 C C  2s
+277 B B  3s
+278 C C  3s
+279 C B B 9s
+280 B B  3s
+281 D D  3s
+282 C D C 8s
+283 B B  3s
+284 A B B 13s
+286 D D  3s
+287 B B  3s
+288 B C C 10s
+289 A C A 9s
+290 B B  3s
+291 B B  3s
+292 A A  3s
+293 A A  3s
+294 D D  3s
+295 A B B 9s
+296 C C  5s
+299 B B  3s
+300 C C  3s
+301 A B B 10s
+302 A A  3s
+303 D D  3s
+304 A A  3s
+305 B C B 9s
+306 B B  4s
+307 D D  3s
+308 A A  3s
+309 C B C 10s
+310 B B  3s
+311 D D  4s
+312 B B  3s
+313 B B  4s
+314 D C D 11s
+315 C C  3s
+317 B B  3s
+318 D D  2s
+319 D A A 6s
+320 B B  4s
+321 A A  3s
+322 A A  4s
+323 C C  3s
+325 C C  4s
+326 A C A 10s
+327 B B  3s
+328 BD BE BE 9s
+329 D D  3s
+330 B B  4s
+331 A A  3s
+332 B C C 9s
+333 A A  3s
+334 B B  3s
+335 A A  3s
+336 D D  3s
+337 B D B 10s
+338 C C  3s
+339 D D  4s
+340 C C  3s
+341 A A  4s
+342 B B  3s
+343 D B B 41s
+344 B D D 11s
+345 B B  4s
+347 A A  3s
+349 A A  3s
+350 D D  4s
+351 A A  4s
+352 B B  3s
+353 D D  3s
+354 D D  3s
+356 D D  3s
+357 B B  4s
+358 B B  3s
+359 A A  4s
+360 B B  4s
+361 C C  3s
+362 C B B 9s
+363 C C  3s
+364 D D  4s
+365 A A  3s
+366 D D  4s
+367 B A A 9s
+368 B B  3s
+369 D D  3s
+370 A A  3s
+371 D D  4s
+372 B D D 10s
+373 A D D 9s
+374 A A  3s
+375 C C  3s
+DONE d'accordo 298/354
